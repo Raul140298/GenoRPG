@@ -1,0 +1,8230 @@
+fileFormatVersion: 2
+guid: 1abeb65e97c269b4195f60170f6b7d4a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -85082164033451710
+    second: geno_0
+  - first:
+      213: 613443749956510336
+    second: geno_1
+  - first:
+      213: 2335990348074855478
+    second: geno_2
+  - first:
+      213: -3318929105122603393
+    second: geno_3
+  - first:
+      213: -2142428174845493219
+    second: geno_4
+  - first:
+      213: 952064964887551183
+    second: geno_5
+  - first:
+      213: 4150573967765129122
+    second: geno_6
+  - first:
+      213: 5184343372799021732
+    second: geno_7
+  - first:
+      213: -9094447136016900285
+    second: geno_8
+  - first:
+      213: 8445804427030857069
+    second: geno_9
+  - first:
+      213: -1965754964110696732
+    second: geno_10
+  - first:
+      213: 585164246076085014
+    second: geno_11
+  - first:
+      213: -795114668148725178
+    second: geno_12
+  - first:
+      213: -1533874453303309684
+    second: geno_13
+  - first:
+      213: 7553521662848471775
+    second: geno_14
+  - first:
+      213: 6579747933219054466
+    second: geno_15
+  - first:
+      213: -1950037737151399777
+    second: geno_16
+  - first:
+      213: 8093019229170479843
+    second: geno_17
+  - first:
+      213: -9174107524282025350
+    second: geno_18
+  - first:
+      213: 9059840395354868548
+    second: geno_19
+  - first:
+      213: -446148230586982372
+    second: geno_20
+  - first:
+      213: 7042459972915340665
+    second: geno_21
+  - first:
+      213: 265385341216392949
+    second: geno_22
+  - first:
+      213: -1525079027921247191
+    second: geno_23
+  - first:
+      213: 7151239988731297838
+    second: geno_24
+  - first:
+      213: -2653005980881788934
+    second: geno_25
+  - first:
+      213: -8472801286224843247
+    second: geno_26
+  - first:
+      213: 3243395945585272465
+    second: geno_27
+  - first:
+      213: 3919541374247879512
+    second: geno_28
+  - first:
+      213: 1392161513471477947
+    second: geno_29
+  - first:
+      213: -438031560172575906
+    second: geno_30
+  - first:
+      213: -1547627890971286357
+    second: geno_31
+  - first:
+      213: 2359932577938597853
+    second: geno_32
+  - first:
+      213: -8303574738549102266
+    second: geno_33
+  - first:
+      213: 3046094368267869975
+    second: geno_34
+  - first:
+      213: -508958655188792967
+    second: geno_35
+  - first:
+      213: 4112086458844145077
+    second: geno_36
+  - first:
+      213: -3862009153191847046
+    second: geno_37
+  - first:
+      213: -5800526635396695590
+    second: geno_38
+  - first:
+      213: 3479496609837001499
+    second: geno_39
+  - first:
+      213: 8064696023679846435
+    second: geno_40
+  - first:
+      213: -7255080790099724360
+    second: geno_41
+  - first:
+      213: 183785233381401461
+    second: geno_42
+  - first:
+      213: -7899121111287361357
+    second: geno_43
+  - first:
+      213: -6951779369854289715
+    second: geno_44
+  - first:
+      213: 4207228035828250408
+    second: geno_45
+  - first:
+      213: 8349612882595304812
+    second: geno_46
+  - first:
+      213: -4982765032686602366
+    second: geno_47
+  - first:
+      213: 1270663954169584737
+    second: geno_48
+  - first:
+      213: 1200063280123214899
+    second: geno_49
+  - first:
+      213: 4131232825126081259
+    second: geno_50
+  - first:
+      213: 5507613849808912134
+    second: geno_51
+  - first:
+      213: 3514944822715349555
+    second: geno_52
+  - first:
+      213: -3290477514540027760
+    second: geno_53
+  - first:
+      213: 2489507344677907396
+    second: geno_54
+  - first:
+      213: -3190753661366801134
+    second: geno_55
+  - first:
+      213: 118279354298515367
+    second: geno_56
+  - first:
+      213: 648429777077528088
+    second: geno_57
+  - first:
+      213: 5985165796926080179
+    second: geno_58
+  - first:
+      213: -5274042947618511343
+    second: geno_59
+  - first:
+      213: -7434320586435217983
+    second: geno_60
+  - first:
+      213: -2312281764384584195
+    second: geno_61
+  - first:
+      213: 4628838789777193818
+    second: geno_62
+  - first:
+      213: 2295418278769699024
+    second: geno_63
+  - first:
+      213: 2795356434439978568
+    second: geno_64
+  - first:
+      213: 5291967796304942233
+    second: geno_65
+  - first:
+      213: -1597562169019949005
+    second: geno_66
+  - first:
+      213: 5019057615389828439
+    second: geno_67
+  - first:
+      213: -1924636232308450304
+    second: geno_68
+  - first:
+      213: -1038170236534376048
+    second: geno_69
+  - first:
+      213: -428835059232718588
+    second: geno_70
+  - first:
+      213: -6711252962670134417
+    second: geno_71
+  - first:
+      213: 2090660654717169696
+    second: geno_72
+  - first:
+      213: 6394353588323282882
+    second: geno_73
+  - first:
+      213: 5004367902052941309
+    second: geno_74
+  - first:
+      213: -707245779740601457
+    second: geno_75
+  - first:
+      213: 2071011611626219392
+    second: geno_76
+  - first:
+      213: -4622289642270056972
+    second: geno_77
+  - first:
+      213: -2800894724567833276
+    second: geno_78
+  - first:
+      213: 178263509093212435
+    second: geno_79
+  - first:
+      213: -6414975260313292885
+    second: geno_80
+  - first:
+      213: 6556919901240885073
+    second: geno_81
+  - first:
+      213: 2898434276912969123
+    second: geno_82
+  - first:
+      213: 5825680195197163903
+    second: geno_83
+  - first:
+      213: -2887204144114906597
+    second: geno_84
+  - first:
+      213: 7343520258796662252
+    second: geno_85
+  - first:
+      213: 8342907465589253501
+    second: geno_86
+  - first:
+      213: -3711619866877316899
+    second: geno_87
+  - first:
+      213: -8548086111742794137
+    second: geno_88
+  - first:
+      213: 8042850265420889866
+    second: geno_89
+  - first:
+      213: 8144378502089559417
+    second: geno_90
+  - first:
+      213: -7130797807519539735
+    second: geno_91
+  - first:
+      213: -1356151348402832581
+    second: geno_92
+  - first:
+      213: -7520981183332121260
+    second: geno_93
+  - first:
+      213: 8948702390094941075
+    second: geno_94
+  - first:
+      213: -6754688145439170800
+    second: geno_95
+  - first:
+      213: -3472660538849472248
+    second: geno_96
+  - first:
+      213: 7902323582213462428
+    second: geno_97
+  - first:
+      213: 7165312454586851396
+    second: geno_98
+  - first:
+      213: 443546381839851948
+    second: geno_99
+  - first:
+      213: 4353060530444444013
+    second: geno_100
+  - first:
+      213: 7991429468007357189
+    second: geno_101
+  - first:
+      213: 8730602560714304977
+    second: geno_102
+  - first:
+      213: -2120999214831758073
+    second: geno_103
+  - first:
+      213: -6660953200802491329
+    second: geno_104
+  - first:
+      213: 8765287323782661803
+    second: geno_105
+  - first:
+      213: -6069579174857344477
+    second: geno_106
+  - first:
+      213: -4230555614338539366
+    second: geno_107
+  - first:
+      213: 2586258230739832059
+    second: geno_108
+  - first:
+      213: -3009517677684911043
+    second: geno_109
+  - first:
+      213: 7280387339637316563
+    second: geno_110
+  - first:
+      213: 7992973245110995386
+    second: geno_111
+  - first:
+      213: -2970401619142250741
+    second: geno_112
+  - first:
+      213: 452786356535600450
+    second: geno_113
+  - first:
+      213: -8032286479168428976
+    second: geno_114
+  - first:
+      213: -8495340965880836309
+    second: geno_115
+  - first:
+      213: -1000504972431913659
+    second: geno_116
+  - first:
+      213: 5575720396912255425
+    second: geno_117
+  - first:
+      213: 4962094074037178112
+    second: geno_118
+  - first:
+      213: -4617272046432462232
+    second: geno_119
+  - first:
+      213: -5072566739144154055
+    second: geno_120
+  - first:
+      213: 1134654083467524422
+    second: geno_121
+  - first:
+      213: -7562447494581382871
+    second: geno_122
+  - first:
+      213: -253977712729076400
+    second: geno_123
+  - first:
+      213: 1900600618227397160
+    second: geno_124
+  - first:
+      213: -844736303335650883
+    second: geno_125
+  - first:
+      213: -1563608024616670520
+    second: geno_126
+  - first:
+      213: 8595897946276673966
+    second: geno_127
+  - first:
+      213: 1229534517930789637
+    second: geno_128
+  - first:
+      213: -3961330125789166333
+    second: geno_129
+  - first:
+      213: 1116622295939356689
+    second: geno_130
+  - first:
+      213: -3640124830064423124
+    second: geno_131
+  - first:
+      213: 6959852125200291092
+    second: geno_132
+  - first:
+      213: -4842603198762536400
+    second: geno_133
+  - first:
+      213: -8390373273370255645
+    second: geno_134
+  - first:
+      213: -4345676553249170952
+    second: geno_135
+  - first:
+      213: -5674124477804860140
+    second: geno_136
+  - first:
+      213: -2518348966488043817
+    second: geno_137
+  - first:
+      213: 1968285844770367875
+    second: geno_138
+  - first:
+      213: -7127895364126230956
+    second: geno_139
+  - first:
+      213: -8034708467942166676
+    second: geno_140
+  - first:
+      213: 7380500355245484358
+    second: geno_141
+  - first:
+      213: -7116676165637982499
+    second: geno_142
+  - first:
+      213: -699734406984808457
+    second: geno_143
+  - first:
+      213: -9078809002086038866
+    second: geno_144
+  - first:
+      213: -7130150999408710306
+    second: geno_145
+  - first:
+      213: -3620050888216354300
+    second: geno_146
+  - first:
+      213: -5407855375470608868
+    second: geno_147
+  - first:
+      213: 2672203172242682350
+    second: geno_148
+  - first:
+      213: 7267866382957879426
+    second: geno_149
+  - first:
+      213: 3709524365381573639
+    second: geno_150
+  - first:
+      213: 5631873292997973809
+    second: geno_151
+  - first:
+      213: 5307207771736892414
+    second: geno_152
+  - first:
+      213: -8175938560981960173
+    second: geno_153
+  - first:
+      213: -4028335027795433612
+    second: geno_154
+  - first:
+      213: -6535162280179438991
+    second: geno_155
+  - first:
+      213: 2347528139426169378
+    second: geno_156
+  - first:
+      213: -3162428476590096876
+    second: geno_157
+  - first:
+      213: 5649269689919629583
+    second: geno_158
+  - first:
+      213: 1200139792723271755
+    second: geno_159
+  - first:
+      213: -8916374382121951200
+    second: geno_160
+  - first:
+      213: -3207617329590100371
+    second: geno_161
+  - first:
+      213: 8268647620722541394
+    second: geno_162
+  - first:
+      213: 3490339476524458067
+    second: geno_163
+  - first:
+      213: 1115417526210884543
+    second: geno_164
+  - first:
+      213: 9205822312069312652
+    second: geno_165
+  - first:
+      213: -2072334362117290675
+    second: geno_166
+  - first:
+      213: 6560425303363770474
+    second: geno_167
+  - first:
+      213: -5846877142609219295
+    second: geno_168
+  - first:
+      213: -4570024616618195566
+    second: geno_169
+  - first:
+      213: -6571887589554159891
+    second: geno_170
+  - first:
+      213: 6434105157093056485
+    second: geno_171
+  - first:
+      213: -5951927013003128564
+    second: geno_172
+  - first:
+      213: 707312040712172038
+    second: geno_173
+  - first:
+      213: 2264666080457003323
+    second: geno_174
+  - first:
+      213: 1233317508012049975
+    second: geno_175
+  - first:
+      213: -8114696891567566378
+    second: geno_176
+  - first:
+      213: -5756733582897868706
+    second: geno_177
+  - first:
+      213: 2749749888505557943
+    second: geno_178
+  - first:
+      213: -3773833685583083616
+    second: geno_179
+  - first:
+      213: 3699424900895253667
+    second: geno_180
+  - first:
+      213: 1159890931037212000
+    second: geno_181
+  - first:
+      213: -6966067305648936066
+    second: geno_182
+  - first:
+      213: 3767543864759230410
+    second: geno_183
+  - first:
+      213: 2572930464796764235
+    second: geno_184
+  - first:
+      213: 5923359933301142720
+    second: geno_185
+  - first:
+      213: -6670941106950658675
+    second: geno_186
+  - first:
+      213: -5555002794382874744
+    second: geno_187
+  - first:
+      213: 2341693548220707525
+    second: geno_188
+  - first:
+      213: 6090096232877630376
+    second: geno_189
+  - first:
+      213: -1388816444631724657
+    second: geno_190
+  - first:
+      213: -4835101538715298432
+    second: geno_191
+  - first:
+      213: -5263749481930723693
+    second: geno_192
+  - first:
+      213: 246286150555347394
+    second: geno_193
+  - first:
+      213: -7438769079210760676
+    second: geno_194
+  - first:
+      213: 3087926993545337858
+    second: geno_195
+  - first:
+      213: 7360191028011082023
+    second: geno_196
+  - first:
+      213: -2614191518146131338
+    second: geno_197
+  - first:
+      213: -4905038890880644754
+    second: geno_198
+  - first:
+      213: 544147812076884229
+    second: geno_199
+  - first:
+      213: 6452671068287344699
+    second: geno_200
+  - first:
+      213: 1548009797499122305
+    second: geno_201
+  - first:
+      213: 7115915992461482669
+    second: geno_202
+  - first:
+      213: -1777124121741503446
+    second: geno_203
+  - first:
+      213: -4879532349341286146
+    second: geno_204
+  - first:
+      213: 1943041663740590351
+    second: geno_205
+  - first:
+      213: -3350841345747300954
+    second: geno_206
+  - first:
+      213: -1122326204397391506
+    second: geno_207
+  - first:
+      213: 997244703056122015
+    second: geno_208
+  - first:
+      213: 5429275061478990489
+    second: geno_209
+  - first:
+      213: -5791849459896143762
+    second: geno_210
+  - first:
+      213: -1272718176430919891
+    second: geno_211
+  - first:
+      213: 7926282036556959832
+    second: geno_212
+  - first:
+      213: 879687722762260073
+    second: geno_213
+  - first:
+      213: 1649710848246337684
+    second: geno_214
+  - first:
+      213: -3012113770798715775
+    second: geno_215
+  - first:
+      213: -4456865447742727907
+    second: geno_216
+  - first:
+      213: 2036599281698371024
+    second: geno_217
+  - first:
+      213: 3882454609134859604
+    second: geno_218
+  - first:
+      213: -1688615592764862234
+    second: geno_219
+  - first:
+      213: 5161530481376262820
+    second: geno_220
+  - first:
+      213: 120209035195363658
+    second: geno_221
+  - first:
+      213: -8837295548794605642
+    second: geno_222
+  - first:
+      213: -1110599343637155701
+    second: geno_223
+  - first:
+      213: -6470304228556904328
+    second: geno_224
+  - first:
+      213: -2230789619201198727
+    second: geno_225
+  - first:
+      213: -5452492925582518451
+    second: geno_226
+  - first:
+      213: -9019002675764929036
+    second: geno_227
+  - first:
+      213: -4559133193888405367
+    second: geno_228
+  - first:
+      213: -7086095592726487852
+    second: geno_229
+  - first:
+      213: -1449081414008983004
+    second: geno_230
+  - first:
+      213: -952221800802443732
+    second: geno_231
+  - first:
+      213: 9209827888110130415
+    second: geno_232
+  - first:
+      213: 7455141980834940801
+    second: geno_233
+  - first:
+      213: 39356495370043514
+    second: geno_234
+  - first:
+      213: -6752022204786238249
+    second: geno_235
+  - first:
+      213: -6062944483912015229
+    second: geno_236
+  - first:
+      213: -338724672561858692
+    second: geno_237
+  - first:
+      213: 5936882233394122983
+    second: geno_238
+  - first:
+      213: 1983899145395639107
+    second: geno_239
+  - first:
+      213: -3729684923683451668
+    second: geno_240
+  - first:
+      213: -429296558579736425
+    second: geno_241
+  - first:
+      213: -2501688754144150438
+    second: geno_242
+  - first:
+      213: -519578128825324589
+    second: geno_243
+  - first:
+      213: -591171380620808790
+    second: geno_244
+  - first:
+      213: -2342692593740331127
+    second: geno_245
+  - first:
+      213: 3116502615593879461
+    second: geno_246
+  - first:
+      213: 8599902495641228784
+    second: geno_247
+  - first:
+      213: -608464460358065682
+    second: geno_248
+  - first:
+      213: -6343248213013487049
+    second: geno_249
+  - first:
+      213: 989445273697241688
+    second: geno_250
+  - first:
+      213: 2752622005732495075
+    second: geno_251
+  - first:
+      213: 4579992342609771361
+    second: geno_252
+  - first:
+      213: 4324111397898766058
+    second: geno_253
+  - first:
+      213: 6775661068271436144
+    second: geno_254
+  - first:
+      213: -5261846183719175114
+    second: geno_255
+  - first:
+      213: 3287573724846573933
+    second: geno_256
+  - first:
+      213: 4027832686036698431
+    second: geno_257
+  - first:
+      213: -5251620034211037140
+    second: geno_258
+  - first:
+      213: -1344914529762440487
+    second: geno_259
+  - first:
+      213: 9057817420235245970
+    second: geno_260
+  - first:
+      213: 6633614277468997982
+    second: geno_261
+  - first:
+      213: 7448997368246557125
+    second: geno_262
+  - first:
+      213: 7375413217373953574
+    second: geno_263
+  - first:
+      213: 6925937966654208375
+    second: geno_264
+  - first:
+      213: 6032827775495218450
+    second: geno_265
+  - first:
+      213: 6394882557778507721
+    second: geno_266
+  - first:
+      213: -6714865872876413160
+    second: geno_267
+  - first:
+      213: -3609573716089292003
+    second: geno_268
+  - first:
+      213: -6333717782073388310
+    second: geno_269
+  - first:
+      213: -1219014996301198169
+    second: geno_270
+  - first:
+      213: 4904925356177792483
+    second: geno_271
+  - first:
+      213: 4993107798878130228
+    second: geno_272
+  - first:
+      213: -3560257420991783166
+    second: geno_273
+  - first:
+      213: -3190980788969135427
+    second: geno_274
+  - first:
+      213: 1361129163139653762
+    second: geno_275
+  - first:
+      213: -6690843500393262268
+    second: geno_276
+  - first:
+      213: -5960695576424117138
+    second: geno_277
+  - first:
+      213: 334031327207832863
+    second: geno_278
+  - first:
+      213: -668331854572958699
+    second: geno_279
+  - first:
+      213: -3511049716733935983
+    second: geno_280
+  - first:
+      213: 7367069538639792936
+    second: geno_281
+  - first:
+      213: -1454501534445786869
+    second: geno_282
+  - first:
+      213: 3515055530997184576
+    second: geno_283
+  - first:
+      213: -6465839890481233523
+    second: geno_284
+  - first:
+      213: -1433593648515852446
+    second: geno_285
+  - first:
+      213: -4128125549764306119
+    second: geno_286
+  - first:
+      213: -1369642806335314538
+    second: geno_287
+  - first:
+      213: -3386117476725952693
+    second: geno_288
+  - first:
+      213: 844556691177197741
+    second: geno_289
+  - first:
+      213: -1695590447005548713
+    second: geno_290
+  - first:
+      213: 6521402812904729848
+    second: geno_291
+  - first:
+      213: -9104972061786838334
+    second: geno_292
+  - first:
+      213: 840953848198719027
+    second: geno_293
+  - first:
+      213: 3640904420917167003
+    second: geno_294
+  - first:
+      213: -2547722612030869688
+    second: geno_295
+  - first:
+      213: -2716543983601118729
+    second: geno_296
+  - first:
+      213: 1885135154518760713
+    second: geno_297
+  - first:
+      213: 5335840725595323482
+    second: geno_298
+  - first:
+      213: -2201603677967935915
+    second: geno_299
+  - first:
+      213: -4331089262417461406
+    second: geno_300
+  - first:
+      213: 6254355834831233094
+    second: geno_301
+  - first:
+      213: 469817048987821756
+    second: geno_302
+  - first:
+      213: -4291183844445340100
+    second: geno_303
+  - first:
+      213: -3089171947292966084
+    second: geno_304
+  - first:
+      213: -2973273754236286482
+    second: geno_305
+  - first:
+      213: 2292006847977500923
+    second: geno_306
+  - first:
+      213: -6779114002961489677
+    second: geno_307
+  - first:
+      213: -16834071672245724
+    second: geno_308
+  - first:
+      213: 2051182313939368442
+    second: geno_309
+  - first:
+      213: 3508480684234886518
+    second: geno_310
+  - first:
+      213: -4144021054435606961
+    second: geno_311
+  - first:
+      213: -2108819064936589255
+    second: geno_312
+  - first:
+      213: 3624220968299268846
+    second: geno_313
+  - first:
+      213: 6617467044152231008
+    second: geno_314
+  - first:
+      213: 9163774545326640891
+    second: geno_315
+  - first:
+      213: 6348036839202921828
+    second: geno_316
+  - first:
+      213: -5582345950795425198
+    second: geno_317
+  - first:
+      213: 4374615608162510555
+    second: geno_318
+  - first:
+      213: 8099123428383121018
+    second: geno_319
+  - first:
+      213: 7276266975612540749
+    second: geno_320
+  - first:
+      213: 8651836537703000629
+    second: geno_321
+  - first:
+      213: -1044149946671574123
+    second: geno_322
+  - first:
+      213: -482827708210823435
+    second: geno_323
+  - first:
+      213: -8094987497511670493
+    second: geno_324
+  - first:
+      213: -2557562425315721274
+    second: geno_325
+  - first:
+      213: 2470901366106692768
+    second: geno_326
+  - first:
+      213: -4800637308449252085
+    second: geno_327
+  - first:
+      213: 8593886827452392274
+    second: geno_328
+  - first:
+      213: -8551026038307117760
+    second: geno_329
+  - first:
+      213: 4043737756990671498
+    second: geno_330
+  - first:
+      213: 2572164001655626315
+    second: geno_331
+  - first:
+      213: 7579542009409286121
+    second: geno_332
+  - first:
+      213: 3941827400121089167
+    second: geno_333
+  - first:
+      213: -8901920886161009449
+    second: geno_334
+  - first:
+      213: -10023846021948825
+    second: geno_335
+  - first:
+      213: 7094735248238310470
+    second: geno_336
+  - first:
+      213: 2862158252947562610
+    second: geno_337
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: geno_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 516
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249801cf83ab1def0800000000000000
+      internalID: -85082164033451710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 516
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08267d527d3638800800000000000000
+      internalID: 613443749956510336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 516
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c2ebf48da1b6020800000000000000
+      internalID: 2335990348074855478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 516
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e4676309bc0f1d0800000000000000
+      internalID: -3318929105122603393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_4
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 517
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10cb811de09442e0800000000000000
+      internalID: -2142428174845493219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_5
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 517
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc97339a0a663d00800000000000000
+      internalID: 952064964887551183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_6
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 517
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7cf92780dc99930800000000000000
+      internalID: 4150573967765129122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_7
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 517
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2165964dc72f740800000000000000
+      internalID: 5184343372799021732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_8
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 517
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fd425a3880ac180800000000000000
+      internalID: -9094447136016900285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_9
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 517
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65889be066853570800000000000000
+      internalID: 8445804427030857069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_10
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 517
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee98b0764c38b4e0800000000000000
+      internalID: -1965754964110696732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_11
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 517
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613df9e08cbee1800800000000000000
+      internalID: 585164246076085014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 517
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64aea490c6f27f4f0800000000000000
+      internalID: -795114668148725178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_13
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 517
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a4fc0cf4596bae0800000000000000
+      internalID: -1533874453303309684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_14
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 517
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd21d4d9eef73d860800000000000000
+      internalID: 7553521662848471775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_15
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 529
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283e12f52e5ff4b50800000000000000
+      internalID: 6579747933219054466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_16
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 517
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98fb72820310f4e0800000000000000
+      internalID: -1950037737151399777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_17
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 517
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2bc1b3c1e205070800000000000000
+      internalID: 8093019229170479843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_18
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 516
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a7eeb20d50fa080800000000000000
+      internalID: -9174107524282025350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_19
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 516
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b8cd6a6d40bbd70800000000000000
+      internalID: 9059840395354868548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_20
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 516
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10a1be4c86fec9f0800000000000000
+      internalID: -446148230586982372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_21
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 516
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975a6866808dbb160800000000000000
+      internalID: 7042459972915340665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_22
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 516
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f68ccfcf86dea300800000000000000
+      internalID: 265385341216392949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_23
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 405
+        width: 219
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9242b5e44b4d5dae0800000000000000
+      internalID: -1525079027921247191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_24
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 523
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20c5ef71ee4e3360800000000000000
+      internalID: 7151239988731297838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_25
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 483
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affdd8add11ae2bd0800000000000000
+      internalID: -2653005980881788934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_26
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 483
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e681afe109a6a80800000000000000
+      internalID: -8472801286224843247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_27
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 483
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1966d82ad6bd20d20800000000000000
+      internalID: 3243395945585272465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_28
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 475
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853cd7efc12056630800000000000000
+      internalID: 3919541374247879512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_29
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 475
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb800704583f15310800000000000000
+      internalID: 1392161513471477947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 475
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53e087ed9ccbe9f0800000000000000
+      internalID: -438031560172575906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_31
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 475
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba46b2202a8b58ae0800000000000000
+      internalID: -1547627890971286357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_32
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 475
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7e6e91d2a20c020800000000000000
+      internalID: 2359932577938597853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_33
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 475
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649afdef4c6c3cc80800000000000000
+      internalID: -8303574738549102266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_34
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 475
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f9ce460b6e54a20800000000000000
+      internalID: 3046094368267869975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_35
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 475
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9798c18bcc0dfe8f0800000000000000
+      internalID: -508958655188792967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_36
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 475
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b56919f8d0111930800000000000000
+      internalID: 4112086458844145077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_37
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 489
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b51b01323676ac0800000000000000
+      internalID: -3862009153191847046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_38
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 475
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9fcf2f1c3608fa0800000000000000
+      internalID: -5800526635396695590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_39
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 475
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ba2824bb7a94030800000000000000
+      internalID: 3479496609837001499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_40
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 487
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32841f01e4e8bef60800000000000000
+      internalID: 8064696023679846435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_41
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 487
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b77851e576c05b90800000000000000
+      internalID: -7255080790099724360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_42
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 487
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57329ae22bfec8200800000000000000
+      internalID: 183785233381401461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_43
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 487
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b09deb533fa06290800000000000000
+      internalID: -7899121111287361357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_44
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 487
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc832f6ce71568f90800000000000000
+      internalID: -6951779369854289715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_45
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 483
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8277b949b93136a30800000000000000
+      internalID: 4207228035828250408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_46
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 447
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c655e17bda8cfd370800000000000000
+      internalID: 8349612882595304812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_47
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 447
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2873a734a99a9dab0800000000000000
+      internalID: -4982765032686602366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_48
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 447
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cdb21522e42a110800000000000000
+      internalID: 1270663954169584737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_49
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 447
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33cfbbfe13b77a010800000000000000
+      internalID: 1200063280123214899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_50
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 468
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2d212cd56155930800000000000000
+      internalID: 4131232825126081259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_51
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 468
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fb1e5ad99fe6c40800000000000000
+      internalID: 5507613849808912134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_52
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 467
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33afb0b71b797c030800000000000000
+      internalID: 3514944822715349555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_53
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 431
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0907e6c5220e552d0800000000000000
+      internalID: -3290477514540027760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_54
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 431
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cba0417db18c8220800000000000000
+      internalID: 2489507344677907396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_55
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 431
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d6478437a28b3d0800000000000000
+      internalID: -3190753661366801134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_56
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 431
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afb931327634a100800000000000000
+      internalID: 118279354298515367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_57
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 431
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816ed7c527faff800800000000000000
+      internalID: 648429777077528088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_58
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 431
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4c89fd4949f0350800000000000000
+      internalID: 5985165796926080179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_59
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 431
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1166b09d1e5dec6b0800000000000000
+      internalID: -5274042947618511343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_60
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 440
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5b72bb0dcf3d890800000000000000
+      internalID: -7434320586435217983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_61
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 440
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd4e3d7cff19efd0800000000000000
+      internalID: -2312281764384584195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_62
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 440
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bf73bca50fc3040800000000000000
+      internalID: 4628838789777193818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_63
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 440
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8a10d43c6fadf10800000000000000
+      internalID: 2295418278769699024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_64
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 440
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84eb56fddd91bc620800000000000000
+      internalID: 2795356434439978568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_65
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 437
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99410953ca8d07940800000000000000
+      internalID: 5291967796304942233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_66
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 451
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330a6f8eba154d9e0800000000000000
+      internalID: -1597562169019949005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_67
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 324
+        width: 219
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755a7802f4647a540800000000000000
+      internalID: 5019057615389828439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_68
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 411
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c986b3b815a45e0800000000000000
+      internalID: -1924636232308450304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_69
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 442
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0993cfa9bada791f0800000000000000
+      internalID: -1038170236534376048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_70
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 411
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401433329c87c0af0800000000000000
+      internalID: -428835059232718588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_71
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 411
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b324afcf6dcd2a0800000000000000
+      internalID: -6711252962670134417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_72
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 411
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0207d46e9c4830d10800000000000000
+      internalID: 2090660654717169696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_73
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 393
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cfe048b5be4db850800000000000000
+      internalID: 6394353588323282882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_74
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 393
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd7b37b716137540800000000000000
+      internalID: 5004367902052941309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_75
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 393
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83daa1e5bb5f26f0800000000000000
+      internalID: -707245779740601457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_76
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 393
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087a0bc8616bdbc10800000000000000
+      internalID: 2071011611626219392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_77
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 393
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd968f6f045adfb0800000000000000
+      internalID: -4622289642270056972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_78
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 393
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4456ed876193129d0800000000000000
+      internalID: -2800894724567833276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_79
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 393
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3116aef87b1597200800000000000000
+      internalID: 178263509093212435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_80
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 393
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf6b1e1dfd69f6a0800000000000000
+      internalID: -6414975260313292885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_81
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 393
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ff62ef8ebdefa50800000000000000
+      internalID: 6556919901240885073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_82
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 393
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5b6384e9e493820800000000000000
+      internalID: 2898434276912969123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_83
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 393
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7951c19549f8d050800000000000000
+      internalID: 5825680195197163903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_84
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 393
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1acef3c0279ee7d0800000000000000
+      internalID: -2887204144114906597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_85
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 393
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceda57a84cc69e560800000000000000
+      internalID: 7343520258796662252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_86
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 418
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75e6682326f7c370800000000000000
+      internalID: 8342907465589253501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_87
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 417
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0be75656dad7cc0800000000000000
+      internalID: -3711619866877316899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_88
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 423
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766ee1898f81f5980800000000000000
+      internalID: -8548086111742794137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_89
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 375
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f711c14b1fd9f60800000000000000
+      internalID: 8042850265420889866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_90
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 375
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d406dc815a60170800000000000000
+      internalID: 8144378502089559417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_91
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 375
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9edd9a5bc215a0d90800000000000000
+      internalID: -7130797807519539735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_92
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 375
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b38c8a88bfd2de0800000000000000
+      internalID: -1356151348402832581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_93
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 390
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455871d267b10a790800000000000000
+      internalID: -7520981183332121260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_94
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 386
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b4c4a596d203c70800000000000000
+      internalID: 8948702390094941075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_95
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 389
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f5e8a6be68242a0800000000000000
+      internalID: -6754688145439170800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_96
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 385
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8015c5c83a1aecfc0800000000000000
+      internalID: -3472660538849472248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_97
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 396
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9996020e61baad60800000000000000
+      internalID: 7902323582213462428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_98
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 392
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440e458c6bd407360800000000000000
+      internalID: 7165312454586851396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_99
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 355
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca169f2951bc72600800000000000000
+      internalID: 443546381839851948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_100
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 355
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d612aea2d7d296c30800000000000000
+      internalID: 4353060530444444013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_101
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 355
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bda20c2c247ee60800000000000000
+      internalID: 7991429468007357189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_102
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 355
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dded72b5c4592970800000000000000
+      internalID: 8730602560714304977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_103
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 355
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705121f9372b092e0800000000000000
+      internalID: -2120999214831758073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_104
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 355
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f349aa8ea5a8f83a0800000000000000
+      internalID: -6660953200802491329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_105
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 355
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6cc48616e84a970800000000000000
+      internalID: 8765287323782661803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_106
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 355
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32af48206e584cba0800000000000000
+      internalID: -6069579174857344477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_107
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 370
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9021dc451c0a45c0800000000000000
+      internalID: -4230555614338539366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_108
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 371
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc8da4882c34e320800000000000000
+      internalID: 2586258230739832059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_109
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 242
+        width: 219
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3415540e9b0c36d0800000000000000
+      internalID: -3009517677684911043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_110
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 339
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db555656b1290560800000000000000
+      internalID: 7280387339637316563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_111
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 339
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9ca0e51debcee60800000000000000
+      internalID: 7992973245110995386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_112
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 339
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fe7ca177307c6d0800000000000000
+      internalID: -2970401619142250741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_113
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 315
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245a274dace984600800000000000000
+      internalID: 452786356535600450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_114
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 315
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0542efa0106978090800000000000000
+      internalID: -8032286479168428976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_115
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 315
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f49dad66c7a1a80800000000000000
+      internalID: -8495340965880836309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_116
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 315
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d0f2a470e7d12f0800000000000000
+      internalID: -1000504972431913659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_117
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 315
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1ead8d820f06d40800000000000000
+      internalID: 5575720396912255425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_118
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 315
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f8e012546ecd440800000000000000
+      internalID: 4962094074037178112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_119
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 315
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a5d0189872cefb0800000000000000
+      internalID: -4617272046432462232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_120
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 315
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934e9d52d6f9a99b0800000000000000
+      internalID: -5072566739144154055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_121
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 338
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649370490e91fbf00800000000000000
+      internalID: 1134654083467524422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_122
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 352
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9211fec321acc0790800000000000000
+      internalID: -7562447494581382871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_123
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05dcaebad90b97cf0800000000000000
+      internalID: -253977712729076400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_124
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 305
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822f455413a406a10800000000000000
+      internalID: 1900600618227397160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_125
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 305
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db94dc6cec4e644f0800000000000000
+      internalID: -844736303335650883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_126
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 305
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cae5c439c2fc4ae0800000000000000
+      internalID: -1563608024616670520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_127
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 309
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9b45d93a3ca4770800000000000000
+      internalID: 8595897946276673966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_128
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 307
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b8854312f201110800000000000000
+      internalID: 1229534517930789637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_129
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 313
+        width: 58
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30588461d378609c0800000000000000
+      internalID: -3961330125789166333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_130
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 271
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1181fb1ef0a0f7f00800000000000000
+      internalID: 1116622295939356689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_131
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 271
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f4ee5d0cdab7dc0800000000000000
+      internalID: -3640124830064423124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_132
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 271
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4159fcb02ac569060800000000000000
+      internalID: 6959852125200291092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_133
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 271
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032b6954c0e9bccb0800000000000000
+      internalID: -4842603198762536400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_134
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 268
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee95d346f76f8b80800000000000000
+      internalID: -8390373273370255645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_135
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 268
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9d6def23e01b3c0800000000000000
+      internalID: -4345676553249170952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_136
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 268
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41da719a9d57141b0800000000000000
+      internalID: -5674124477804860140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_137
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 268
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de020035f60d0dd0800000000000000
+      internalID: -2518348966488043817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_138
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 268
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389a7f12c81c05b10800000000000000
+      internalID: 1968285844770367875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_139
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 268
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4563a197ee0a41d90800000000000000
+      internalID: -7127895364126230956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_140
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 268
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6feb76d73bfe7090800000000000000
+      internalID: -8034708467942166676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_141
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 268
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6492d0338fdcc6660800000000000000
+      internalID: 7380500355245484358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_142
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 269
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6b8adabbc7c3d90800000000000000
+      internalID: -7116676165637982499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_143
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 290
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f74d82a34b0a46f0800000000000000
+      internalID: -699734406984808457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_144
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 287
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea20b0f6057910280800000000000000
+      internalID: -9078809002086038866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_145
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 288
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5de855717d9c0d90800000000000000
+      internalID: -7130150999408710306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_146
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 285
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402e603a5eef2cdc0800000000000000
+      internalID: -3620050888216354300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_147
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 284
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e3364203073f4b0800000000000000
+      internalID: -5407855375470608868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_148
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 284
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1723190a2951520800000000000000
+      internalID: 2672203172242682350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_149
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 283
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280253fe7f5acd460800000000000000
+      internalID: 7267866382957879426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_150
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 160
+        width: 219
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c9934a1c0ea7330800000000000000
+      internalID: 3709524365381573639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_151
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 240
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1375729cbee682e40800000000000000
+      internalID: 5631873292997973809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_152
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 235
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3e19f795df6a940800000000000000
+      internalID: 5307207771736892414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_153
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 235
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a704f523b398e80800000000000000
+      internalID: -8175938560981960173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_154
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 235
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4776dff92aa7818c0800000000000000
+      internalID: -4028335027795433612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_155
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 235
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a6f5ce7807e45a0800000000000000
+      internalID: -6535162280179438991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_156
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 252
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2220bb2b768149020800000000000000
+      internalID: 2347528139426169378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_157
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 253
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e74494e0ccc14d0800000000000000
+      internalID: -3162428476590096876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_158
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 253
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f096a041adc366e40800000000000000
+      internalID: 5649269689919629583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_159
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 253
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40e41a68c0c7a010800000000000000
+      internalID: 1200139792723271755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_160
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 253
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0206a3d8dbca24480800000000000000
+      internalID: -8916374382121951200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_161
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 253
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e156e88014c73d0800000000000000
+      internalID: -3207617329590100371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_162
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 253
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253cb0ea33320c270800000000000000
+      internalID: 8268647620722541394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_163
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 238
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35063c3e24d207030800000000000000
+      internalID: 3490339476524458067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_164
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 248
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb37b029452ca7f00800000000000000
+      internalID: 1115417526210884543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_165
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 248
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80b1484e96a1cf70800000000000000
+      internalID: 9205822312069312652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_166
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 248
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45c92a90e69d33e0800000000000000
+      internalID: -2072334362117290675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_167
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 248
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a685b760e005b0b50800000000000000
+      internalID: 6560425303363770474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_168
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 237
+        width: 124
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1213d658738bbdea0800000000000000
+      internalID: -5846877142609219295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_169
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 240
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2958eaff2d20490c0800000000000000
+      internalID: -4570024616618195566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_170
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 240
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee73d08e07fbc4a0800000000000000
+      internalID: -6571887589554159891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_171
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 240
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef5a001d888a4950800000000000000
+      internalID: 6434105157093056485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_172
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 240
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0195e49ae1866da0800000000000000
+      internalID: -5951927013003128564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_173
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 238
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6027104bd80e0d900800000000000000
+      internalID: 707312040712172038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_174
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 240
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31148c2dc5bd6f10800000000000000
+      internalID: 2264666080457003323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_175
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 240
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73604583dbf9d1110800000000000000
+      internalID: 1233317508012049975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_176
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 240
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1162eab2ec26f80800000000000000
+      internalID: -8114696891567566378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_177
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 235
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e509fcc8e49fb10b0800000000000000
+      internalID: -5756733582897868706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_178
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 235
+        width: 64
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b33b8d64f2192620800000000000000
+      internalID: 2749749888505557943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_179
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 198
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7ca61f146a0abc0800000000000000
+      internalID: -3773833685583083616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_180
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 198
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4a813d85ff65330800000000000000
+      internalID: 3699424900895253667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_181
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 198
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d8baa08a2c81010800000000000000
+      internalID: 1159890931037212000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_182
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 198
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b255d71be835f90800000000000000
+      internalID: -6966067305648936066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_183
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 198
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf1da60f21094430800000000000000
+      internalID: 3767543864759230410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_184
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 209
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48edf130a2e4b320800000000000000
+      internalID: 2572930464796764235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_185
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 209
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4323dd970043250800000000000000
+      internalID: 5923359933301142720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_186
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 209
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85a7aa486e0c63a0800000000000000
+      internalID: -6670941106950658675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_187
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 209
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887a182e36aa8e2b0800000000000000
+      internalID: -5555002794382874744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_188
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 209
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2f48210ed5f7020800000000000000
+      internalID: 2341693548220707525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_189
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 209
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3ad90d14e548450800000000000000
+      internalID: 6090096232877630376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_190
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 169
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d41874dcee9bce0800000000000000
+      internalID: -1388816444631724657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_191
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 175
+        width: 20
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0851eeb94c446ecb0800000000000000
+      internalID: -4835101538715298432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_192
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 147
+        width: 84
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e6fd61cb763f6b0800000000000000
+      internalID: -5263749481930723693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_193
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 201
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c923f4f2fbfa6300800000000000000
+      internalID: 246286150555347394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_194
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 211
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16ab7b4fee24c890800000000000000
+      internalID: -7438769079210760676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_195
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 211
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c1c967d358ada20800000000000000
+      internalID: 3087926993545337858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_196
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 211
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7212e977eb6a42660800000000000000
+      internalID: 7360191028011082023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_197
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 211
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a8f023aa688bbd0800000000000000
+      internalID: -2614191518146131338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_198
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 211
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e694593ed1dcdebb0800000000000000
+      internalID: -4905038890880644754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_199
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 76
+        width: 219
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50116245d833d8700800000000000000
+      internalID: 544147812076884229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_200
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 163
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3025bd162e7c8950800000000000000
+      internalID: 6452671068287344699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_201
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 163
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18272c885b2ab7510800000000000000
+      internalID: 1548009797499122305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_202
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 163
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa1036b4efc0c260800000000000000
+      internalID: 7115915992461482669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_203
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 163
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24d1d1e6036657e0800000000000000
+      internalID: -1777124121741503446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_204
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 163
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef04c7f5e2b684cb0800000000000000
+      internalID: -4879532349341286146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_205
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 190
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09ba07391217fa10800000000000000
+      internalID: 1943041663740590351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_206
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 190
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad4a00bc8b6f71d0800000000000000
+      internalID: -3350841345747300954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_207
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 190
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61f7c07342bc60f0800000000000000
+      internalID: -1122326204397391506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_208
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 190
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90dcc716cce6dd00800000000000000
+      internalID: 997244703056122015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_209
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 190
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992a75327e8a85b40800000000000000
+      internalID: 5429275061478990489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_210
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 190
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e603a5e4a973f9fa0800000000000000
+      internalID: -5791849459896143762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_211
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 164
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fe6aacf85665ee0800000000000000
+      internalID: -1272718176430919891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_212
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 160
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850998a548fcffd60800000000000000
+      internalID: 7926282036556959832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_213
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 161
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e4484b257453c00800000000000000
+      internalID: 879687722762260073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_214
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 174
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490d4d3a643f4e610800000000000000
+      internalID: 1649710848246337684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_215
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 174
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18cea7cfb72d236d0800000000000000
+      internalID: -3012113770798715775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_216
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 174
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19159f1d780622c0800000000000000
+      internalID: -4456865447742727907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_217
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 174
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5727f9144734c10800000000000000
+      internalID: 2036599281698371024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_218
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 174
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455bf0a95ef31e530800000000000000
+      internalID: 3882454609134859604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_219
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 174
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e09017a015d098e0800000000000000
+      internalID: -1688615592764862234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_220
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 174
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa78c730a071a740800000000000000
+      internalID: 5161530481376262820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_221
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 174
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41bc990b711ba100800000000000000
+      internalID: 120209035195363658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_222
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 174
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfe4f6358e9b5580800000000000000
+      internalID: -8837295548794605642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_223
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 174
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80b9baf7cb5690f0800000000000000
+      internalID: -1110599343637155701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_224
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 162
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8786824d59cd436a0800000000000000
+      internalID: -6470304228556904328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_225
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 162
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97532ea19a4aa01e0800000000000000
+      internalID: -2230789619201198727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_226
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 162
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47d25e929ad454b0800000000000000
+      internalID: -5452492925582518451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_227
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 155
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fddbb2e9d016d280800000000000000
+      internalID: -9019002675764929036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_228
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 155
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988e696f384bab0c0800000000000000
+      internalID: -4559133193888405367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_229
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 126
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc93172a9129ad90800000000000000
+      internalID: -7086095592726487852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_230
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 126
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422bf5ba124d3ebe0800000000000000
+      internalID: -1449081414008983004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_231
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 125
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e99c7315709c2f0800000000000000
+      internalID: -952221800802443732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_232
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 125
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe45a412ba1efcf70800000000000000
+      internalID: 9209827888110130415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_233
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 125
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187c4cde12cf57760800000000000000
+      internalID: 7455141980834940801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_234
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 125
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70c2262682db8000800000000000000
+      internalID: 39356495370043514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_235
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 126
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc9a28149ffb42a0800000000000000
+      internalID: -6752022204786238249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_236
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 126
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382a28f5d181cdba0800000000000000
+      internalID: -6062944483912015229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_237
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 155
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c773a4774bb9c4bf0800000000000000
+      internalID: -338724672561858692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_238
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 155
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0d8c2bfea046250800000000000000
+      internalID: 5936882233394122983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_239
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 127
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3431287f2c9388b10800000000000000
+      internalID: 1983899145395639107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_240
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 124
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecc7b7925f7d3cc0800000000000000
+      internalID: -3729684923683451668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_241
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 120
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790ae82fd05da0af0800000000000000
+      internalID: -429296558579736425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_242
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 120
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5cf5a62557384dd0800000000000000
+      internalID: -2501688754144150438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_243
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 120
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbed46d1761ac8f0800000000000000
+      internalID: -519578128825324589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_244
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 137
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad28b0f2ccbbc7f0800000000000000
+      internalID: -591171380620808790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_245
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 137
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9874b248f751d7fd0800000000000000
+      internalID: -2342692593740331127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_246
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 137
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a78c00fd9a004b20800000000000000
+      internalID: 3116502615593879461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_247
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 137
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5d0bb61cdf85770800000000000000
+      internalID: 8599902495641228784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_248
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 137
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee168ed0ccc4e87f0800000000000000
+      internalID: -608464460358065682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_249
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 137
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7322335bb5148f7a0800000000000000
+      internalID: -6343248213013487049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_250
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 91
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ac96feb373bbd00800000000000000
+      internalID: 989445273697241688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_251
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 91
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eecb945127433620800000000000000
+      internalID: 2752622005732495075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_252
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 91
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16bb34f05c66f8f30800000000000000
+      internalID: 4579992342609771361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_253
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 91
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae649f00864520c30800000000000000
+      internalID: 4324111397898766058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_254
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 91
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07143c4b7dbf70e50800000000000000
+      internalID: 6775661068271436144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_255
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 91
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c7cac36ca2af6b0800000000000000
+      internalID: -5261846183719175114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_256
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 8
+        width: 389
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69436a62eecf9d20800000000000000
+      internalID: 3287573724846573933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_257
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 53
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35cce1dc7cb5e730800000000000000
+      internalID: 4027832686036698431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_258
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 53
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20c685376f7e17b0800000000000000
+      internalID: -5251620034211037140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_259
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 53
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da8f306c57e55de0800000000000000
+      internalID: -1344914529762440487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_260
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 53
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299877d04f4d3bd70800000000000000
+      internalID: 9057817420235245970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_261
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 53
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59cf79f9055f0c50800000000000000
+      internalID: 6633614277468997982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_262
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 53
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c9d723d3a7206760800000000000000
+      internalID: 7448997368246557125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_263
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 66
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e9b4d9e3bba5660800000000000000
+      internalID: 7375413217373953574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_264
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 66
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779b0dea2efdd1060800000000000000
+      internalID: 6925937966654208375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_265
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 66
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215a08506e8e8b350800000000000000
+      internalID: 6032827775495218450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_266
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 66
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7bab40ecf2fb850800000000000000
+      internalID: 6394882557778507721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_267
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 66
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fdec4c01100d2a0800000000000000
+      internalID: -6714865872876413160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_268
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 64
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b39ed54d738edc0800000000000000
+      internalID: -3609573716089292003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_269
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 64
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2d0f31c3d1a18a0800000000000000
+      internalID: -6333717782073388310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_270
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 66
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7acc799c150351fe0800000000000000
+      internalID: -1219014996301198169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_271
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 66
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed98c0cf9bc11440800000000000000
+      internalID: 4904925356177792483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_272
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 66
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4301d55a6151b4540800000000000000
+      internalID: 4993107798878130228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_273
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 64
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f16d81dbc679ec0800000000000000
+      internalID: -3560257420991783166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_274
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 54
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2266401eb57b3d0800000000000000
+      internalID: -3190980788969135427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_275
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 54
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2802d5623c3b3e210800000000000000
+      internalID: 1361129163139653762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_276
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 54
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443145739495523a0800000000000000
+      internalID: -6690843500393262268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_277
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 54
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c8ff054fa574da0800000000000000
+      internalID: -5960695576424117138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_278
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 52
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d331ae8b7b2a400800000000000000
+      internalID: 334031327207832863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_279
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 54
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cc91028bb99b6f0800000000000000
+      internalID: -668331854572958699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_280
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 54
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e765d82ee364fc0800000000000000
+      internalID: -3511049716733935983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_281
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 54
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bc93686b61d3660800000000000000
+      internalID: 7367069538639792936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_282
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 54
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09291a8f8290dbe0800000000000000
+      internalID: -1454501534445786869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_283
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 54
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048fbd2c16cf7c030800000000000000
+      internalID: 3515055530997184576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_284
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 54
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81c05980e8b446a0800000000000000
+      internalID: -6465839890481233523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_285
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 12
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267d4f31c2ada1ce0800000000000000
+      internalID: -1433593648515852446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_286
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 12
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b951a2fa3f5b6c0800000000000000
+      internalID: -4128125549764306119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_287
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 12
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695e633df1d0efce0800000000000000
+      internalID: -1369642806335314538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_288
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 12
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fe10868181201d0800000000000000
+      internalID: -3386117476725952693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_289
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 12
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0db4206d778bb00800000000000000
+      internalID: 844556691177197741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_290
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 12
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f30b9d87d0878e0800000000000000
+      internalID: -1695590447005548713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_291
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 12
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc6b647e4da08a50800000000000000
+      internalID: 6521402812904729848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_292
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 12
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cae6576624a4a180800000000000000
+      internalID: -9104972061786838334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_293
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 12
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336e162c11babab00800000000000000
+      internalID: 840953848198719027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_294
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 42
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93caedc747178230800000000000000
+      internalID: 3640904420917167003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_295
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 42
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f6ba368cba4acd0800000000000000
+      internalID: -2547722612030869688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_296
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 42
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f11bb8c3a5ec4ad0800000000000000
+      internalID: -2716543983601118729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_297
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 42
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d11b66f68592a10800000000000000
+      internalID: 1885135154518760713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_298
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 42
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5cfb239ed6bc0a40800000000000000
+      internalID: 5335840725595323482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_299
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 42
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55617869e155271e0800000000000000
+      internalID: -2201603677967935915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_300
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 42
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f391f4341e4e3c0800000000000000
+      internalID: -4331089262417461406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_301
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 42
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640e10aae7febc650800000000000000
+      internalID: 6254355834831233094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_302
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 42
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6675aed10258600800000000000000
+      internalID: 469817048987821756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_303
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 42
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3eb0f57707a274c0800000000000000
+      internalID: -4291183844445340100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_304
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 42
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3340872b7e0125d0800000000000000
+      internalID: -3089171947292966084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_305
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 42
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee901ca064fccb6d0800000000000000
+      internalID: -2973273754236286482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_306
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 42
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0367ca518decf10800000000000000
+      internalID: 2292006847977500923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_307
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 42
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0aa994bbfbbe1a0800000000000000
+      internalID: -6779114002961489677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_308
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 12
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4223ad1408134cff0800000000000000
+      internalID: -16834071672245724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_309
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 12
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af97be76273477c10800000000000000
+      internalID: 2051182313939368442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_310
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 12
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dc325f790a0b030800000000000000
+      internalID: 3508480684234886518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_311
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 30
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e30a49eca7d76c0800000000000000
+      internalID: -4144021054435606961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_312
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 30
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93812e2cb38fbb2e0800000000000000
+      internalID: -2108819064936589255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_313
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 30
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea000bc4c1db4230800000000000000
+      internalID: 3624220968299268846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_314
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 30
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0644c8f3737f5db50800000000000000
+      internalID: 6617467044152231008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_315
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 30
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe06ffa5644c2f70800000000000000
+      internalID: 9163774545326640891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_316
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 30
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d98c53fd1c81850800000000000000
+      internalID: 6348036839202921828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_317
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 30
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a9f7d2fe58782b0800000000000000
+      internalID: -5582345950795425198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_318
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 28
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6e769c7b1c5bc30800000000000000
+      internalID: 4374615608162510555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_319
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 29
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ed1dcd8ddd56070800000000000000
+      internalID: 8099123428383121018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_320
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 30
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d479a44534e7af460800000000000000
+      internalID: 7276266975612540749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_321
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 30
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a688cdd7f711870800000000000000
+      internalID: 8651836537703000629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_322
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 30
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593d568d72f6281f0800000000000000
+      internalID: -1044149946671574123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_323
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 30
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5feb06ce1c6ac49f0800000000000000
+      internalID: -482827708210823435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_324
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 30
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32da69592c3d8af80800000000000000
+      internalID: -8094987497511670493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_325
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf7b245686b18cd0800000000000000
+      internalID: -2557562425315721274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_326
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 16
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac11d973b76a4220800000000000000
+      internalID: 2470901366106692768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_327
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d15668dc5b06db0800000000000000
+      internalID: -4800637308449252085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_328
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 18
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2536536898e934770800000000000000
+      internalID: 8593886827452392274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_329
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045a6999f17a45980800000000000000
+      internalID: -8551026038307117760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_330
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a834ab01e3e1830800000000000000
+      internalID: 4043737756990671498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_331
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a1bb6188922b320800000000000000
+      internalID: 2572164001655626315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_332
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efadf6ac41ff2960800000000000000
+      internalID: 7579542009409286121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_333
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 18
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c7e1eb22f24b630800000000000000
+      internalID: 3941827400121089167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_334
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d41eb15e16067480800000000000000
+      internalID: -8901920886161009449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_335
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a149a7d536cdff0800000000000000
+      internalID: -10023846021948825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_336
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 16
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644ffa66e10957260800000000000000
+      internalID: 7094735248238310470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_337
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 16
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27064e544cd68b720800000000000000
+      internalID: 2862158252947562610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

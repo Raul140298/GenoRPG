@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896f6d257c143984bb217cb63d4f5903, type: 3}
+  m_Name: Bowsette
+  m_EditorClassIdentifier: 
+  names: Bowsette
+  lvl: 10
+  damage: 25
+  maxHP: 200
+  currHP: 200
+  speed: 0.7
+  sprite: {fileID: 5233607313693837211, guid: c99e34f8f3768de4590e46996c586a3b, type: 3}
+  battleAnimator: {fileID: 9100000, guid: 4feb7954b886e604fbc18f88bf77bbb3, type: 2}
