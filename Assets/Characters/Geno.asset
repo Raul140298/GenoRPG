@@ -19,3 +19,4 @@ MonoBehaviour:
   currHP: 100
   speed: 0.75
   sprite: {fileID: -3318929105122603393, guid: 1abeb65e97c269b4195f60170f6b7d4a, type: 3}
+  battleAnimator: {fileID: 9100000, guid: ae00aeb5cd78d624b8c16c6a95d7f68c, type: 2}

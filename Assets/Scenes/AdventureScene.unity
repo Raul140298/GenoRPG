@@ -1262,13 +1262,12 @@ MonoBehaviour:
   playerUnit: {fileID: 0}
   enemyUnit: {fileID: 0}
   playerHUD: {fileID: 1260583732}
-  battleByTurn: {fileID: 0}
-  playerBattleStation: {fileID: 1234684991}
-  enemyBattleStation: {fileID: 1962686915}
+  playerBattleStation: {fileID: 1234684990}
+  enemyBattleStation: {fileID: 1962686914}
   zonaBatalla: {fileID: 0}
   state: 0
-  camera1: {fileID: 0}
-  camera2: {fileID: 0}
+  camera1: {fileID: 797046323}
+  camera2: {fileID: 1111875605}
 --- !u!4 &965200829
 Transform:
   m_ObjectHideFlags: 0
@@ -1832,6 +1831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1234684991}
   - component: {fileID: 1234684992}
+  - component: {fileID: 1234684993}
   m_Layer: 0
   m_Name: PlayerBattleStation
   m_TagString: Untagged
@@ -1854,7 +1854,26 @@ Transform:
   m_Father: {fileID: 361984119}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1234684992
+--- !u!95 &1234684992
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234684990}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ae00aeb5cd78d624b8c16c6a95d7f68c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1234684993
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2154,8 +2173,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1962686915}
-  - component: {fileID: 1962686916}
   - component: {fileID: 1962686917}
+  - component: {fileID: 1962686916}
   m_Layer: 0
   m_Name: EnemyBattleStation
   m_TagString: Untagged
@@ -2171,7 +2190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962686914}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.138, y: 0.892, z: 0}
+  m_LocalPosition: {x: 3.13, y: -0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1397070340}

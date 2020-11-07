@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public enum BattleState { START,PLAYERTURN,ENEMYTURN, WON, LOST }
+public enum Action { ITEM, SPECIAL, ATTACK, ETC }
 
 public class BattleSystem : MonoBehaviour
 {
@@ -13,21 +14,22 @@ public class BattleSystem : MonoBehaviour
     public GameObject enemyPrefab;
     public GameObject playerButtons;
 
-    //POSICIONES EN LAS QUE SE INSTANCIAN
-    //public Transform playerBattleStation;
-    //public Transform enemyBattleStation;
-
     //DATOS DE LOS QUE PELEARAN
     public Unit playerUnit;
     public Unit enemyUnit;
 
+    //DATOS DE IU
     public BattleHUD playerHUD;
-    //public BattleHUD enemyHUD;
-    public BattleSystem battleByTurn;
 	public GameObject playerBattleStation;
 	public GameObject enemyBattleStation;
     public GameObject zonaBatalla;
+    public CharacterController controller;
     public BattleState state;
+    public Action action;
+
+    //Animator enemyAnim;
+    public Animator playerAnim;
+    public Animator buttonAnim;
 
     Vector3 mov = new Vector3(-1,-1,0);
     Vector3 destino;
@@ -44,27 +46,8 @@ public class BattleSystem : MonoBehaviour
 
     void Start()
     {
-        //playerBattleStation.GetComponent<SpriteRenderer>().sprite = playerUnit.unitSprite;
-        //enemyBattleStation.GetComponent<SpriteRenderer>().sprite = enemyUnit.unitSprite;
-
-        All_Cameras();
-
         zonaBatalla = GameObject.Find("Zona Battalla");
-        playerBattleStation = GameObject.Find("PlayerBattleStation");
-        enemyBattleStation = GameObject.Find("EnemyBattleStation");
-
-        this.playerUnit = playerPrefab.GetComponent<Unit>();
-        this.enemyUnit = enemyPrefab.GetComponent<Unit>();
-
-        playerBattleStation.GetComponent<SpriteRenderer>().sprite = this.playerUnit.unitSprite;
-        enemyBattleStation.GetComponent<SpriteRenderer>().sprite = this.enemyUnit.unitSprite;
-        enemyBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.enemyUnit.unitBattleAnimator;
-
-        destino = enemyBattleStation.transform.position + mov;
-
-        state = BattleState.START;
-
-        StartCoroutine(SetupBattle());
+        buttonAnim = GameObject.Find("BattleButtons").GetComponent<Animator>();
     }
 
     void Update()
@@ -76,7 +59,67 @@ public class BattleSystem : MonoBehaviour
                     destino,
                     0.75f * Time.deltaTime);
         }
-	}
+
+        //Si se está moviendo
+        if (buttonAnim.GetBool("PlayerTurn") == true)
+        {
+            if(Input.GetAxisRaw("Horizontal") > 0)
+			{
+                SoundSystemScript.PlaySound("Sound_button");
+                buttonAnim.SetBool("PlayerTurn", false);
+                buttonAnim.SetFloat("eje X", 1f);
+                buttonAnim.SetFloat("eje Y", 0f);
+                action = Action.ATTACK;
+                StartCoroutine(PlayerAttack());
+            }
+            if (Input.GetAxisRaw("Horizontal") < 0)
+            {
+                SoundSystemScript.PlaySound("Sound_button");
+                buttonAnim.SetFloat("eje X", -1f);
+                buttonAnim.SetFloat("eje Y", 0f);
+                action = Action.SPECIAL;
+            }
+            if (Input.GetAxisRaw("Vertical") > 0)
+            {
+                SoundSystemScript.PlaySound("Sound_button");
+                buttonAnim.SetFloat("eje X", 0f);
+                buttonAnim.SetFloat("eje Y", 1f);
+                action = Action.ITEM;
+            }
+            if (Input.GetAxisRaw("Vertical") < 0)
+            {
+                SoundSystemScript.PlaySound("Sound_button");
+                buttonAnim.SetFloat("eje X", 0f);
+                buttonAnim.SetFloat("eje Y", -1f);
+                action = Action.ETC;
+            }
+        }
+    }
+
+    public void Init()
+	{
+        print("Comienza la Batalla\n");
+
+        controller.state = State.BATTLE;
+
+        enemyBattleStation.transform.position = new Vector3(3.5f, 2.82f, 0f);
+
+        this.playerUnit = playerPrefab.GetComponent<Unit>();
+        this.enemyUnit = enemyPrefab.GetComponent<Unit>();
+        
+        playerBattleStation.GetComponent<SpriteRenderer>().sprite = this.playerUnit.unitSprite;
+        playerBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.playerUnit.unitBattleAnimator;
+        playerAnim = playerBattleStation.GetComponent<Animator>();
+
+        enemyBattleStation.GetComponent<SpriteRenderer>().sprite = this.enemyUnit.unitSprite;
+        enemyBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.enemyUnit.unitBattleAnimator;
+
+        destino = enemyBattleStation.transform.position + mov;
+
+        state = BattleState.START;
+    
+        StartCoroutine(SetupBattle());
+    }
 
     IEnumerator SetupBattle()
 	{   //obtiene info acerca de los UNIT
@@ -111,6 +154,8 @@ public class BattleSystem : MonoBehaviour
     IEnumerator PlayerAttack()
 	{
         print("Atacaste\n");
+        playerAnim.SetFloat("eje X", -1f);
+        SoundSystemScript.PlaySound("Sound_button");
         yield return new WaitForSeconds(1.5f);
         //Atacar al enemigo:
         bool isDead = enemyUnit.TakeDamage(playerUnit.unitDamage);
@@ -135,6 +180,7 @@ public class BattleSystem : MonoBehaviour
     IEnumerator EnemyTurn()
 	{
         print("Turno del enemigo\n");
+        playerAnim.SetFloat("eje X", -1f);
         playerButtons.GetComponent<SpriteRenderer>().enabled = false;
         yield return new WaitForSeconds(1.5f);
         
@@ -157,9 +203,15 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator EndBattle()
 	{
-        if(state == BattleState.WON)
+        buttonAnim.SetFloat("eje X", 0f);
+        buttonAnim.SetFloat("eje Y", 0f);
+        playerButtons.GetComponent<SpriteRenderer>().enabled = false;
+
+        if (state == BattleState.WON)
 		{
             print("Ganaste\n");
+            print(enemyUnit.gameObject.name + " ha muerto \n");
+            enemyUnit.Die();
         }
 		else
 		{
@@ -184,17 +236,25 @@ public class BattleSystem : MonoBehaviour
         FadeOut();
 
         yield return new WaitForSeconds(fadeTime);
+
+        this.enabled = false;
+        GameObject.Find("player").GetComponent<CharacterController>().state = State.ADVENTURE;
     }
 
     IEnumerator playerTurn()
 	{
-        print("Turno del personaje\n"); 
+        print("Turno del personaje\n");
+
+        playerAnim.SetFloat("eje X", 1f);
+        playerAnim.SetFloat("eje Y", 0f);
 
         yield return new WaitForSeconds(1.5f);
 
         playerButtons.GetComponent<SpriteRenderer>().enabled = true;
 
-        StartCoroutine(PlayerAttack());
+        buttonAnim.SetFloat("eje X", 0f);
+        buttonAnim.SetFloat("eje Y", 0f);
+        buttonAnim.SetBool("PlayerTurn", true);
     }
 
     public void OnAttackButton()
@@ -206,8 +266,9 @@ public class BattleSystem : MonoBehaviour
         PlayerAttack();
     }
 
-    // Método para activar la transición de entrada
-    public void FadeIn()
+	#region Transicion
+	// Método para activar la transición de entrada
+	public void FadeIn()
     {
         start = true;
         isFadeIn = true;
@@ -252,21 +313,9 @@ public class BattleSystem : MonoBehaviour
             if (alpha < 0) start = false;
         }
 
+
     }
 
-    void All_Cameras()
-    {
-        object[] Cams = GameObject.FindObjectsOfType(typeof(Camera));
-        foreach (Camera C in Cams)
-        {
-            if (C.name == "Main Camera")
-            {
-                camera1 = C;
-            }
-            else if (C.name == "Battle Camera")
-            {
-                camera2 = C;
-            }
-        }
-    }
+	#endregion
+
 }

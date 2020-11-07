@@ -95,6 +95,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -129,6 +130,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -174,9 +176,9 @@ TextureImporter:
       name: BattleButtons_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 1
-        width: 48
+        width: 81
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -195,10 +197,10 @@ TextureImporter:
       name: BattleButtons_1
       rect:
         serializedVersion: 2
-        x: 62
-        y: 33
-        width: 32
-        height: 16
+        x: 83
+        y: 1
+        width: 81
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,34 +215,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BattleButtons_3
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 33
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f7af7886d7e91730800000000000000
-      internalID: 3970459455102887921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BattleButtons_7
       rect:
         serializedVersion: 2
-        x: 114
+        x: 166
         y: 1
-        width: 32
-        height: 16
+        width: 81
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,34 +236,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BattleButtons_8
-      rect:
-        serializedVersion: 2
-        x: 158
-        y: 17
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc9ddff637e7295e0800000000000000
-      internalID: -1904320658159052339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BattleButtons_9
       rect:
         serializedVersion: 2
-        x: 190
-        y: 17
-        width: 33
-        height: 16
+        x: 249
+        y: 1
+        width: 81
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,10 +260,10 @@ TextureImporter:
       name: BattleButtons_10
       rect:
         serializedVersion: 2
-        x: 228
-        y: 17
-        width: 32
-        height: 16
+        x: 334
+        y: 1
+        width: 81
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,48 +273,6 @@ TextureImporter:
       bones: []
       spriteID: 2e7d481670ebac0b0800000000000000
       internalID: -5707540638828537886
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BattleButtons_11
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 17
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fa2bcf1a643bbe60800000000000000
-      internalID: 7979028795221551856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BattleButtons_14
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 1
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ece56e00754b8ed40800000000000000
-      internalID: 5613935221287575246
       vertices: []
       indices: 
       edges: []

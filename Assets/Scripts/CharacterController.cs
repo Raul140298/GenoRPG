@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public enum State { ADVENTURE, BATTLE }
+
 public class CharacterController : MonoBehaviour
 {
 	#region variables
@@ -25,7 +27,7 @@ public class CharacterController : MonoBehaviour
 	public GameObject zonaBatalla;
 	public GameObject zonaActual;
 	Rigidbody2D body;
-
+	public State state;
 	// Para controlar si empieza o no la transición
 	bool start = false;
 	// Para controlar si la transición es de entrada o salida
@@ -42,21 +44,63 @@ public class CharacterController : MonoBehaviour
 	{
 		player = GetComponent<Unit>();
 		anim = GetComponent<Animator>();
+		body = GetComponent<Rigidbody2D>();
+		zonaBatalla = GameObject.Find("Zona Battalla");
+		zonaActual = GameObject.Find("Zona Kero Sewers");
+		battleByTurn.controller = this;
+
 		floor = transform.position.y;
-		//speed = 0.01f;
 
 		SoundSystemScript.PlaySoundtrack("Soundtrack_forest_maze");
 
 		All_Cameras();
 
-		body = GetComponent<Rigidbody2D>();
-
-		zonaBatalla = GameObject.Find("Zona Battalla");
-		zonaActual = GameObject.Find("Zona Kero Sewers");
+		state = State.ADVENTURE;
 	}
 	// Update is called once per frame
 	void Update()
-	{	//obtenemos el movimiento	
+	{   	
+		if (state == State.ADVENTURE)
+		{
+			ManageMovement();
+			ManageJump();
+		}
+	}
+
+	void FixedUpdate()
+	{
+		//Si se está moviendo
+		if (mov != Vector3.zero)
+		{
+			anim.SetFloat("movX", mov.x);
+			anim.SetFloat("movY", mov.y);
+			anim.SetBool("walking", true);
+		}
+		else
+		{
+			anim.SetBool("walking", false);
+		}
+	}
+
+	void All_Cameras()
+	{
+		object[] Cams = GameObject.FindObjectsOfType(typeof(Camera));
+		foreach (Camera C in Cams)
+		{
+			if(C.name == "Main Camera")
+			{
+				camera1 = C;
+			}
+			else if (C.name == "Battle Camera")
+			{
+				camera2 = C;
+			}
+		}
+	}
+
+	void ManageMovement()
+	{
+		//obtenemos el movimiento
 		mov = new Vector3(
 			2 * Input.GetAxisRaw("Horizontal"),
 			Input.GetAxisRaw("Vertical"),
@@ -81,8 +125,8 @@ public class CharacterController : MonoBehaviour
 						);
 			}
 			else
-			{	//Solo saldrá del bloque si es que se ha dejado de presionar los botones anteriores
-				if(!comparaSignos(chocaX, mov.x) || !comparaSignos(chocaY, mov.y))
+			{   //Solo saldrá del bloque si es que se ha dejado de presionar los botones anteriores
+				if (!comparaSignos(chocaX, mov.x) || !comparaSignos(chocaY, mov.y))
 				{
 					choca = false;
 				}
@@ -101,48 +145,7 @@ public class CharacterController : MonoBehaviour
 			floor += transform.position.y - anteriorY;
 			topeY += transform.position.y - anteriorY;
 		}
-
-		ManageJump();
 	}
-
-	void FixedUpdate()
-	{
-		//Si se está moviendo
-		if (mov != Vector3.zero)
-		{
-			anim.SetFloat("movX", mov.x);
-			anim.SetFloat("movY", mov.y);
-			anim.SetBool("walking", true);
-		}
-		else
-		{
-			anim.SetBool("walking", false);
-			//speed = 0;
-		}
-	}
-
-	void All_Cameras()
-	{
-		object[] Cams = GameObject.FindObjectsOfType(typeof(Camera));
-		foreach (Camera C in Cams)
-		{
-			if(C.name == "Main Camera")
-			{
-				camera1 = C;
-			}
-			else if (C.name == "Battle Camera")
-			{
-				camera2 = C;
-			}
-		}
-	}
-
-	//void MoveCharacter(Vector2 movementVector)
-	//{
-	//	movementVector.Normalize();
-	//	// move the RigidBody2D instead of moving the Transform
-	//	body.velocity = movementVector * mov;
-	//}
 
 	void ManageJump()
 	{
@@ -199,7 +202,7 @@ public class CharacterController : MonoBehaviour
 		if (!other.gameObject.name.Contains("wall"))
 		{
 			SoundSystemScript.PlaySound("Sound_battle_start");
-			print("Comienza la batalla\n");
+			print("Chocaste con un enemigo\n");
 			FadeIn();
 			
 			//player.GetComponent<CharacterController>().enabled = false;
@@ -214,8 +217,10 @@ public class CharacterController : MonoBehaviour
 
 			battleByTurn.playerPrefab = gameObject;
 			battleByTurn.enemyPrefab = other.gameObject;
-			GameObject.Find("BattleSys").GetComponent<BattleSystem>().enabled = true;
 
+			battleByTurn.enabled = true;
+			battleByTurn.Init();
+			
 			FadeOut();
 
 			yield return new WaitForSeconds(fadeTime);

@@ -30,7 +30,6 @@ public class Unit : MonoBehaviour
         unitCurrHP = character.currHP;
         unitSpeed = character.speed;    
         unitSprite = character.sprite;
-        
 
         //Deberiamos crear un spriteRenderer primero, pero no funciona
         this.GetComponent<SpriteRenderer>().sprite = unitSprite;
@@ -45,10 +44,10 @@ public class Unit : MonoBehaviour
         {
             coll.isTrigger = true;
         }
-		else
-		{
-            unitBattleAnimator = character.battleAnimator;
-		}
+
+        unitBattleAnimator = character.battleAnimator;
+
+        
         //creamos una sombra
         GameObject sombraRef = Instantiate(sombraPrefab, transform.position, Quaternion.identity);
         sombraRef.transform.parent = gameObject.transform;
@@ -67,7 +66,7 @@ public class Unit : MonoBehaviour
         else return false;
 	}
 
-    private void Die()
+    public void Die()
     {
         Destroy(gameObject);
     }

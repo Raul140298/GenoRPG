@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class SoundSystemScript : MonoBehaviour
 {
-    public static AudioClip jumpSound, battleStartSound, forestMazeSoundtrack, battleSoundtrackMonsters;
+    public static AudioClip buttonSound, jumpSound, battleStartSound, forestMazeSoundtrack, battleSoundtrackMonsters;
     static AudioSource audioSrc;
     // Start is called before the first frame update
     void Start()
     {
+        buttonSound = Resources.Load<AudioClip>("Sound_button");
         jumpSound = Resources.Load<AudioClip>("Sound_jump");
         battleStartSound = Resources.Load<AudioClip>("Sound_battle_start");
         battleSoundtrackMonsters = Resources.Load<AudioClip>("Soundtrack_battle_monsters");
@@ -27,6 +28,10 @@ public class SoundSystemScript : MonoBehaviour
 
             case "Sound_battle_start":
                 audioSrc.PlayOneShot(battleStartSound);
+                break;
+
+            case "Sound_button":
+                audioSrc.PlayOneShot(buttonSound);
                 break;
 
         }
