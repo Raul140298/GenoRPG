@@ -4,8 +4,8 @@ using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum BattleState { START,PLAYERTURN,ENEMYTURN, WON, LOST }
-public enum Action { ITEM, SPECIAL, ATTACK, ETC }
+public enum BattleState { START,PLAYERTURN,ENEMYTURN, WON, LOST, RUN }
+public enum Action { ITEM, SPECIAL, ATTACK, ETC, NONE }
 
 public class BattleSystem : MonoBehaviour
 {
@@ -44,6 +44,8 @@ public class BattleSystem : MonoBehaviour
     float fadeTime = 1f;
     public Camera camera1, camera2;
 
+    bool enemyTurn = false;
+
     void Start()
     {
         zonaBatalla = GameObject.Find("Zona Battalla");
@@ -52,58 +54,94 @@ public class BattleSystem : MonoBehaviour
 
     void Update()
 	{
-        if(enemyBattleStation.transform.position != destino)
+        if(enemyBattleStation.transform.position != destino && enemyTurn == false)
 		{
             enemyBattleStation.transform.position = Vector3.MoveTowards(
                     enemyBattleStation.transform.position,
                     destino,
                     0.75f * Time.deltaTime);
         }
+		else if (enemyTurn == true)
+		{
+            enemyBattleStation.transform.position = Vector3.MoveTowards(
+                    enemyBattleStation.transform.position,
+                    playerBattleStation.transform.position + new Vector3(0.1f, 0.1f, 0f),
+                    0.75f * Time.deltaTime);
+        }
 
-        //Si se está moviendo
+        //Si es el turno del personaje
         if (buttonAnim.GetBool("PlayerTurn") == true)
         {
-            if(Input.GetAxisRaw("Horizontal") > 0)
+            if(Input.GetAxisRaw("Horizontal") > 0 && action != Action.ATTACK)
 			{
+                action = Action.ATTACK;
                 SoundSystemScript.PlaySound("Sound_button");
-                buttonAnim.SetBool("PlayerTurn", false);
                 buttonAnim.SetFloat("eje X", 1f);
                 buttonAnim.SetFloat("eje Y", 0f);
-                action = Action.ATTACK;
-                StartCoroutine(PlayerAttack());
             }
-            if (Input.GetAxisRaw("Horizontal") < 0)
+            else if (Input.GetAxisRaw("Horizontal") < 0 && action != Action.SPECIAL) 
             {
+                action = Action.SPECIAL;
                 SoundSystemScript.PlaySound("Sound_button");
                 buttonAnim.SetFloat("eje X", -1f);
                 buttonAnim.SetFloat("eje Y", 0f);
-                action = Action.SPECIAL;
+
             }
-            if (Input.GetAxisRaw("Vertical") > 0)
+            else if (Input.GetAxisRaw("Vertical") > 0 && action != Action.ITEM)
             {
+                action = Action.ITEM;
                 SoundSystemScript.PlaySound("Sound_button");
                 buttonAnim.SetFloat("eje X", 0f);
                 buttonAnim.SetFloat("eje Y", 1f);
-                action = Action.ITEM;
             }
-            if (Input.GetAxisRaw("Vertical") < 0)
+            else if (Input.GetAxisRaw("Vertical") < 0 && action != Action.ETC)
             {
+                action = Action.ETC;
                 SoundSystemScript.PlaySound("Sound_button");
                 buttonAnim.SetFloat("eje X", 0f);
-                buttonAnim.SetFloat("eje Y", -1f);
-                action = Action.ETC;
+                buttonAnim.SetFloat("eje Y", -1f);        
             }
+            
+            if(Input.GetKey("c"))
+			{
+                SoundSystemScript.PlaySound("Sound_button");
+                StartCoroutine(HideButtons());
+                switch (action)
+                {
+                    case Action.ATTACK:
+                        StartCoroutine(PlayerAttack());
+                        break;
+                    case Action.SPECIAL:
+                        StartCoroutine(PlayerAttack());
+                        break;
+                    case Action.ITEM:
+                        StartCoroutine(PlayerAttack());
+                        break;
+                    case Action.ETC:
+                        state = BattleState.RUN;
+                        StartCoroutine(EndBattle());
+                        break;
+                    default:
+                        print("Error de seleccion de accion\n");
+                        break;
+                }
+
+                buttonAnim.SetBool("PlayerTurn", false);
+                action = Action.NONE;
+            }    
         }
     }
 
     public void Init()
 	{
-        print("Comienza la Batalla\n");
-
+        //CUESTIONES PREVIAS:
+        //Desactivo el movimiento del player al setearle el estado de BATTLE
         controller.state = State.BATTLE;
 
+        //Posiciono al enemigo fuera de la pantalla, para que este luego se mueva a su posicion original
         enemyBattleStation.transform.position = new Vector3(3.5f, 2.82f, 0f);
 
+        //Obtengo los datos del enemigo y del player
         this.playerUnit = playerPrefab.GetComponent<Unit>();
         this.enemyUnit = enemyPrefab.GetComponent<Unit>();
         
@@ -114,29 +152,35 @@ public class BattleSystem : MonoBehaviour
         enemyBattleStation.GetComponent<SpriteRenderer>().sprite = this.enemyUnit.unitSprite;
         enemyBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.enemyUnit.unitBattleAnimator;
 
+        //Establezco la posición original del enemigo(la del enemyBattleStation)
         destino = enemyBattleStation.transform.position + mov;
 
+        //Establezco el inicio de la batalla
+        print("Comienza la Batalla\n");
         state = BattleState.START;
-    
+        action = Action.NONE;
+
         StartCoroutine(SetupBattle());
     }
 
+    IEnumerator HideButtons()
+	{
+        buttonAnim.SetFloat("eje X", 0f);
+        buttonAnim.SetFloat("eje Y", 0f);
+        yield return new WaitForSeconds(0.25f);
+        playerButtons.GetComponent<SpriteRenderer>().enabled = false;
+    }
+
     IEnumerator SetupBattle()
-	{   //obtiene info acerca de los UNIT
-        //yield return new WaitForSeconds(2f);
+	{   
+        //obtiene info acerca de los UNIT
         playerHUD.SetHUD(playerUnit);
-        //enemyHUD.SetHUD(enemyUnit);
 
-        //enemyBattleStation.transform.position = Vector3.MoveTowards(
-        //				enemyBattleStation.transform.position,
-        //              enemyBattleStation.transform.position + mov,
-        //				0.5f * Time.deltaTime);
+        //Tiempo de espera hasta que el enemigo llegue al centro
+        yield return new WaitForSeconds(2.5f);
 
-        //acá tengo que hacer que de alguna forma no se teletransporte, sino en cambio se mueva natural.
-        //enemyBattleStation.transform.position = enemyBattleStation.transform.position + mov;
-
-        yield return new WaitForSeconds(3f);
-
+        //Tiempo de decisión
+        yield return new WaitForSeconds(0.5f);
         if (playerUnit.unitSpeed > enemyUnit.unitSpeed)
 		{
             state = BattleState.PLAYERTURN;
@@ -146,26 +190,23 @@ public class BattleSystem : MonoBehaviour
 		{
             state = BattleState.ENEMYTURN;
             StartCoroutine(EnemyTurn());
-
         }
-        
     }
 
     IEnumerator PlayerAttack()
 	{
-        print("Atacaste\n");
+        //Tiempo para voltearse
+        yield return new WaitForSeconds(0.25f);
         playerAnim.SetFloat("eje X", -1f);
-        SoundSystemScript.PlaySound("Sound_button");
-        yield return new WaitForSeconds(1.5f);
-        //Atacar al enemigo:
+
+        //Tiempo del ataque
+        yield return new WaitForSeconds(2f);
+        print("Atacaste\n");
         bool isDead = enemyUnit.TakeDamage(playerUnit.unitDamage);
+        yield return new WaitForSeconds(1f);
 
-        //enemyHUD.SetHP(enemyUnit.unitCurrHP);
-
-        //yield return new WaitForSeconds(2f);
-
-		//comprobar si esta muerto
-		if (isDead)
+        //comprobar si esta muerto
+        if (isDead)
 		{
             state = BattleState.WON;
             StartCoroutine(EndBattle());
@@ -174,21 +215,25 @@ public class BattleSystem : MonoBehaviour
             state = BattleState.ENEMYTURN;
             StartCoroutine(EnemyTurn());
         }
-        //cambiar el estado
 	}
 
     IEnumerator EnemyTurn()
 	{
         print("Turno del enemigo\n");
+        //Volteo al player en direccion al enemigo
         playerAnim.SetFloat("eje X", -1f);
-        playerButtons.GetComponent<SpriteRenderer>().enabled = false;
-        yield return new WaitForSeconds(1.5f);
         
+        //Activo la bandera para la animación de ataque y el tiempo se encarga de demorarse hasta que acabe la animacion
+        enemyTurn = true;
+        yield return new WaitForSeconds(1.5f);
+        print("Enemigo ataca\n");
         bool isDead = playerUnit.TakeDamage(enemyUnit.unitDamage);
         playerHUD.SetHP(playerUnit.unitCurrHP);
+        //Devuelvo al enemigo a su posicion en el mismo tiempo
+        enemyTurn = false;
+        yield return new WaitForSeconds(1.5f);
 
-        print("Enemigo ataca\n");
-   
+        //Evalúo si está muerto o no
         if (isDead)
         {
             state = BattleState.LOST;
@@ -203,40 +248,40 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator EndBattle()
 	{
+        //Devuelvo los botones a su posicion normal y los oculto (podría hacerlo en el Init() pero no funciona
         buttonAnim.SetFloat("eje X", 0f);
         buttonAnim.SetFloat("eje Y", 0f);
         playerButtons.GetComponent<SpriteRenderer>().enabled = false;
 
-        if (state == BattleState.WON)
+        switch(state)
 		{
-            print("Ganaste\n");
-            print(enemyUnit.gameObject.name + " ha muerto \n");
-            enemyUnit.Die();
-        }
-		else
-		{
-            print("Perdiste\n");
-        }
+            case BattleState.LOST:
+                print("Perdiste\n");
+                break;
+            case BattleState.WON:
+                print("Ganaste\n");
+                print(enemyUnit.gameObject.name + " ha muerto \n");
+                enemyUnit.Die();
+                break;
+            case BattleState.RUN:
+                print("Huiste con éxito\n");
+                break;
+            default:
+                break;
+		}
 
-        yield return new WaitForSeconds(1.5f);
-
+        //tiempo de espera de la decision de huir o la animacion de muerte del enemigo
+        yield return new WaitForSeconds(1f);
         FadeIn();
-
-        //player.GetComponent<CharacterController>().enabled = false;
-
+        yield return new WaitForSeconds(fadeTime);
         SoundSystemScript.Stop();
-
-        yield return new WaitForSeconds(fadeTime);
-
         SoundSystemScript.PlaySoundtrack(playerPrefab.GetComponent<CharacterController>().zonaActual.GetComponent<ZonaScript>().soundtrack.name);
-
         camera2.enabled = false;
-        camera1.enabled = true;
-        
+        camera1.enabled = true; 
         FadeOut();
-
         yield return new WaitForSeconds(fadeTime);
 
+        //Desactivo el BattleSystem y activo el controller
         this.enabled = false;
         GameObject.Find("player").GetComponent<CharacterController>().state = State.ADVENTURE;
     }
@@ -245,25 +290,17 @@ public class BattleSystem : MonoBehaviour
 	{
         print("Turno del personaje\n");
 
+        //Me volteo y miro a cámara
         playerAnim.SetFloat("eje X", 1f);
         playerAnim.SetFloat("eje Y", 0f);
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.25f);
 
+        //y después muestro los botones
         playerButtons.GetComponent<SpriteRenderer>().enabled = true;
-
         buttonAnim.SetFloat("eje X", 0f);
         buttonAnim.SetFloat("eje Y", 0f);
         buttonAnim.SetBool("PlayerTurn", true);
-    }
-
-    public void OnAttackButton()
-	{
-        if (state != BattleState.PLAYERTURN)
-            return;
-
-        StartCoroutine(PlayerAttack());
-        PlayerAttack();
     }
 
 	#region Transicion

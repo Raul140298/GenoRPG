@@ -1265,7 +1265,11 @@ MonoBehaviour:
   playerBattleStation: {fileID: 1234684990}
   enemyBattleStation: {fileID: 1962686914}
   zonaBatalla: {fileID: 0}
+  controller: {fileID: 0}
   state: 0
+  action: 0
+  playerAnim: {fileID: 0}
+  buttonAnim: {fileID: 0}
   camera1: {fileID: 797046323}
   camera2: {fileID: 1111875605}
 --- !u!4 &965200829
@@ -1531,7 +1535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143797362}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2210001, y: -1.1650001, z: 0}
+  m_LocalPosition: {x: -1.372, y: -2.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 414947898}
@@ -2423,6 +2427,7 @@ MonoBehaviour:
   battleByTurn: {fileID: 965200828}
   zonaBatalla: {fileID: 0}
   zonaActual: {fileID: 0}
+  state: 0
   camera1: {fileID: 0}
   camera2: {fileID: 0}
 --- !u!114 &2073131211
