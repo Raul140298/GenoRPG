@@ -4,7 +4,7 @@ using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum BattleState { START,PLAYERTURN,ENEMYTURN, WON, LOST, RUN }
+public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST, RUN }
 public enum Action { ITEM, SPECIAL, ATTACK, ETC, NONE }
 
 public class BattleSystem : MonoBehaviour
@@ -20,8 +20,8 @@ public class BattleSystem : MonoBehaviour
 
     //DATOS DE IU
     public BattleHUD playerHUD;
-	public GameObject playerBattleStation;
-	public GameObject enemyBattleStation;
+    public GameObject playerBattleStation;
+    public GameObject enemyBattleStation;
     public GameObject zonaBatalla;
     public CharacterController controller;
     public BattleState state;
@@ -31,7 +31,7 @@ public class BattleSystem : MonoBehaviour
     public Animator playerAnim;
     public Animator buttonAnim;
 
-    Vector3 mov = new Vector3(-1,-1,0);
+    Vector3 mov = new Vector3(-1, -1, 0);
     Vector3 destino;
 
     // Para controlar si empieza o no la transición
@@ -53,16 +53,16 @@ public class BattleSystem : MonoBehaviour
     }
 
     void Update()
-	{
-        if(enemyBattleStation.transform.position != destino && enemyTurn == false)
-		{
+    {
+        if (enemyBattleStation.transform.position != destino && enemyTurn == false)
+        {
             enemyBattleStation.transform.position = Vector3.MoveTowards(
                     enemyBattleStation.transform.position,
                     destino,
                     0.75f * Time.deltaTime);
         }
-		else if (enemyTurn == true)
-		{
+        else if (enemyTurn == true)
+        {
             enemyBattleStation.transform.position = Vector3.MoveTowards(
                     enemyBattleStation.transform.position,
                     playerBattleStation.transform.position + new Vector3(0.1f, 0.1f, 0f),
@@ -72,14 +72,14 @@ public class BattleSystem : MonoBehaviour
         //Si es el turno del personaje
         if (buttonAnim.GetBool("PlayerTurn") == true)
         {
-            if(Input.GetAxisRaw("Horizontal") > 0 && action != Action.ATTACK)
-			{
+            if (Input.GetAxisRaw("Horizontal") > 0 && action != Action.ATTACK)
+            {
                 action = Action.ATTACK;
                 SoundSystemScript.PlaySound("Sound_button");
                 buttonAnim.SetFloat("eje X", 1f);
                 buttonAnim.SetFloat("eje Y", 0f);
             }
-            else if (Input.GetAxisRaw("Horizontal") < 0 && action != Action.SPECIAL) 
+            else if (Input.GetAxisRaw("Horizontal") < 0 && action != Action.SPECIAL)
             {
                 action = Action.SPECIAL;
                 SoundSystemScript.PlaySound("Sound_button");
@@ -99,11 +99,11 @@ public class BattleSystem : MonoBehaviour
                 action = Action.ETC;
                 SoundSystemScript.PlaySound("Sound_button");
                 buttonAnim.SetFloat("eje X", 0f);
-                buttonAnim.SetFloat("eje Y", -1f);        
+                buttonAnim.SetFloat("eje Y", -1f);
             }
-            
-            if(Input.GetKey("c"))
-			{
+
+            if (Input.GetKey("c"))
+            {
                 SoundSystemScript.PlaySound("Sound_button");
                 StartCoroutine(HideButtons());
                 switch (action)
@@ -128,12 +128,12 @@ public class BattleSystem : MonoBehaviour
 
                 buttonAnim.SetBool("PlayerTurn", false);
                 action = Action.NONE;
-            }    
+            }
         }
     }
 
     public void Init()
-	{
+    {
         //CUESTIONES PREVIAS:
         //Desactivo el movimiento del player al setearle el estado de BATTLE
         controller.state = State.BATTLE;
@@ -144,7 +144,7 @@ public class BattleSystem : MonoBehaviour
         //Obtengo los datos del enemigo y del player
         this.playerUnit = playerPrefab.GetComponent<Unit>();
         this.enemyUnit = enemyPrefab.GetComponent<Unit>();
-        
+
         playerBattleStation.GetComponent<SpriteRenderer>().sprite = this.playerUnit.unitSprite;
         playerBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.playerUnit.unitBattleAnimator;
         playerAnim = playerBattleStation.GetComponent<Animator>();
@@ -164,7 +164,7 @@ public class BattleSystem : MonoBehaviour
     }
 
     IEnumerator HideButtons()
-	{
+    {
         buttonAnim.SetFloat("eje X", 0f);
         buttonAnim.SetFloat("eje Y", 0f);
         yield return new WaitForSeconds(0.25f);
@@ -172,7 +172,7 @@ public class BattleSystem : MonoBehaviour
     }
 
     IEnumerator SetupBattle()
-	{   
+    {
         //obtiene info acerca de los UNIT
         playerHUD.SetHUD(playerUnit);
 
@@ -182,19 +182,19 @@ public class BattleSystem : MonoBehaviour
         //Tiempo de decisión
         yield return new WaitForSeconds(0.5f);
         if (playerUnit.unitSpeed > enemyUnit.unitSpeed)
-		{
+        {
             state = BattleState.PLAYERTURN;
             StartCoroutine(playerTurn());
         }
         else
-		{
+        {
             state = BattleState.ENEMYTURN;
             StartCoroutine(EnemyTurn());
         }
     }
 
     IEnumerator PlayerAttack()
-	{
+    {
         //Tiempo para voltearse
         yield return new WaitForSeconds(0.25f);
         playerAnim.SetFloat("eje X", -1f);
@@ -207,22 +207,23 @@ public class BattleSystem : MonoBehaviour
 
         //comprobar si esta muerto
         if (isDead)
-		{
+        {
             state = BattleState.WON;
             StartCoroutine(EndBattle());
-		} else
-		{
+        }
+        else
+        {
             state = BattleState.ENEMYTURN;
             StartCoroutine(EnemyTurn());
         }
-	}
+    }
 
     IEnumerator EnemyTurn()
-	{
+    {
         print("Turno del enemigo\n");
         //Volteo al player en direccion al enemigo
         playerAnim.SetFloat("eje X", -1f);
-        
+
         //Activo la bandera para la animación de ataque y el tiempo se encarga de demorarse hasta que acabe la animacion
         enemyTurn = true;
         yield return new WaitForSeconds(1.5f);
@@ -247,14 +248,14 @@ public class BattleSystem : MonoBehaviour
     }
 
     IEnumerator EndBattle()
-	{
+    {
         //Devuelvo los botones a su posicion normal y los oculto (podría hacerlo en el Init() pero no funciona
         buttonAnim.SetFloat("eje X", 0f);
         buttonAnim.SetFloat("eje Y", 0f);
         playerButtons.GetComponent<SpriteRenderer>().enabled = false;
 
-        switch(state)
-		{
+        switch (state)
+        {
             case BattleState.LOST:
                 print("Perdiste\n");
                 break;
@@ -268,7 +269,7 @@ public class BattleSystem : MonoBehaviour
                 break;
             default:
                 break;
-		}
+        }
 
         //tiempo de espera de la decision de huir o la animacion de muerte del enemigo
         yield return new WaitForSeconds(1f);
@@ -277,7 +278,7 @@ public class BattleSystem : MonoBehaviour
         SoundSystemScript.Stop();
         SoundSystemScript.PlaySoundtrack(playerPrefab.GetComponent<CharacterController>().zonaActual.GetComponent<ZonaScript>().soundtrack.name);
         camera2.enabled = false;
-        camera1.enabled = true; 
+        camera1.enabled = true;
         FadeOut();
         yield return new WaitForSeconds(fadeTime);
 
@@ -287,7 +288,7 @@ public class BattleSystem : MonoBehaviour
     }
 
     IEnumerator playerTurn()
-	{
+    {
         print("Turno del personaje\n");
 
         //Me volteo y miro a cámara
@@ -303,9 +304,9 @@ public class BattleSystem : MonoBehaviour
         buttonAnim.SetBool("PlayerTurn", true);
     }
 
-	#region Transicion
-	// Método para activar la transición de entrada
-	public void FadeIn()
+    #region Transicion
+    // Método para activar la transición de entrada
+    public void FadeIn()
     {
         start = true;
         isFadeIn = true;
@@ -353,6 +354,6 @@ public class BattleSystem : MonoBehaviour
 
     }
 
-	#endregion
+    #endregion
 
 }
