@@ -199,7 +199,7 @@ public class CharacterController : MonoBehaviour
 
 	IEnumerator OnTriggerEnter2D(Collider2D other)
 	{
-		if (!other.gameObject.name.Contains("wall"))
+		if (other.gameObject.name.Contains("enemy"))
 		{
 			SoundSystemScript.PlaySound("Sound_battle_start");
 			print("Chocaste con un enemigo\n");
@@ -225,7 +225,7 @@ public class CharacterController : MonoBehaviour
 
 			yield return new WaitForSeconds(fadeTime);
 		}
-		else
+		else if (other.gameObject.name.Contains("wall"))
 		{
 			choca = true;
 			chocaX = mov.x;

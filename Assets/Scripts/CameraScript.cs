@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
@@ -13,6 +14,9 @@ public class CameraScript : MonoBehaviour
     bool followPlayer = false;
     float posX, posY, smoothTime = 0.6f;
     float posXF, posYF, smoothTimeF = 0.25f;
+
+    public List<GameObject> objetosEnCamara = new List<GameObject>();
+
     void Awake()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -96,5 +100,41 @@ public class CameraScript : MonoBehaviour
         //prevPosition.y = posY;
         prevPosition.z = transform.position.z;
 
+        actualizaTransformZ();
+
     }
+
+    void actualizaTransformZ()
+	{
+        int count = objetosEnCamara.Count;
+
+        if(count > 1)
+		{
+            objetosEnCamara.Sort(sortByY);
+            for(int i=0; i< objetosEnCamara.Count; i++)
+			{
+                objetosEnCamara[i].transform.position = new Vector3(
+                    objetosEnCamara[i].transform.position.x,
+                    objetosEnCamara[i].transform.position.y,
+                    -i);
+            }
+        }
+
+    }
+
+    public void addUnitToObjetosEnCamara(GameObject o)
+	{
+        objetosEnCamara.Add(o);
+    }
+
+    private static int sortByY(GameObject o1, GameObject o2)
+    {
+        return o2.transform.position.y.CompareTo(o1.transform.position.y);
+    }
+
+    public void removeUnitToObjetosEnCamara(GameObject o)
+	{
+        objetosEnCamara.Remove(o);
+    }
+
 }

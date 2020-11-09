@@ -20,9 +20,13 @@ public class Unit : MonoBehaviour
     Vector3 auxiliar;
     public GameObject sombraPrefab;
     public UnityEditor.Animations.AnimatorController unitBattleAnimator;
+    public CameraScript cam;
 
     void Start()
-    {   //extrae la info de los scriptables characters
+    {
+        //buscamos la cámara
+        cam = GameObject.Find("Main Camera").GetComponent<CameraScript>();
+        //extrae la info de los scriptables characters
         unitNames = character.names;
         unitLvl = character.lvl;
         unitDamage = character.damage;
@@ -47,7 +51,6 @@ public class Unit : MonoBehaviour
 
         unitBattleAnimator = character.battleAnimator;
 
-        
         //creamos una sombra
         GameObject sombraRef = Instantiate(sombraPrefab, transform.position, Quaternion.identity);
         sombraRef.transform.parent = gameObject.transform;
@@ -59,6 +62,18 @@ public class Unit : MonoBehaviour
         sombraRef.AddComponent<shadow>();
     }
 
+ //   void Update()
+	//{
+ //       if(this.GetComponent<SpriteRenderer>().isVisible)
+	//	{
+ //           print(unitNames + " es visible\n");
+	//	}
+	//	else
+	//	{
+ //           print(unitNames + " se escondió\n");
+ //       }
+	//}
+
     public bool TakeDamage(int dmg)
 	{
         unitCurrHP -= dmg;
@@ -69,5 +84,18 @@ public class Unit : MonoBehaviour
     public void Die()
     {
         Destroy(gameObject);
+    }
+
+    void OnBecameInvisible()
+    {
+        //print(unitNames + " se escondió\n");
+        cam.removeUnitToObjetosEnCamara(this.gameObject);
+    }
+
+    // ... y habilítelo de nuevo cuando sea visible.
+    void OnBecameVisible()
+    {
+        //print(unitNames + " es visible\n");
+        cam.addUnitToObjetosEnCamara(this.gameObject);
     }
 } 
