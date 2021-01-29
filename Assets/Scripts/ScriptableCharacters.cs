@@ -7,11 +7,9 @@ using UnityEngine;
 public class ScriptableCharacters : ScriptableObject
 {
     public string names;
-    public int lvl;
-    public int damage;
-    public int maxHP;
-    public int currHP;
+    public int lvl, damage, maxHP, currHP, maxMP, currMP;
     public float speed;
     public Sprite sprite;
-    public AnimatorController battleAnimator;
+    public AnimatorController battleAnimator;   
+    public ParticleSystem attackParticle;
 }

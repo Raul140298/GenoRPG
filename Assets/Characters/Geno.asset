@@ -17,6 +17,10 @@ MonoBehaviour:
   damage: 20
   maxHP: 100
   currHP: 100
+  maxMP: 100
+  currMP: 100
   speed: 0.75
   sprite: {fileID: -3318929105122603393, guid: 1abeb65e97c269b4195f60170f6b7d4a, type: 3}
   battleAnimator: {fileID: 9100000, guid: ae00aeb5cd78d624b8c16c6a95d7f68c, type: 2}
+  attackParticle: {fileID: 2763472760586862018, guid: e392849ee14ae0e458b917220c81ebab,
+    type: 3}

@@ -6,15 +6,8 @@ public class shadow : MonoBehaviour
 {
     public GameObject target;
     public CharacterController control;
-    public Vector3 startPosTarget;
-    public Vector3 startPosObj;
-    public Vector3 difference;
-    public Vector3 auxFloor;
-    public Vector3 auxScale;
-    public Vector3 ScaleIni;
-    public float floorShadow;
-    public float scaleX;
-    public float scaleY;
+    public Vector3 startPosTarget, startPosObj, difference, auxFloor, auxScale, ScaleIni;
+    public float floorShadow, scaleX, scaleY;
    
     void Start()
     {
@@ -63,8 +56,6 @@ public class shadow : MonoBehaviour
 			{
                 this.transform.localScale = ScaleIni;
             }
-			
-            
         }
 		else//SI NO ES EL PERSONAJE (solo tiene que actualizar la sombra por si se mueve)
 		{
@@ -72,8 +63,5 @@ public class shadow : MonoBehaviour
             difference = target.transform.position - startPosTarget;
             this.transform.position = startPosObj + difference;
         }
-       
-
-        
     }
 }

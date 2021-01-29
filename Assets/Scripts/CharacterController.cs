@@ -3,60 +3,49 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum State { ADVENTURE, BATTLE }
+public enum State { ADVENTURE, BATTLE, TELEPORT }
 
 public class CharacterController : MonoBehaviour
 {
 	#region variables
+	//PUBLICAS
 	public float floor;
-	float ejeY;
-	float topeY;
-	float anteriorY;
-	float chocaX;
-	float chocaY;
-	public bool canJump = true;
-	public bool elevando = false;
-	public bool choca = false;
-	float speedJump = 4f;
-	float gravity = 1f;
-	Vector3 salto = new Vector3(0f, 1f, 0f);
-	Vector3 mov;
+	public bool canJump = true, elevando = false, choca = false, canBattle = true;
+	public BattleSystem battleByTurn;
+	public GameObject zonaBatalla, zonaActual;
+	public State state;
+	public Camera camera1, camera2;
+	//PRIVADAS
+	float ejeY, topeY, anteriorY, chocaX, chocaY, speedJump = 4f, gravity = 1f;
+	Vector3 salto = new Vector3(0f, 1f, 0f), mov;
 	Animator anim;
 	Unit player;
-	public BattleSystem battleByTurn;
-	public GameObject zonaBatalla;
-	public GameObject zonaActual;
 	Rigidbody2D body;
-	public State state;
-	// Para controlar si empieza o no la transición
-	bool start = false;
-	// Para controlar si la transición es de entrada o salida
-	bool isFadeIn = false;
-	// Opacidad inicial del cuadrado de transición
-	float alpha = 0;
-	// Transición de 1 segundo
-	float fadeTime = 1f;
-	public Camera camera1, camera2;
+	// start: Para controlar si empieza o no la transición
+	// isFadeIn: Para controlar si la transición es de entrada o salida
+	// alpha: Opacidad inicial del cuadrado de transición
+	// fadeTime: Transición de 1 segundo
+	bool start = false, isFadeIn = false;
+	float alpha = 0, fadeTime = 1f;
 	#endregion
 
 	// Start is called once
 	void Start()
 	{
+		battleByTurn.controller = this;
 		player = GetComponent<Unit>();
 		anim = GetComponent<Animator>();
 		body = GetComponent<Rigidbody2D>();
 		zonaBatalla = GameObject.Find("Zona Battalla");
 		zonaActual = GameObject.Find("Zona Kero Sewers");
-		battleByTurn.controller = this;
-
 		floor = transform.position.y;
 
-		SoundSystemScript.PlaySoundtrack("Soundtrack_forest_maze");
-
+		SoundSystemScript.PlaySoundtrack(zonaActual.GetComponent<ZonaScript>().soundtrack.name);
 		All_Cameras();
 
 		state = State.ADVENTURE;
 	}
+
 	// Update is called once per frame
 	void Update()
 	{   	
@@ -82,7 +71,7 @@ public class CharacterController : MonoBehaviour
 		}
 	}
 
-	void All_Cameras()
+	void All_Cameras()//Ordena las cámaras
 	{
 		object[] Cams = GameObject.FindObjectsOfType(typeof(Camera));
 		foreach (Camera C in Cams)
@@ -100,17 +89,12 @@ public class CharacterController : MonoBehaviour
 
 	void ManageMovement()
 	{
-		//obtenemos el movimiento
+		//Obtenemos el movimiento
 		mov = new Vector3(
 			2 * Input.GetAxisRaw("Horizontal"),
 			Input.GetAxisRaw("Vertical"),
 			0
 		);
-
-		//if (speed < maxSpeed)
-		//{
-		//	speed += acceleration * Time.deltaTime;
-		//}
 
 		if (canJump)//si está en el suelo
 		{
@@ -134,7 +118,8 @@ public class CharacterController : MonoBehaviour
 		}
 		else //si ya saltó (elevando o cayendo)
 		{   //basicamente para disminuir la velocidad en el aire
-			GetComponent<CapsuleCollider2D>().isTrigger = true;
+			if(elevando)GetComponent<CapsuleCollider2D>().isTrigger = true;
+
 			anteriorY = gameObject.transform.position.y;
 			transform.position = Vector3.MoveTowards(
 						transform.position,
@@ -199,8 +184,9 @@ public class CharacterController : MonoBehaviour
 
 	IEnumerator OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.gameObject.name.Contains("enemy"))
+		if (other.gameObject.name.Contains("enemy") && canBattle == true)
 		{
+			canBattle = false;
 			SoundSystemScript.PlaySound("Sound_battle_start");
 			print("Chocaste con un enemigo\n");
 			FadeIn();
@@ -225,7 +211,29 @@ public class CharacterController : MonoBehaviour
 
 			yield return new WaitForSeconds(fadeTime);
 		}
-		else if (other.gameObject.name.Contains("wall"))
+		else if (other.gameObject.name.Contains("teleport"))
+		{
+
+			state = State.TELEPORT;
+			//SoundSystemScript.PlaySound("Sound_battle_start");
+			print("Te teletransportaste\n");
+			FadeIn();
+
+			yield return new WaitForSeconds(fadeTime);
+
+			this.gameObject.transform.position = other.GetComponent<WarpScript>().target.transform.GetChild(0).transform.position;
+
+			//Chanco los datos de la zona de batalla de acuerdo a la zona actual.
+			zonaBatalla.GetComponent<SpriteRenderer>().sprite = zonaActual.GetComponent<ZonaScript>().battleSprite;
+			//Si es una nueva zona, debemos poder su música
+			//SoundSystemScript.PlaySoundtrack(zonaActual.GetComponent<ZonaScript>().battleSoundtrack.name);		
+			FadeOut();
+			state = State.ADVENTURE;
+			yield return new WaitForSeconds(fadeTime);
+			
+
+		}
+		else if (other.gameObject.name.Contains("wall") && elevando == false)
 		{
 			choca = true;
 			chocaX = mov.x;

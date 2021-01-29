@@ -12,9 +12,7 @@ public class CameraScript : MonoBehaviour
     Vector3 prevPosition;
     Vector2 velocity;
     bool followPlayer = false;
-    float posX, posY, smoothTime = 0.6f;
-    float posXF, posYF, smoothTimeF = 0.25f;
-
+    float posX, posY, smoothTime = 0.6f, posXF, posYF, smoothTimeF = 0.25f;
     public List<GameObject> objetosEnCamara = new List<GameObject>();
 
     void Awake()

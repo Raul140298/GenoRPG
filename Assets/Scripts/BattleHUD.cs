@@ -5,11 +5,8 @@ using UnityEngine.UI;
 
 public class BattleHUD : MonoBehaviour
 {
-    public Text nameText;
-    public Text levelText;
-    public Slider hpSlider;
-    int maxHP;
-    int currHP;
+    public Text nameText, levelText;
+    public Slider hpSlider, mpSlider;
 
     public void SetHUD(Unit unit)
 	{
@@ -20,6 +17,9 @@ public class BattleHUD : MonoBehaviour
         //HP.text = currHP.ToString() + '/' + maxHP.ToString();
         hpSlider.maxValue = unit.unitMaxHP;
         hpSlider.value = unit.unitCurrHP;
+        mpSlider.maxValue = unit.unitMaxMP;
+        mpSlider.value = unit.unitCurrMP;
+
     }
 
     public void SetHP(int hp)

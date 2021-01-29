@@ -1016,6 +1016,15 @@ TextureImporter:
   - first:
       213: 2862158252947562610
     second: geno_337
+  - first:
+      213: -979701091692773944
+    second: geno_338
+  - first:
+      213: -1120456311130333133
+    second: geno_339
+  - first:
+      213: -5232945231024995352
+    second: geno_340
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1069,6 +1078,8 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -3365,9 +3376,9 @@ TextureImporter:
       name: geno_107
       rect:
         serializedVersion: 2
-        x: 611
+        x: 617
         y: 370
-        width: 22
+        width: 8
         height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3808,7 +3819,7 @@ TextureImporter:
         serializedVersion: 2
         x: 605
         y: 307
-        width: 24
+        width: 9
         height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -8208,6 +8219,69 @@ TextureImporter:
       bones: []
       spriteID: 27064e544cd68b720800000000000000
       internalID: 2862158252947562610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_338
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 372
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdf69b3c076762f0800000000000000
+      internalID: -979701091692773944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_339
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 372
+        width: 4
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3306bb4ebe65370f0800000000000000
+      internalID: -1120456311130333133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geno_340
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 307
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e34ea7a908d067b0800000000000000
+      internalID: -5232945231024995352
       vertices: []
       indices: 
       edges: []

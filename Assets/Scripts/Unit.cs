@@ -10,17 +10,14 @@ public class Unit : MonoBehaviour
 {
     public ScriptableCharacters character;
     public string unitNames;
-    public int unitLvl;
-    public int unitDamage;
-    public int unitMaxHP;
-    public int unitCurrHP;
+    public int unitLvl, unitDamage, unitMaxHP, unitCurrHP, unitMaxMP, unitCurrMP;
     public float unitSpeed;
     public Sprite unitSprite;
-    CapsuleCollider2D coll;
-    Vector3 auxiliar;
     public GameObject sombraPrefab;
     public UnityEditor.Animations.AnimatorController unitBattleAnimator;
     public CameraScript cam;
+    public ParticleSystem unitAttackParticle;
+    CapsuleCollider2D coll;
 
     void Start()
     {
@@ -32,15 +29,15 @@ public class Unit : MonoBehaviour
         unitDamage = character.damage;
         unitMaxHP = character.maxHP;
         unitCurrHP = character.currHP;
+        unitMaxMP = character.maxMP;
+        unitCurrMP = character.currMP;
         unitSpeed = character.speed;    
         unitSprite = character.sprite;
+        unitBattleAnimator = character.battleAnimator;//Asignamos el animator
+        unitAttackParticle = character.attackParticle;//Asignamos las partículas de ataque
 
-        //Deberiamos crear un spriteRenderer primero, pero no funciona
-        this.GetComponent<SpriteRenderer>().sprite = unitSprite;
-        sombraPrefab = GameObject.Find("sombra");
-
-        //creamos un collider debajo del objeto
-        coll = gameObject.AddComponent<CapsuleCollider2D>();    
+        //Creamos un collider debajo del objeto
+        coll = gameObject.AddComponent<CapsuleCollider2D>();
         coll.size = new Vector2(0.2f, 0.08f);
         coll.offset = new Vector2(0, -0.14f);
         coll.direction = (CapsuleDirection2D)2;
@@ -48,38 +45,52 @@ public class Unit : MonoBehaviour
         {
             coll.isTrigger = true;
         }
+		else
+		{
+            gameObject.AddComponent<SpriteRenderer>();
+        }
+        this.GetComponent<SpriteRenderer>().sprite = unitSprite;
 
-        unitBattleAnimator = character.battleAnimator;
-
-        //creamos una sombra
+        //Buscamos la sombra
+        sombraPrefab = GameObject.Find("sombra");
+        //Instansiamos la sombra
         GameObject sombraRef = Instantiate(sombraPrefab, transform.position, Quaternion.identity);
         sombraRef.transform.parent = gameObject.transform;
         sombraRef.name = "sombra" + unitNames;
+        Vector3 auxiliar;
         auxiliar = sombraRef.transform.position;
 		auxiliar.y -= 0.14f;
 		auxiliar.z = 1f;
 		sombraRef.transform.position = auxiliar;
         sombraRef.AddComponent<shadow>();
+      
     }
 
- //   void Update()
+	//void Update()
 	//{
- //       if(this.GetComponent<SpriteRenderer>().isVisible)
+	//	if (this.GetComponent<SpriteRenderer>().isVisible)
 	//	{
- //           print(unitNames + " es visible\n");
+	//		print(unitNames + " es visible\n");
 	//	}
 	//	else
 	//	{
- //           print(unitNames + " se escondió\n");
- //       }
+	//		print(unitNames + " se escondió\n");
+	//	}
 	//}
 
-    public bool TakeDamage(int dmg)
+	public bool TakeDamage(int dmg)
 	{
         unitCurrHP -= dmg;
         if (unitCurrHP <= 0) return true;
         else return false;
 	}
+
+    public bool TakeMana(int mana)
+	{
+        unitCurrMP -= mana;
+        if (unitCurrMP <= 0) return true;
+        else return false;
+    }
 
     public void Die()
     {

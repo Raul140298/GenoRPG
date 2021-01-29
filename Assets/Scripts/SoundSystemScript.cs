@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class SoundSystemScript : MonoBehaviour
 {
-    public static AudioClip buttonSound, jumpSound, battleStartSound, forestMazeSoundtrack, battleSoundtrackMonsters;
+    public static AudioClip deadSound, buttonSound, jumpSound, battleStartSound;
+    public static AudioClip forestMazeSoundtrack, battleMonstersSoundtrack, battleBossesSoundtrack;
+    public static AudioClip genoAttackSound;
     static AudioSource audioSrc;
     // Start is called before the first frame update
     void Start()
     {
+        //SOUNDS
         buttonSound = Resources.Load<AudioClip>("Sound_button");
         jumpSound = Resources.Load<AudioClip>("Sound_jump");
+        deadSound = Resources.Load<AudioClip>("Sound_dead");
+        genoAttackSound = Resources.Load<AudioClip>("Sound_geno_fingershot");
         battleStartSound = Resources.Load<AudioClip>("Sound_battle_start");
-        battleSoundtrackMonsters = Resources.Load<AudioClip>("Soundtrack_battle_monsters");
+
+        //SOUNDTRACKS
+        battleMonstersSoundtrack = Resources.Load<AudioClip>("Soundtrack_battle_monsters");
         forestMazeSoundtrack = Resources.Load<AudioClip>("Soundtrack_forest_maze");
+        battleBossesSoundtrack = Resources.Load<AudioClip>("Soundtrack_battle_bosses");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -25,15 +33,18 @@ public class SoundSystemScript : MonoBehaviour
             case "Sound_jump":
                 audioSrc.PlayOneShot(jumpSound);
                 break;
-
             case "Sound_battle_start":
                 audioSrc.PlayOneShot(battleStartSound);
                 break;
-
             case "Sound_button":
                 audioSrc.PlayOneShot(buttonSound);
                 break;
-
+            case "Sound_dead":
+                audioSrc.PlayOneShot(deadSound);
+                break;
+            case "Sound_geno_fingershot":
+                audioSrc.PlayOneShot(genoAttackSound);
+                break;
         }
 	}
 
@@ -47,7 +58,11 @@ public class SoundSystemScript : MonoBehaviour
                 break;
             case "Soundtrack_battle_monsters":
                 audioSrc.Stop();
-                audioSrc.PlayOneShot(battleSoundtrackMonsters);
+                audioSrc.PlayOneShot(battleMonstersSoundtrack);
+                break;
+            case "Soundtrack_battle_bosses":
+                audioSrc.Stop();
+                audioSrc.PlayOneShot(battleBossesSoundtrack);
                 break;
         }
     }
