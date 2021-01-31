@@ -248,9 +248,9 @@ public class BattleSystem : MonoBehaviour
         if (isDead)
         {
             enemyAnim.SetBool("isDead", true);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.3f);
             SoundSystemScript.PlaySound("Sound_dead");
-            yield return new WaitForSeconds(0.8f);
+            yield return new WaitForSeconds(0.7f);
             state = BattleState.WON;
             StartCoroutine(EndBattle());
         }
@@ -309,7 +309,7 @@ public class BattleSystem : MonoBehaviour
                 SoundSystemScript.Stop();
                 SoundSystemScript.PlaySound("Sound_win");
                 //musica y animacion
-                yield return new WaitForSeconds(0.6f);
+                yield return new WaitForSeconds(1f);
                 playerAnim.SetBool("won", true);
                 print(enemyUnit.gameObject.name + " ha muerto \n");
                 enemyUnit.Die();
