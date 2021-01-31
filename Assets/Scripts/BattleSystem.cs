@@ -116,6 +116,11 @@ public class BattleSystem : MonoBehaviour
                 action = Action.NONE;
             }
         }
+
+        if(state == BattleState.WON)
+		{
+            StartCoroutine(Won());
+        }
     }
 
     public void Init()
@@ -136,6 +141,7 @@ public class BattleSystem : MonoBehaviour
         playerAnim = playerBattleStation.GetComponent<Animator>();
 
         enemyBattleStation.GetComponent<SpriteRenderer>().sprite = this.enemyUnit.unitSprite;
+        enemyBattleStation.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
         enemyBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.enemyUnit.unitBattleAnimator;
         enemyAnim = enemyBattleStation.GetComponent<Animator>();
 
@@ -158,11 +164,6 @@ public class BattleSystem : MonoBehaviour
         playerButtons.GetComponent<SpriteRenderer>().enabled = false;
     }
 
-    IEnumerator Wait()
-	{
-        yield return new WaitForSeconds(0.25f);
-    }
-
     IEnumerator SetupBattle()
     {
         //obtiene info acerca de los UNIT
@@ -183,6 +184,23 @@ public class BattleSystem : MonoBehaviour
             state = BattleState.ENEMYTURN;
             StartCoroutine(EnemyTurn());
         }
+    }
+
+    IEnumerator playerTurn()
+    {
+        print("Turno del personaje\n");
+
+        //Me volteo y miro a cámara
+        playerAnim.SetFloat("eje X", 1f);
+        playerAnim.SetFloat("eje Y", 0f);
+
+        yield return new WaitForSeconds(0.25f);
+
+        //y después muestro los botones
+        playerButtons.GetComponent<SpriteRenderer>().enabled = true;
+        buttonAnim.SetFloat("eje X", 0f);
+        buttonAnim.SetFloat("eje Y", 0f);
+        buttonAnim.SetBool("PlayerTurn", true);
     }
 
     IEnumerator PlayerAttack()
@@ -229,9 +247,10 @@ public class BattleSystem : MonoBehaviour
         //comprobar si esta muerto
         if (isDead)
         {
-            SoundSystemScript.PlaySound("Sound_dead");
             enemyAnim.SetBool("isDead", true);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.2f);
+            SoundSystemScript.PlaySound("Sound_dead");
+            yield return new WaitForSeconds(0.8f);
             state = BattleState.WON;
             StartCoroutine(EndBattle());
         }
@@ -286,8 +305,15 @@ public class BattleSystem : MonoBehaviour
                 break;
             case BattleState.WON:
                 print("Ganaste\n");
+                yield return new WaitForSeconds(0.4f);
+                SoundSystemScript.Stop();
+                SoundSystemScript.PlaySound("Sound_win");
+                //musica y animacion
+                yield return new WaitForSeconds(0.6f);
+                playerAnim.SetBool("won", true);
                 print(enemyUnit.gameObject.name + " ha muerto \n");
                 enemyUnit.Die();
+                enemyBattleStation.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
                 break;
             case BattleState.RUN:
                 print("Huiste con éxito\n");
@@ -297,41 +323,32 @@ public class BattleSystem : MonoBehaviour
         }
 
         //tiempo de espera de la decision de huir o la animacion de muerte del enemigo
-        yield return new WaitForSeconds(1f);
-        FadeIn();
-        yield return new WaitForSeconds(fadeTime);
-        SoundSystemScript.Stop();
-        SoundSystemScript.PlaySoundtrack(playerPrefab.GetComponent<CharacterController>().zonaActual.GetComponent<ZonaScript>().soundtrack.name);
-        camera2.enabled = false;
-        camera1.enabled = true;
-        FadeOut();
-        yield return new WaitForSeconds(fadeTime);
-
-        //Desactivo el BattleSystem y activo el controller
-        this.enabled = false;
-        GameObject.Find("player").GetComponent<CharacterController>().state = State.ADVENTURE;
-        GameObject.Find("player").GetComponent<CharacterController>().canBattle = true;
-
-        //Retornamos la animacion al por defecto
-        playerAnim.SetFloat("eje X", -1f);
-        playerAnim.SetFloat("eje Y", 0f);
+        yield return new WaitForSeconds(1.5f);
     }
 
-    IEnumerator playerTurn()
+    IEnumerator Won()
     {
-        print("Turno del personaje\n");
+        if (Input.GetKey("c"))
+        {
+            FadeIn();
+            yield return new WaitForSeconds(fadeTime);
+            SoundSystemScript.Stop();
+            SoundSystemScript.PlaySoundtrack(playerPrefab.GetComponent<CharacterController>().zonaActual.GetComponent<ZonaScript>().soundtrack.name);
+            camera2.enabled = false;
+            camera1.enabled = true;
+            FadeOut();
+            yield return new WaitForSeconds(fadeTime);
 
-        //Me volteo y miro a cámara
-        playerAnim.SetFloat("eje X", 1f);
-        playerAnim.SetFloat("eje Y", 0f);
+            //Desactivo el BattleSystem y activo el controller
+            this.enabled = false;
+            GameObject.Find("player").GetComponent<CharacterController>().state = State.ADVENTURE;
+            GameObject.Find("player").GetComponent<CharacterController>().canBattle = true;
 
-        yield return new WaitForSeconds(0.25f);
-
-        //y después muestro los botones
-        playerButtons.GetComponent<SpriteRenderer>().enabled = true;
-        buttonAnim.SetFloat("eje X", 0f);
-        buttonAnim.SetFloat("eje Y", 0f);
-        buttonAnim.SetBool("PlayerTurn", true);
+            //Retornamos la animacion al por defecto
+            playerAnim.SetBool("won", false);
+            playerAnim.SetFloat("eje X", -1f);
+            playerAnim.SetFloat("eje Y", 0f);
+        }
     }
 
     #region Transicion

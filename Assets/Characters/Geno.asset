@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   names: Geno
   lvl: 1
-  damage: 20
+  damage: 200
   maxHP: 100
   currHP: 100
   maxMP: 100
