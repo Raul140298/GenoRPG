@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
-using UnityEditor.Animations;
+//using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -93,6 +93,7 @@ public class BattleSystem : MonoBehaviour
             {
                 SoundSystemScript.PlaySound("Sound_button");
                 StartCoroutine(HideButtons());
+                buttonAnim.SetBool("PlayerTurn", false);
                 switch (action)
                 {
                     case Action.ATTACK:
@@ -112,8 +113,6 @@ public class BattleSystem : MonoBehaviour
                         print("Error de seleccion de accion\n");
                         break;
                 }
-
-                buttonAnim.SetBool("PlayerTurn", false);
                 action = Action.NONE;
             }
         }
@@ -197,10 +196,10 @@ public class BattleSystem : MonoBehaviour
         //Tiempo del ataque
         yield return new WaitForSeconds(0.5f);
 
-        //Animación completa del ataque---------------------------------------------------------
+		//Animación completa del ataque---------------------------------------------------------
+		playerAnim.SetFloat("eje X", 1f);
+		playerAnim.SetFloat("eje Y", 0f);
         playerAnim.SetBool("isAttack", true);
-        playerAnim.SetFloat("eje X", 1f);
-        playerAnim.SetFloat("eje Y", 0f);
         yield return new WaitForSeconds(0.35f);
 
         //Se debe hacer de esta manera para que las particulas puedan intercambiarase por las de cualquier ataque.

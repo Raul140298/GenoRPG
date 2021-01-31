@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum State { ADVENTURE, BATTLE, TELEPORT }
+public enum State { ADVENTURE, BATTLE, TELEPORT, NARRATIVE }
 
 public class CharacterController : MonoBehaviour
 {
 	#region variables
 	//PUBLICAS
 	public float floor;
+	public float oposY;
 	public bool canJump = true, elevando = false, choca = false, canBattle = true;
 	public BattleSystem battleByTurn;
 	public GameObject zonaBatalla, zonaActual;
@@ -53,6 +54,10 @@ public class CharacterController : MonoBehaviour
 		{
 			ManageMovement();
 			ManageJump();
+			if(Input.GetKey("x"))
+			{
+				state = State.NARRATIVE;
+			}
 		}
 	}
 
@@ -184,7 +189,11 @@ public class CharacterController : MonoBehaviour
 
 	IEnumerator OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.gameObject.name.Contains("enemy") && canBattle == true)
+		oposY = other.transform.position.y;
+
+
+		if (other.gameObject.name.Contains("enemy") && canBattle == true 
+			&& (Mathf.Abs(oposY - floor) <= 0.07f))
 		{
 			canBattle = false;
 			SoundSystemScript.PlaySound("Sound_battle_start");

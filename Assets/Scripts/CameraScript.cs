@@ -111,10 +111,10 @@ public class CameraScript : MonoBehaviour
             objetosEnCamara.Sort(sortByY);
             for(int i=0; i< objetosEnCamara.Count; i++)
 			{
-                objetosEnCamara[i].transform.position = new Vector3(
+                    objetosEnCamara[i].transform.position = new Vector3(
                     objetosEnCamara[i].transform.position.x,
                     objetosEnCamara[i].transform.position.y,
-                    -i);
+                    -i);     
             }
         }
 
@@ -127,7 +127,18 @@ public class CameraScript : MonoBehaviour
 
     private static int sortByY(GameObject o1, GameObject o2)
     {
-        return o2.transform.position.y.CompareTo(o1.transform.position.y);
+        if(o1.name == "player")
+		{
+            return o2.transform.position.y.CompareTo(o1.GetComponent<CharacterController>().floor);
+        }
+        else if (o2.name == "player")
+		{
+            return o2.GetComponent<CharacterController>().floor.CompareTo(o1.transform.position.y);
+        }
+		else
+		{
+            return o2.transform.position.y.CompareTo(o1.transform.position.y);
+        }
     }
 
     public void removeUnitToObjetosEnCamara(GameObject o)

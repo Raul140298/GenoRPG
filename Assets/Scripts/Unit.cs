@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
-using UnityEditorInternal;
+//using UnityEditor.Animations;
 using UnityEngine;
 
 public enum SceneState { ADVENTURESCENE, BATTLESCENE}
@@ -14,7 +13,7 @@ public class Unit : MonoBehaviour
     public float unitSpeed;
     public Sprite unitSprite;
     public GameObject sombraPrefab;
-    public UnityEditor.Animations.AnimatorController unitBattleAnimator;
+    public RuntimeAnimatorController unitBattleAnimator;
     public CameraScript cam;
     public ParticleSystem unitAttackParticle;
     CapsuleCollider2D coll;

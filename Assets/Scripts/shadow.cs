@@ -24,6 +24,7 @@ public class shadow : MonoBehaviour
 
         if (control)//SI ES EL PERSONAJE
 		{
+            this.GetComponent<SpriteRenderer>().enabled = false;
             //actualizar la posición de la sombra
             floorShadow = control.floor;
             auxFloor = target.transform.position;
@@ -34,6 +35,7 @@ public class shadow : MonoBehaviour
 			//actualizar el tamaño de la sombra
 			if (!control.canJump)
 			{
+                this.GetComponent<SpriteRenderer>().enabled = true;
                 if (control.elevando == true)
                 {//si se está elevando debemos encogerla
                     auxScale = this.transform.localScale;
@@ -59,6 +61,7 @@ public class shadow : MonoBehaviour
         }
 		else//SI NO ES EL PERSONAJE (solo tiene que actualizar la sombra por si se mueve)
 		{
+            this.GetComponent<SpriteRenderer>().enabled = false;
             //actualizar la posición de la sombra
             difference = target.transform.position - startPosTarget;
             this.transform.position = startPosObj + difference;
