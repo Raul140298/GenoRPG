@@ -5,6 +5,10 @@ using UnityEngine;
 public class PipeScript : MonoBehaviour
 {
     public CameraScript cam;
+    // Para almacenar el punto de destino
+    public GameObject target;
+    // Para almacenar el mapa de destino
+    public GameObject targetMap;
     // Start is called before the first frame update
     void Start()
     {

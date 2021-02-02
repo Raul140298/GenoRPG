@@ -241,6 +241,29 @@ public class CharacterController : MonoBehaviour
 			
 
 		}
+		else if (other.gameObject.name.Contains("PipeIni"))
+		{
+
+			state = State.TELEPORT;
+			SoundSystemScript.PlaySound("Sound_pipe");
+			print("Te metiste al tubo\n");
+			FadeIn();
+
+			yield return new WaitForSeconds(fadeTime*3);
+
+			this.gameObject.transform.position = other.transform.parent.GetComponent<PipeScript>().target.transform.position;
+
+			//Chanco los datos de la zona de batalla de acuerdo a la zona actual.
+			//zonaBatalla.GetComponent<SpriteRenderer>().sprite = zonaActual.GetComponent<ZonaScript>().battleSprite;
+			//Si es una nueva zona, debemos poder su música
+			//SoundSystemScript.PlaySoundtrack(zonaActual.GetComponent<ZonaScript>().battleSoundtrack.name);		
+			FadeOut();
+			state = State.ADVENTURE;
+			SoundSystemScript.PlaySound("Sound_pipe");
+			yield return new WaitForSeconds(fadeTime*3);
+			
+
+		}
 		else if (other.gameObject.name.Contains("wall") && elevando == false)
 		{
 			choca = true;
