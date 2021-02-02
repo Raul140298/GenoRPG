@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2765843898411305349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2765843898411305354}
+  - component: {fileID: 2765843898411305355}
+  m_Layer: 0
+  m_Name: enemy fireball
+  m_TagString: Untagged
+  m_Icon: {fileID: 2800000, guid: eb17799252cf5c4498fc153a47ede5d6, type: 3}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2765843898411305354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2765843898411305349}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.79399943, y: -2.681, z: -20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2765843898411305355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2765843898411305349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d642d15314654c48bc2d0bd464fb859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: c5e50ca9510b69042b5df967c7faebfd, type: 2}
+  unitNames: 
+  unitLvl: 0
+  unitDamage: 0
+  unitMaxHP: 0
+  unitCurrHP: 0
+  unitMaxMP: 0
+  unitCurrMP: 0
+  unitSpeed: 0
+  unitSprite: {fileID: 0}
+  sombraPrefab: {fileID: 0}
+  unitBattleAnimator: {fileID: 0}
+  cam: {fileID: 0}
+  unitAttackParticle: {fileID: 0}

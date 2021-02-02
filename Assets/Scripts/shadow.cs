@@ -32,8 +32,9 @@ public class shadow : MonoBehaviour
             difference = auxFloor - startPosTarget;
             this.transform.position = startPosObj + difference;
 
-			//actualizar el tamaño de la sombra
-			if (!control.canJump)
+
+            //actualizar el tamaño de la sombra
+            if (!control.canJump)
 			{
                 this.GetComponent<SpriteRenderer>().enabled = true;
                 if (control.elevando == true)

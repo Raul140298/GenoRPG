@@ -16,12 +16,12 @@ public class CharacterController : MonoBehaviour
 	public GameObject zonaBatalla, zonaActual;
 	public State state;
 	public Camera camera1, camera2;
+	public Rigidbody2D body;
 	//PRIVADAS
 	float ejeY, topeY, anteriorY, chocaX, chocaY, speedJump = 4f, gravity = 1f;
 	Vector3 salto = new Vector3(0f, 1f, 0f), mov;
 	Animator anim;
 	Unit player;
-	Rigidbody2D body;
 	// start: Para controlar si empieza o no la transición
 	// isFadeIn: Para controlar si la transición es de entrada o salida
 	// alpha: Opacidad inicial del cuadrado de transición
@@ -40,7 +40,6 @@ public class CharacterController : MonoBehaviour
 		zonaBatalla = GameObject.Find("Zona Battalla");
 		zonaActual = GameObject.Find("Zona Kero Sewers");
 		floor = transform.position.y;
-
 		SoundSystemScript.PlaySoundtrack(zonaActual.GetComponent<ZonaScript>().soundtrack.name);
 		All_Cameras();
 
@@ -193,7 +192,7 @@ public class CharacterController : MonoBehaviour
 
 
 		if (other.gameObject.name.Contains("enemy") && canBattle == true 
-			&& (Mathf.Abs(oposY - floor) <= 0.07f))
+			&& (Mathf.Abs(oposY - floor) <= 0.075f))
 		{
 			canBattle = false;
 			SoundSystemScript.PlaySound("Sound_battle_start");
@@ -228,7 +227,7 @@ public class CharacterController : MonoBehaviour
 			print("Te teletransportaste\n");
 			FadeIn();
 
-			yield return new WaitForSeconds(fadeTime);
+			yield return new WaitForSeconds(fadeTime*2);
 
 			this.gameObject.transform.position = other.GetComponent<WarpScript>().target.transform.GetChild(0).transform.position;
 
@@ -238,7 +237,7 @@ public class CharacterController : MonoBehaviour
 			//SoundSystemScript.PlaySoundtrack(zonaActual.GetComponent<ZonaScript>().battleSoundtrack.name);		
 			FadeOut();
 			state = State.ADVENTURE;
-			yield return new WaitForSeconds(fadeTime);
+			yield return new WaitForSeconds(fadeTime*2);
 			
 
 		}
@@ -247,6 +246,11 @@ public class CharacterController : MonoBehaviour
 			choca = true;
 			chocaX = mov.x;
 			chocaY = mov.y;
+		}
+		else if (other.gameObject.name.Contains("Zona"))
+		{
+			zonaActual = other.gameObject;
+			//SoundSystemScript.PlaySoundtrack(zonaActual.GetComponent<ZonaScript>().soundtrack.name);
 		}
 	}
 

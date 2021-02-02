@@ -35,6 +35,19 @@ public class Unit : MonoBehaviour
         unitBattleAnimator = character.battleAnimator;//Asignamos el animator
         unitAttackParticle = character.attackParticle;//Asignamos las partículas de ataque
 
+        //Buscamos la sombra
+        sombraPrefab = GameObject.Find("sombra");
+        //Instansiamos la sombra
+        GameObject sombraRef = Instantiate(sombraPrefab, transform.position, Quaternion.identity);
+        sombraRef.transform.parent = gameObject.transform;
+        sombraRef.name = "sombra" + unitNames;
+        Vector3 auxiliar;
+        auxiliar = sombraRef.transform.position;
+        auxiliar.y -= 0.14f;
+        auxiliar.z = 1f;
+        sombraRef.transform.position = auxiliar;
+        sombraRef.AddComponent<shadow>();
+
         //Creamos un collider debajo del objeto
         coll = gameObject.AddComponent<CapsuleCollider2D>();
         coll.size = new Vector2(0.2f, 0.08f);
@@ -47,21 +60,18 @@ public class Unit : MonoBehaviour
 		else
 		{
             gameObject.AddComponent<SpriteRenderer>();
+            gameObject.AddComponent<Animator>();
+            gameObject.GetComponent<Animator>().runtimeAnimatorController = unitBattleAnimator;
+            if(gameObject.name.Contains("bones") || gameObject.name.Contains("bowsette"))
+			{
+				gameObject.GetComponent<Animator>().SetBool("isBattle", false);
+				gameObject.GetComponent<Animator>().SetBool("walking", false);
+				gameObject.GetComponent<EnemyMoveScript>().anim = GetComponent<Animator>();
+			}
         }
         this.GetComponent<SpriteRenderer>().sprite = unitSprite;
 
-        //Buscamos la sombra
-        sombraPrefab = GameObject.Find("sombra");
-        //Instansiamos la sombra
-        GameObject sombraRef = Instantiate(sombraPrefab, transform.position, Quaternion.identity);
-        sombraRef.transform.parent = gameObject.transform;
-        sombraRef.name = "sombra" + unitNames;
-        Vector3 auxiliar;
-        auxiliar = sombraRef.transform.position;
-		auxiliar.y -= 0.14f;
-		auxiliar.z = 1f;
-		sombraRef.transform.position = auxiliar;
-        sombraRef.AddComponent<shadow>();
+        
       
     }
 

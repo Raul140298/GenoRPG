@@ -1546,7 +1546,7 @@ TextureImporter:
       name: Bowsette_17
       rect:
         serializedVersion: 2
-        x: 35
+        x: 34
         y: 671
         width: 27
         height: 33
@@ -1567,7 +1567,7 @@ TextureImporter:
       name: Bowsette_18
       rect:
         serializedVersion: 2
-        x: 62
+        x: 61
         y: 671
         width: 27
         height: 33

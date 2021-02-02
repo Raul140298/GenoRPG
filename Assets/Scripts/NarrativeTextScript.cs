@@ -54,6 +54,8 @@ public class NarrativeTextScript : MonoBehaviour
                     }   
                 }
                 break;
+            case State.TELEPORT:
+                break;
             default:
                 print("Error de seleccion de estado\n");
                 break;

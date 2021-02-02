@@ -40,6 +40,41 @@ public class BattleSystem : MonoBehaviour
         buttonAnim = GameObject.Find("BattleButtons").GetComponent<Animator>();
     }
 
+    public void Init()
+    {
+        //CUESTIONES PREVIAS:
+        //Desactivo el movimiento del player al setearle el estado de BATTLE
+        controller.state = State.BATTLE;
+
+        //Posiciono al enemigo fuera de la pantalla, para que este luego se mueva a su posicion original
+        enemyBattleStation.transform.position = new Vector3(3.5f, 2.82f, 0f);
+
+        //Establezco la posición original del enemigo(la del enemyBattleStation)
+        destino = enemyBattleStation.transform.position + mov;
+
+        //Obtengo los datos del enemigo y del player
+        this.playerUnit = playerPrefab.GetComponent<Unit>();
+        this.enemyUnit = enemyPrefab.GetComponent<Unit>();
+
+        playerBattleStation.GetComponent<SpriteRenderer>().sprite = this.playerUnit.unitSprite;
+        playerBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.playerUnit.unitBattleAnimator;
+        playerAnim = playerBattleStation.GetComponent<Animator>();
+
+        enemyBattleStation.GetComponent<SpriteRenderer>().sprite = this.enemyUnit.unitSprite;
+        enemyBattleStation.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+        enemyBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.enemyUnit.unitBattleAnimator;
+        enemyAnim = enemyBattleStation.GetComponent<Animator>();
+
+        
+
+        //Establezco el inicio de la batalla
+        print("Comienza la Batalla\n");
+        state = BattleState.START;
+        action = Action.NONE;
+
+        StartCoroutine(SetupBattle());
+    }
+
     void Update()
     {
         if (enemyBattleStation.transform.position != destino && enemyTurn == false)
@@ -117,43 +152,10 @@ public class BattleSystem : MonoBehaviour
             }
         }
 
-        if(state == BattleState.WON)
+        if(state == BattleState.WON || state == BattleState.RUN)
 		{
             StartCoroutine(Won());
         }
-    }
-
-    public void Init()
-    {
-        //CUESTIONES PREVIAS:
-        //Desactivo el movimiento del player al setearle el estado de BATTLE
-        controller.state = State.BATTLE;
-
-        //Posiciono al enemigo fuera de la pantalla, para que este luego se mueva a su posicion original
-        enemyBattleStation.transform.position = new Vector3(3.5f, 2.82f, 0f);
-
-        //Obtengo los datos del enemigo y del player
-        this.playerUnit = playerPrefab.GetComponent<Unit>();
-        this.enemyUnit = enemyPrefab.GetComponent<Unit>();
-
-        playerBattleStation.GetComponent<SpriteRenderer>().sprite = this.playerUnit.unitSprite;
-        playerBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.playerUnit.unitBattleAnimator;
-        playerAnim = playerBattleStation.GetComponent<Animator>();
-
-        enemyBattleStation.GetComponent<SpriteRenderer>().sprite = this.enemyUnit.unitSprite;
-        enemyBattleStation.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
-        enemyBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.enemyUnit.unitBattleAnimator;
-        enemyAnim = enemyBattleStation.GetComponent<Animator>();
-
-        //Establezco la posición original del enemigo(la del enemyBattleStation)
-        destino = enemyBattleStation.transform.position + mov;
-
-        //Establezco el inicio de la batalla
-        print("Comienza la Batalla\n");
-        state = BattleState.START;
-        action = Action.NONE;
-
-        StartCoroutine(SetupBattle());
     }
 
     IEnumerator HideButtons()
@@ -317,6 +319,7 @@ public class BattleSystem : MonoBehaviour
                 break;
             case BattleState.RUN:
                 print("Huiste con éxito\n");
+                yield return new WaitForSeconds(1f);
                 break;
             default:
                 break;
