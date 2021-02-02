@@ -17,6 +17,7 @@ public class CharacterController : MonoBehaviour
 	public State state;
 	public Camera camera1, camera2;
 	public Rigidbody2D body;
+	public NarrativeTextScript narrative;
 	//PRIVADAS
 	float ejeY, topeY, anteriorY, chocaX, chocaY, speedJump = 4f, gravity = 1f;
 	Vector3 salto = new Vector3(0f, 1f, 0f), mov;
@@ -39,6 +40,7 @@ public class CharacterController : MonoBehaviour
 		body = GetComponent<Rigidbody2D>();
 		zonaBatalla = GameObject.Find("Zona Battalla");
 		zonaActual = GameObject.Find("Zona Kero Sewers");
+		narrative = GameObject.Find("TextBox").GetComponent<NarrativeTextScript>();
 		floor = transform.position.y;
 		SoundSystemScript.PlaySoundtrack(zonaActual.GetComponent<ZonaScript>().soundtrack.name);
 		All_Cameras();
@@ -53,10 +55,6 @@ public class CharacterController : MonoBehaviour
 		{
 			ManageMovement();
 			ManageJump();
-			if(Input.GetKey("x"))
-			{
-				state = State.NARRATIVE;
-			}
 		}
 	}
 
@@ -263,6 +261,12 @@ public class CharacterController : MonoBehaviour
 			yield return new WaitForSeconds(fadeTime*3);
 			
 
+		}
+		else if (other.gameObject.name.Contains("narrative"))
+		{
+			other.GetComponent<PolygonCollider2D>().enabled = false;
+			narrative.sentences = other.GetComponent<NarrativeLauncherScript>().sentences;
+			state = State.NARRATIVE;	
 		}
 		else if (other.gameObject.name.Contains("wall") && elevando == false)
 		{

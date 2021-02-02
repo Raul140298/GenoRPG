@@ -91,7 +91,8 @@ public class NarrativeTextScript : MonoBehaviour
     IEnumerator Wait()
 	{
         yield return new WaitForSeconds(0.5f);
-        controller.state = State.ADVENTURE;
         index = 0;
+        isActive = false;
+        controller.state = State.ADVENTURE;
     }
 }
