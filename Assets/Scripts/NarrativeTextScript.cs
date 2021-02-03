@@ -38,12 +38,15 @@ public class NarrativeTextScript : MonoBehaviour
         switch (controller.state)
         {
             case State.ADVENTURE:
-                cajaTextoSprite.enabled = textoSprite.enabled = continueButton.enabled = false;               
+                cajaTextoSprite.enabled = textoSprite.enabled = continueButton.enabled = false;
+                controller.anim.SetBool("narrative", false);
                 break;
             case State.BATTLE:
                 break;
             case State.NARRATIVE:
                 cajaTextoSprite.enabled = textoSprite.enabled = true;
+                controller.anim.SetBool("walking", false);
+                if (controller.numNarrative != -1) controller.anim.SetBool("narrative", true);
                 if (index < sentences.Length)
                 {
                     if (isActive == false)

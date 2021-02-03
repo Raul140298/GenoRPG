@@ -10,8 +10,7 @@ public class CharacterController : MonoBehaviour
 	#region variables
 	//PUBLICAS
 	public int numNarrative;
-	public float floor;
-	public float oposY;
+	public float floor, oposY;
 	public bool canJump = true, elevando = false, choca = false, canBattle = true;
 	public BattleSystem battleByTurn;
 	public GameObject zonaBatalla, zonaActual;
@@ -19,10 +18,10 @@ public class CharacterController : MonoBehaviour
 	public Camera camera1, camera2;
 	public Rigidbody2D body;
 	public NarrativeTextScript narrative;
+	public Animator anim;
 	//PRIVADAS
 	float ejeY, topeY, anteriorY, chocaX, chocaY, speedJump = 4f, gravity = 1f;
 	Vector3 salto = new Vector3(0f, 1f, 0f), mov;
-	Animator anim;
 	Unit player;
 	// start: Para controlar si empieza o no la transición
 	// isFadeIn: Para controlar si la transición es de entrada o salida
@@ -268,6 +267,7 @@ public class CharacterController : MonoBehaviour
 			other.GetComponent<PolygonCollider2D>().enabled = false;
 			narrative.sentences = other.GetComponent<NarrativeLauncherScript>().sentences;
 			numNarrative = other.GetComponent<NarrativeLauncherScript>().numNarrative;
+			//anim.SetBool("narrative", true);
 			state = State.NARRATIVE;	
 		}
 		else if (other.gameObject.name.Contains("wall") && elevando == false)
