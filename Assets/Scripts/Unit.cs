@@ -16,6 +16,7 @@ public class Unit : MonoBehaviour
     public RuntimeAnimatorController unitBattleAnimator;
     public CameraScript cam;
     public ParticleSystem unitAttackParticle;
+    public ParticleSystem unitSpecialParticle;
     CapsuleCollider2D coll;
 
     void Start()
@@ -33,8 +34,8 @@ public class Unit : MonoBehaviour
         unitSpeed = character.speed;    
         unitSprite = character.sprite;
         unitBattleAnimator = character.battleAnimator;//Asignamos el animator
-        unitAttackParticle = character.attackParticle;//Asignamos las partículas de ataque
-
+        unitAttackParticle = character.attackParticle[0];//Asignamos las partículas de ataque
+        //unitSpecialParticle = character.attackParticle[1];//Asignamos las partículas del especial
         //Buscamos la sombra
         sombraPrefab = GameObject.Find("sombra");
         //Instansiamos la sombra
@@ -62,7 +63,8 @@ public class Unit : MonoBehaviour
             gameObject.AddComponent<SpriteRenderer>();
             gameObject.AddComponent<Animator>();
             gameObject.GetComponent<Animator>().runtimeAnimatorController = unitBattleAnimator;
-            if(gameObject.name.Contains("bones") || gameObject.name.Contains("bowsette"))
+            //if(gameObject.name.Contains("bones") || gameObject.name.Contains("bowsette"))
+            if(gameObject.name.Contains("bones"))
 			{
 				gameObject.GetComponent<Animator>().SetBool("isBattle", false);
 				gameObject.GetComponent<Animator>().SetBool("walking", false);

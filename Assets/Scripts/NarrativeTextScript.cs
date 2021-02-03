@@ -10,11 +10,12 @@ public class NarrativeTextScript : MonoBehaviour
     public int index = 0;
     public float typingSpeed;
     public SpriteRenderer continueButton;
-    bool isActive = false;
+    bool isActive = false, last = false;
     SpriteRenderer cajaTextoSprite;  
     MeshRenderer textoSprite;
     CharacterController controller;
     public GameObject posInicial;
+    public GameObject bowsette;
     // start: Para controlar si empieza o no la transición
     // isFadeIn: Para controlar si la transición es de entrada o salida
     // alpha: Opacidad inicial del cuadrado de transición
@@ -46,7 +47,14 @@ public class NarrativeTextScript : MonoBehaviour
             case State.NARRATIVE:
                 cajaTextoSprite.enabled = textoSprite.enabled = true;
                 controller.anim.SetBool("walking", false);
-                if (controller.numNarrative != -1) controller.anim.SetBool("narrative", true);
+                GameObject.Find("enemy bowsette").GetComponent<Animator>().SetBool("isBattle", false);
+                GameObject.Find("enemy bowsette").GetComponent<Animator>().SetBool("walking", false);
+                if (controller.numNarrative == 0) controller.anim.SetBool("narrative", true);
+                if (controller.numNarrative == -2 && last == false)
+                {
+                    last = true;
+                    this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y - 1.44f, this.gameObject.transform.position.z);
+                }
                 if (index < sentences.Length)
                 {
                     if (isActive == false)

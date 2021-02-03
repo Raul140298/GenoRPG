@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   names: Bones
   lvl: 5
-  damage: 22
-  maxHP: 25
-  currHP: 25
+  damage: 50
+  maxHP: 125
+  currHP: 125
   maxMP: 0
   currMP: 0
   speed: 0.8
   sprite: {fileID: -5193276013480602723, guid: 4b8e123c720a18042b738d5b12794815, type: 3}
   battleAnimator: {fileID: 9100000, guid: 3445e36b985deb74d8730ae63cd23c04, type: 2}
-  attackParticle: {fileID: 0}
+  attackParticle:
+  - {fileID: 0}

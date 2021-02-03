@@ -58,21 +58,21 @@ public class SoundSystemScript : MonoBehaviour
 
     public static void PlaySoundtrack(string clip2)
     {
+        audioSrc.loop = true;
+        audioSrc.Stop();
         switch (clip2)
         {
-            case "Soundtrack_forest_maze":
-                audioSrc.Stop();
-                audioSrc.PlayOneShot(forestMazeSoundtrack);
+            case "Soundtrack_forest_maze":              
+                audioSrc.clip = forestMazeSoundtrack;   
                 break;
             case "Soundtrack_battle_monsters":
-                audioSrc.Stop();
-                audioSrc.PlayOneShot(battleMonstersSoundtrack);
+                audioSrc.clip = battleMonstersSoundtrack;
                 break;
             case "Soundtrack_battle_bosses":
-                audioSrc.Stop();
-                audioSrc.PlayOneShot(battleBossesSoundtrack);
+                audioSrc.clip = battleBossesSoundtrack;
                 break;
         }
+        audioSrc.Play();
     }
 
     public static void Stop()

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   names: Bowsette
   lvl: 10
-  damage: 25
-  maxHP: 200
-  currHP: 200
+  damage: 100
+  maxHP: 1000
+  currHP: 1000
   maxMP: 0
   currMP: 0
   speed: 0.5

@@ -11,5 +11,5 @@ public class ScriptableCharacters : ScriptableObject
     public float speed;
     public Sprite sprite;
     public RuntimeAnimatorController battleAnimator;   
-    public ParticleSystem attackParticle;
+    public ParticleSystem [] attackParticle;
 }
