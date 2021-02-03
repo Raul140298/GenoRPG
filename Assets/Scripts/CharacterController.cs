@@ -9,6 +9,7 @@ public class CharacterController : MonoBehaviour
 {
 	#region variables
 	//PUBLICAS
+	public int numNarrative;
 	public float floor;
 	public float oposY;
 	public bool canJump = true, elevando = false, choca = false, canBattle = true;
@@ -42,7 +43,7 @@ public class CharacterController : MonoBehaviour
 		zonaActual = GameObject.Find("Zona Kero Sewers");
 		narrative = GameObject.Find("TextBox").GetComponent<NarrativeTextScript>();
 		floor = transform.position.y;
-		SoundSystemScript.PlaySoundtrack(zonaActual.GetComponent<ZonaScript>().soundtrack.name);
+		//SoundSystemScript.PlaySoundtrack(zonaActual.GetComponent<ZonaScript>().soundtrack.name);
 		All_Cameras();
 
 		state = State.ADVENTURE;
@@ -266,6 +267,7 @@ public class CharacterController : MonoBehaviour
 		{
 			other.GetComponent<PolygonCollider2D>().enabled = false;
 			narrative.sentences = other.GetComponent<NarrativeLauncherScript>().sentences;
+			numNarrative = other.GetComponent<NarrativeLauncherScript>().numNarrative;
 			state = State.NARRATIVE;	
 		}
 		else if (other.gameObject.name.Contains("wall") && elevando == false)

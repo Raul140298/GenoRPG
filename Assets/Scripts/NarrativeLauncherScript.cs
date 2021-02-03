@@ -5,6 +5,7 @@ using UnityEngine;
 public class NarrativeLauncherScript : MonoBehaviour
 {
     public string[] sentences;
+    public int numNarrative;
     // Start is called before the first frame update
     void Start()
     {
