@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 //using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST, RUN }
@@ -15,6 +16,7 @@ public class BattleSystem : MonoBehaviour
     public GameObject playerPrefab, enemyPrefab, playerButtons;
     //DATOS DE LOS QUE PELEARAN
     public Unit playerUnit, enemyUnit;
+    public String enemyName;
     //DATOS DE IU
     public BattleHUD playerHUD;
     public GameObject playerBattleStation, enemyBattleStation, zonaBatalla;
@@ -64,8 +66,8 @@ public class BattleSystem : MonoBehaviour
         enemyBattleStation.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
         enemyBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.enemyUnit.unitBattleAnimator;
         enemyAnim = enemyBattleStation.GetComponent<Animator>();
+        enemyName = this.enemyUnit.name;
 
-        
 
         //Establezco el inicio de la batalla
         print("Comienza la Batalla\n");
@@ -351,6 +353,11 @@ public class BattleSystem : MonoBehaviour
             playerAnim.SetBool("won", false);
             playerAnim.SetFloat("eje X", -1f);
             playerAnim.SetFloat("eje Y", 0f);
+
+            if(enemyName == "enemy bowsette")
+			{
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            }
         }
     }
 

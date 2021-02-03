@@ -3397,6 +3397,7 @@ MonoBehaviour:
   playerButtons: {fileID: 150191245}
   playerUnit: {fileID: 0}
   enemyUnit: {fileID: 0}
+  enemyName: 
   playerHUD: {fileID: 1260583732}
   playerBattleStation: {fileID: 1234684990}
   enemyBattleStation: {fileID: 1962686914}
@@ -7894,7 +7895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073131207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.027, y: 11.117, z: 0}
+  m_LocalPosition: {x: 12.014, y: 11.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8563,6 +8564,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
+        type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: The sewers? Strange... I'd think they put my body in Peach's castle.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
+        type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: I hope to meet Mario, Mallow, Bowser and Peach soon...
       objectReference: {fileID: 0}
     - target: {fileID: 5551653603643324564, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
