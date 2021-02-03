@@ -137,14 +137,15 @@ public class BattleSystem : MonoBehaviour
                         StartCoroutine(PlayerAttack());
                         break;
                     case Action.SPECIAL:
-                        StartCoroutine(PlayerAttack());
+                        StartCoroutine(PlayerSpecial());
                         break;
                     case Action.ITEM:
-                        StartCoroutine(PlayerAttack());
+                        StartCoroutine(PlayerItem());
                         break;
                     case Action.ETC:
                         state = BattleState.RUN;
                         StartCoroutine(EndBattle());
+                        StartCoroutine(Run());
                         break;
                     default:
                         print("Error de seleccion de accion\n");
@@ -154,7 +155,7 @@ public class BattleSystem : MonoBehaviour
             }
         }
 
-        if(state == BattleState.WON || state == BattleState.RUN)
+        if(state == BattleState.WON)
 		{
             StartCoroutine(Won());
         }
@@ -265,6 +266,106 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    IEnumerator PlayerSpecial()
+    {
+        //Tiempo para voltearse
+        yield return new WaitForSeconds(0.25f);
+        playerAnim.SetBool("isAttack", false);
+        playerAnim.SetFloat("eje X", -1f);
+        playerAnim.SetFloat("eje Y", 0f);
+
+        //Tiempo del ataque
+        yield return new WaitForSeconds(0.5f);
+
+        //Animación completa del ataque---------------------------------------------------------
+        playerAnim.SetFloat("eje X", 1f);
+        playerAnim.SetFloat("eje Y", 0f);
+        playerAnim.SetBool("isAttack", true);
+        yield return new WaitForSeconds(0.35f);
+
+        //Se debe hacer de esta manera para que las particulas puedan intercambiarase por las de cualquier ataque.
+        print("Especial\n");
+        GetCopyOfClass.GetCopyOf(playerBattleStation.transform.GetChild(1).GetComponent<ParticleSystem>(), playerUnit.unitSpecialParticle.GetComponent<ParticleSystem>());
+        var main = playerBattleStation.transform.GetChild(1).GetComponent<ParticleSystem>().main;
+        main.duration = playerUnit.unitSpecialParticle.GetComponent<ParticleSystem>().main.duration;
+        playerBattleStation.transform.GetChild(1).GetComponent<ParticleSystemRenderer>().sharedMaterial = playerUnit.unitSpecialParticle.GetComponent<ParticleSystemRenderer>().sharedMaterial;
+        playerBattleStation.transform.GetChild(1).GetComponent<ParticleSystem>().Play();
+        SoundSystemScript.PlaySound("Sound_geno_laserbeam");
+        bool haveMana = playerUnit.TakeMana(playerUnit.unitDamage /2);
+        playerHUD.SetMP(playerUnit.unitCurrMP);
+        bool isDead = enemyUnit.TakeDamage(playerUnit.unitDamage * 2);
+        //Fin de la animacion
+
+        yield return new WaitForSeconds(0.75f);
+        //---------------------------------------------------------------------------------------
+        playerAnim.SetFloat("eje X", -1f);
+        playerAnim.SetFloat("eje Y", 0f);
+        playerAnim.SetBool("isAttack", false);
+        yield return new WaitForSeconds(0.25f);
+
+        print("Enemigo recibio daño\n");
+        //ANIMACION DE RECIBIR DAÑO Y SONIDO
+        yield return new WaitForSeconds(1f);
+
+        //yield return new WaitForSeconds(1f);
+        //comprobar si esta muerto
+        if (isDead)
+        {
+            enemyAnim.SetBool("isDead", true);
+            yield return new WaitForSeconds(0.3f);
+            SoundSystemScript.PlaySound("Sound_dead");
+            yield return new WaitForSeconds(0.7f);
+            state = BattleState.WON;
+            StartCoroutine(EndBattle());
+        }
+        else
+        {
+            state = BattleState.ENEMYTURN;
+            StartCoroutine(EnemyTurn());
+        }
+    }
+
+    IEnumerator PlayerItem()
+    {
+        //Tiempo para voltearse
+        yield return new WaitForSeconds(0.25f);
+        playerAnim.SetBool("isAttack", false);
+        playerAnim.SetFloat("eje X", -1f);
+        playerAnim.SetFloat("eje Y", 0f);
+
+        //Tiempo del ataque
+        yield return new WaitForSeconds(0.5f);
+
+        //Animación completa del ataque---------------------------------------------------------
+        playerAnim.SetFloat("eje X", 0f);
+        playerAnim.SetFloat("eje Y", 1f);
+        playerAnim.SetBool("isAttack", true);
+        yield return new WaitForSeconds(1.2f);
+
+        //Se debe hacer de esta manera para que las particulas puedan intercambiarase por las de cualquier ataque.
+        print("Iteml\n");
+        SoundSystemScript.PlaySound("Sound_item");
+        playerUnit.TakeDamage(-50);
+        playerUnit.TakeMana(-25);
+        playerHUD.SetHP(playerUnit.unitCurrHP);
+        playerHUD.SetMP(playerUnit.unitCurrMP);
+        //Fin de la animacion
+
+        yield return new WaitForSeconds(0.5f);
+        //---------------------------------------------------------------------------------------
+        playerAnim.SetFloat("eje X", -1f);
+        playerAnim.SetFloat("eje Y", 0f);
+        playerAnim.SetBool("isAttack", false);
+        yield return new WaitForSeconds(0.25f);
+
+        print("Restauraste Hp y Mp\n");
+        //ANIMACION DE RECIBIR DAÑO Y SONIDO
+        yield return new WaitForSeconds(1f);
+
+        state = BattleState.ENEMYTURN;
+        StartCoroutine(EnemyTurn());
+    }
+
     IEnumerator EnemyTurn()
     {
         print("Turno del enemigo\n");
@@ -321,7 +422,7 @@ public class BattleSystem : MonoBehaviour
                 break;
             case BattleState.RUN:
                 print("Huiste con éxito\n");
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(4f);
                 break;
             default:
                 break;
@@ -333,7 +434,7 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator Won()
     {
-        if (Input.GetKey("c"))
+        if (Input.GetKey("c") || state == BattleState.RUN)
         {
             FadeIn();
             yield return new WaitForSeconds(fadeTime);
@@ -360,6 +461,12 @@ public class BattleSystem : MonoBehaviour
             }
         }
 
+    }
+    
+    IEnumerator Run()
+    {
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(Won());
     }
 
     #region Transicion

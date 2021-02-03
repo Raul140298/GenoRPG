@@ -35,7 +35,7 @@ public class Unit : MonoBehaviour
         unitSprite = character.sprite;
         unitBattleAnimator = character.battleAnimator;//Asignamos el animator
         unitAttackParticle = character.attackParticle[0];//Asignamos las partículas de ataque
-        //unitSpecialParticle = character.attackParticle[1];//Asignamos las partículas del especial
+        unitSpecialParticle = character.attackParticle[1];//Asignamos las partículas del especial
         //Buscamos la sombra
         sombraPrefab = GameObject.Find("sombra");
         //Instansiamos la sombra

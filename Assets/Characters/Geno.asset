@@ -24,4 +24,4 @@ MonoBehaviour:
   battleAnimator: {fileID: 9100000, guid: ae00aeb5cd78d624b8c16c6a95d7f68c, type: 2}
   attackParticle:
   - {fileID: 2763472760586862018, guid: e392849ee14ae0e458b917220c81ebab, type: 3}
-  - {fileID: 2763472760586862018, guid: e392849ee14ae0e458b917220c81ebab, type: 3}
+  - {fileID: 5158644646723240168, guid: f808a493c0be05d4d91e5e2e62384117, type: 3}

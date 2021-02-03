@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SoundSystemScript : MonoBehaviour
 {
-    public static AudioClip deadSound, buttonSound, jumpSound, battleStartSound, winSound, pipeSound;
+    public static AudioClip deadSound, buttonSound, jumpSound, battleStartSound, winSound, pipeSound, itemSound;
     public static AudioClip forestMazeSoundtrack, battleMonstersSoundtrack, battleBossesSoundtrack;
-    public static AudioClip genoAttackSound;
+    public static AudioClip genoAttackSound, genoSpecialSound;
     static AudioSource audioSrc;
     // Start is called before the first frame update
     void Start()
@@ -16,9 +16,11 @@ public class SoundSystemScript : MonoBehaviour
         jumpSound = Resources.Load<AudioClip>("Sound_jump");
         deadSound = Resources.Load<AudioClip>("Sound_dead");
         genoAttackSound = Resources.Load<AudioClip>("Sound_geno_fingershot");
+        genoSpecialSound = Resources.Load<AudioClip>("Sound_geno_laserbeam");
         battleStartSound = Resources.Load<AudioClip>("Sound_battle_start");
         winSound = Resources.Load<AudioClip>("Sound_win");
         pipeSound = Resources.Load<AudioClip>("Sound_pipe");
+        itemSound = Resources.Load<AudioClip>("Sound_item");
 
         //SOUNDTRACKS
         battleMonstersSoundtrack = Resources.Load<AudioClip>("Soundtrack_battle_monsters");
@@ -47,11 +49,17 @@ public class SoundSystemScript : MonoBehaviour
             case "Sound_geno_fingershot":
                 audioSrc.PlayOneShot(genoAttackSound);
                 break;
+            case "Sound_geno_laserbeam":
+                audioSrc.PlayOneShot(genoSpecialSound);
+                break;
             case "Sound_win":
                 audioSrc.PlayOneShot(winSound);
                 break;
             case "Sound_pipe":
                 audioSrc.PlayOneShot(pipeSound);
+                break;
+            case "Sound_item":
+                audioSrc.PlayOneShot(itemSound);
                 break;
         }
 	}

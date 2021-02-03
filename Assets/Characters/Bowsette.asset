@@ -22,4 +22,6 @@ MonoBehaviour:
   speed: 0.5
   sprite: {fileID: 5233607313693837211, guid: c99e34f8f3768de4590e46996c586a3b, type: 3}
   battleAnimator: {fileID: 9100000, guid: 4feb7954b886e604fbc18f88bf77bbb3, type: 2}
-  attackParticle: {fileID: 0}
+  attackParticle:
+  - {fileID: 0}
+  - {fileID: 0}

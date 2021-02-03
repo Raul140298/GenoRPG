@@ -859,31 +859,31 @@ TextureImporter:
     second: geno_284
   - first:
       213: -1433593648515852446
-    second: geno_285
+    second: geno_i4
   - first:
       213: -4128125549764306119
-    second: geno_286
+    second: geno_i5
   - first:
       213: -1369642806335314538
-    second: geno_287
+    second: geno_i6
   - first:
       213: -3386117476725952693
-    second: geno_288
+    second: geno_i7
   - first:
       213: 844556691177197741
-    second: geno_289
+    second: geno_i8
   - first:
       213: -1695590447005548713
-    second: geno_290
+    second: geno_i9
   - first:
       213: 6521402812904729848
-    second: geno_291
+    second: geno_i10
   - first:
       213: -9104972061786838334
-    second: geno_292
+    second: geno_i11
   - first:
       213: 840953848198719027
-    second: geno_293
+    second: geno_i12
   - first:
       213: 3640904420917167003
     second: geno_294
@@ -928,13 +928,13 @@ TextureImporter:
     second: geno_307
   - first:
       213: -16834071672245724
-    second: geno_308
+    second: geno_i1
   - first:
       213: 2051182313939368442
-    second: geno_309
+    second: geno_i2
   - first:
       213: 3508480684234886518
-    second: geno_310
+    second: geno_i3
   - first:
       213: -4144021054435606961
     second: geno_311
@@ -6505,10 +6505,10 @@ TextureImporter:
       name: geno_256
       rect:
         serializedVersion: 2
-        x: 329
+        x: 736
         y: 8
-        width: 389
-        height: 126
+        width: 58
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7111,13 +7111,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geno_285
+      name: geno_i4
       rect:
         serializedVersion: 2
-        x: 76
+        x: 116
         y: 12
-        width: 20
-        height: 32
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7132,12 +7132,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geno_286
+      name: geno_i5
       rect:
         serializedVersion: 2
-        x: 100
+        x: 162
         y: 12
-        width: 20
+        width: 33
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -7153,12 +7153,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geno_287
+      name: geno_i6
       rect:
         serializedVersion: 2
-        x: 124
+        x: 210
         y: 12
-        width: 27
+        width: 33
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -7174,12 +7174,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geno_288
+      name: geno_i7
       rect:
         serializedVersion: 2
-        x: 154
+        x: 264
         y: 12
-        width: 23
+        width: 33
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -7195,12 +7195,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geno_289
+      name: geno_i8
       rect:
         serializedVersion: 2
-        x: 183
+        x: 316
         y: 12
-        width: 20
+        width: 33
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -7216,12 +7216,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geno_290
+      name: geno_i9
       rect:
         serializedVersion: 2
-        x: 208
+        x: 360
         y: 12
-        width: 20
+        width: 33
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -7237,12 +7237,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geno_291
+      name: geno_i10
       rect:
         serializedVersion: 2
-        x: 232
+        x: 404
         y: 12
-        width: 23
+        width: 33
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -7258,12 +7258,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geno_292
+      name: geno_i11
       rect:
         serializedVersion: 2
-        x: 259
+        x: 449
         y: 12
-        width: 31
+        width: 33
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -7279,10 +7279,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geno_293
+      name: geno_i12
       rect:
         serializedVersion: 2
-        x: 293
+        x: 504
         y: 12
         width: 33
         height: 34
@@ -7594,13 +7594,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geno_308
+      name: geno_i1
       rect:
         serializedVersion: 2
         x: 4
         y: 12
-        width: 20
-        height: 30
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7615,13 +7615,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geno_309
+      name: geno_i2
       rect:
         serializedVersion: 2
-        x: 28
+        x: 39
         y: 12
-        width: 20
-        height: 30
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7636,13 +7636,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: geno_310
+      name: geno_i3
       rect:
         serializedVersion: 2
-        x: 52
+        x: 77
         y: 12
-        width: 20
-        height: 30
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

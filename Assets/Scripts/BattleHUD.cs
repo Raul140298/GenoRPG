@@ -28,4 +28,10 @@ public class BattleHUD : MonoBehaviour
         //HP.text = currHP.ToString() + '/' + maxHP.ToString();
         hpSlider.value = hp;
     }
+    public void SetMP(int mp)
+	{
+        //currHP = hp;
+        //HP.text = currHP.ToString() + '/' + maxHP.ToString();
+        mpSlider.value = mp;
+    }
 }

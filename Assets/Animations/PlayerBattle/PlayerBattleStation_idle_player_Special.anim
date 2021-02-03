@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerBattleStation_idle_player_defending
+  m_Name: PlayerBattleStation_idle_player_Special
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0

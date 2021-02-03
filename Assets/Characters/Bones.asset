@@ -24,3 +24,4 @@ MonoBehaviour:
   battleAnimator: {fileID: 9100000, guid: 3445e36b985deb74d8730ae63cd23c04, type: 2}
   attackParticle:
   - {fileID: 0}
+  - {fileID: 0}
