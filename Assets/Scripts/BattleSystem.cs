@@ -278,10 +278,10 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         //Animación completa del ataque---------------------------------------------------------
-        playerAnim.SetFloat("eje X", 1f);
+        playerAnim.SetFloat("eje X", -1f);
         playerAnim.SetFloat("eje Y", 0f);
         playerAnim.SetBool("isAttack", true);
-        yield return new WaitForSeconds(0.35f);
+        yield return new WaitForSeconds(1f);
 
         //Se debe hacer de esta manera para que las particulas puedan intercambiarase por las de cualquier ataque.
         print("Especial\n");
@@ -296,7 +296,7 @@ public class BattleSystem : MonoBehaviour
         bool isDead = enemyUnit.TakeDamage(playerUnit.unitDamage * 2);
         //Fin de la animacion
 
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(1f);
         //---------------------------------------------------------------------------------------
         playerAnim.SetFloat("eje X", -1f);
         playerAnim.SetFloat("eje Y", 0f);
@@ -395,6 +395,24 @@ public class BattleSystem : MonoBehaviour
             StartCoroutine(playerTurn());
         }
     }
+
+    IEnumerator EnemyAttackBurn()
+	{
+        while(true)
+		{
+            yield return new WaitForSeconds(1f);
+            bool isDead = playerUnit.TakeDamage(20);
+            playerHUD.SetHP(playerUnit.unitCurrHP);
+            //Devuelvo al enemigo a su posicion en el mismo tiempo
+
+            //Evalúo si está muerto o no
+            if (isDead)
+            {
+                state = BattleState.LOST;
+                StartCoroutine(EndBattle());
+            }
+        }
+	}
 
     IEnumerator EndBattle()
     {
