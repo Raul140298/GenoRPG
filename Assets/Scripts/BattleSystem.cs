@@ -333,6 +333,7 @@ public class BattleSystem : MonoBehaviour
         playerAnim.SetFloat("eje X", -1f);
         playerAnim.SetFloat("eje Y", 0f);
 
+        print("Iteml\n");
         //Tiempo del ataque
         yield return new WaitForSeconds(0.5f);
 
@@ -340,10 +341,10 @@ public class BattleSystem : MonoBehaviour
         playerAnim.SetFloat("eje X", 0f);
         playerAnim.SetFloat("eje Y", 1f);
         playerAnim.SetBool("isAttack", true);
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(1.5f);
 
         //Se debe hacer de esta manera para que las particulas puedan intercambiarase por las de cualquier ataque.
-        print("Iteml\n");
+        print("Restauraste Hp y Mp\n");
         SoundSystemScript.PlaySound("Sound_item");
         playerUnit.TakeDamage(-50);
         playerUnit.TakeMana(-25);
@@ -358,7 +359,6 @@ public class BattleSystem : MonoBehaviour
         playerAnim.SetBool("isAttack", false);
         yield return new WaitForSeconds(0.25f);
 
-        print("Restauraste Hp y Mp\n");
         //ANIMACION DE RECIBIR DAÑO Y SONIDO
         yield return new WaitForSeconds(1f);
 
