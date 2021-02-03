@@ -66,6 +66,7 @@ public class BattleSystem : MonoBehaviour
         enemyBattleStation.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
         enemyBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.enemyUnit.unitBattleAnimator;
         enemyAnim = enemyBattleStation.GetComponent<Animator>();
+        enemyAnim.SetBool("isDead", false);
         enemyName = this.enemyUnit.name;
 
 
@@ -237,11 +238,12 @@ public class BattleSystem : MonoBehaviour
         bool isDead = enemyUnit.TakeDamage(playerUnit.unitDamage);
         //Fin de la animacion
 
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.89f);
         //---------------------------------------------------------------------------------------
         playerAnim.SetFloat("eje X", -1f);
         playerAnim.SetFloat("eje Y", 0f);
         playerAnim.SetBool("isAttack", false);
+
         yield return new WaitForSeconds(0.25f);
 
         print("Enemigo recibio daño\n");
@@ -278,8 +280,8 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         //Animación completa del ataque---------------------------------------------------------
-        playerAnim.SetFloat("eje X", -1f);
-        playerAnim.SetFloat("eje Y", 0f);
+        playerAnim.SetFloat("eje X", 0f);
+        playerAnim.SetFloat("eje Y", -1f);
         playerAnim.SetBool("isAttack", true);
         yield return new WaitForSeconds(1f);
 
@@ -291,7 +293,7 @@ public class BattleSystem : MonoBehaviour
         playerBattleStation.transform.GetChild(1).GetComponent<ParticleSystemRenderer>().sharedMaterial = playerUnit.unitSpecialParticle.GetComponent<ParticleSystemRenderer>().sharedMaterial;
         playerBattleStation.transform.GetChild(1).GetComponent<ParticleSystem>().Play();
         SoundSystemScript.PlaySound("Sound_geno_laserbeam");
-        bool haveMana = playerUnit.TakeMana(playerUnit.unitDamage /2);
+        bool haveMana = playerUnit.TakeMana(25);
         playerHUD.SetMP(playerUnit.unitCurrMP);
         bool isDead = enemyUnit.TakeDamage(playerUnit.unitDamage * 2);
         //Fin de la animacion
