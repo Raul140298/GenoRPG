@@ -359,6 +359,7 @@ public class BattleSystem : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
             }
         }
+
     }
 
     #region Transicion
