@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundSystemScript : MonoBehaviour
 {
-    public static AudioClip deadSound, buttonSound, jumpSound, battleStartSound, winSound, pipeSound, itemSound;
+    public static AudioClip deadSound, buttonSound, jumpSound, battleStartSound, winSound, pipeSound, itemSound, hitSound, flameSound;
     public static AudioClip forestMazeSoundtrack, battleMonstersSoundtrack, battleBossesSoundtrack;
     public static AudioClip genoAttackSound, genoSpecialSound;
     static AudioSource audioSrc;
@@ -21,6 +21,8 @@ public class SoundSystemScript : MonoBehaviour
         winSound = Resources.Load<AudioClip>("Sound_win");
         pipeSound = Resources.Load<AudioClip>("Sound_pipe");
         itemSound = Resources.Load<AudioClip>("Sound_item");
+        hitSound = Resources.Load<AudioClip>("Sound_hit");
+        flameSound = Resources.Load<AudioClip>("Sound_flame");
 
         //SOUNDTRACKS
         battleMonstersSoundtrack = Resources.Load<AudioClip>("Soundtrack_battle_monsters");
@@ -60,6 +62,12 @@ public class SoundSystemScript : MonoBehaviour
                 break;
             case "Sound_item":
                 audioSrc.PlayOneShot(itemSound);
+                break;
+            case "Sound_hit":
+                audioSrc.PlayOneShot(hitSound);
+                break;
+            case "Sound_flame":
+                audioSrc.PlayOneShot(flameSound);
                 break;
         }
 	}

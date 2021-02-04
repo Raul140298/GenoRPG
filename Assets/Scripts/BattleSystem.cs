@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST, RUN }
+public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST, RUN, VACIO }
 public enum Action { ITEM, SPECIAL, ATTACK, ETC, NONE }
 
 public class BattleSystem : MonoBehaviour
@@ -26,6 +26,7 @@ public class BattleSystem : MonoBehaviour
     //Animator enemyAnim;
     public Animator playerAnim, buttonAnim, enemyAnim;
     public Camera camera1, camera2;
+    public bool firstAttack = false;
 
     Vector3 mov = new Vector3(-1, -1, 0), destino;
     bool enemyTurn = false;
@@ -187,8 +188,17 @@ public class BattleSystem : MonoBehaviour
         }
         else
         {
-            state = BattleState.ENEMYTURN;
-            StartCoroutine(EnemyTurn());
+            state = BattleState.ENEMYTURN;        
+            if(firstAttack == false && enemyName == "enemy bowsette")
+			{
+                firstAttack = true;
+                print("enemigo especial\n");
+                StartCoroutine(EnemySpecial());
+            }
+			else
+			{    
+                StartCoroutine(EnemyTurn());
+            }
         }
     }
 
@@ -348,7 +358,7 @@ public class BattleSystem : MonoBehaviour
         //Se debe hacer de esta manera para que las particulas puedan intercambiarase por las de cualquier ataque.
         print("Restauraste Hp y Mp\n");
         SoundSystemScript.PlaySound("Sound_item");
-        playerUnit.TakeDamage(-50);
+        playerUnit.TakeDamage(-100);
         playerUnit.TakeMana(-25);
         playerHUD.SetHP(playerUnit.unitCurrHP);
         playerHUD.SetMP(playerUnit.unitCurrMP);
@@ -379,6 +389,7 @@ public class BattleSystem : MonoBehaviour
         enemyTurn = true;
         yield return new WaitForSeconds(1.5f);
         print("Enemigo ataca\n");
+        SoundSystemScript.PlaySound("Sound_hit");
         bool isDead = playerUnit.TakeDamage(enemyUnit.unitDamage);
         playerHUD.SetHP(playerUnit.unitCurrHP);
         //Devuelvo al enemigo a su posicion en el mismo tiempo
@@ -398,12 +409,37 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    IEnumerator EnemySpecial()
+    {
+        print("Turno del enemigo\n");
+        //Volteo al player en direccion al enemigo
+        playerAnim.SetFloat("eje X", -1f);
+        playerAnim.SetFloat("eje Y", 0f);
+
+        //Tiempo del ataque
+        yield return new WaitForSeconds(1f);
+
+        //Se debe hacer de esta manera para que las particulas puedan intercambiarase por las de cualquier ataque.
+        print("Especial\n");
+        GetCopyOfClass.GetCopyOf(enemyBattleStation.transform.GetChild(1).GetComponent<ParticleSystem>(), enemyUnit.unitSpecialParticle.GetComponent<ParticleSystem>());
+        var main = enemyBattleStation.transform.GetChild(1).GetComponent<ParticleSystem>().main;
+        main.duration = enemyUnit.unitSpecialParticle.GetComponent<ParticleSystem>().main.duration;
+        enemyBattleStation.transform.GetChild(1).GetComponent<ParticleSystemRenderer>().sharedMaterial = enemyUnit.unitSpecialParticle.GetComponent<ParticleSystemRenderer>().sharedMaterial;
+        enemyBattleStation.transform.GetChild(1).GetComponent<ParticleSystem>().Play();
+        SoundSystemScript.PlaySound("Sound_flame");
+        yield return new WaitForSeconds(2f);
+        StartCoroutine(EnemyAttackBurn());
+        yield return new WaitForSeconds(1f);
+        state = BattleState.PLAYERTURN;
+        StartCoroutine(playerTurn());
+    }
+
     IEnumerator EnemyAttackBurn()
 	{
         while(true)
 		{
             yield return new WaitForSeconds(1f);
-            bool isDead = playerUnit.TakeDamage(20);
+            bool isDead = playerUnit.TakeDamage(5);
             playerHUD.SetHP(playerUnit.unitCurrHP);
             //Devuelvo al enemigo a su posicion en el mismo tiempo
 
@@ -426,7 +462,9 @@ public class BattleSystem : MonoBehaviour
         switch (state)
         {
             case BattleState.LOST:
+                state = BattleState.VACIO;
                 print("Perdiste\n");
+                StartCoroutine(Won());
                 break;
             case BattleState.WON:
                 print("Ganaste\n");
@@ -454,7 +492,7 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator Won()
     {
-        if (Input.GetKey("c") || state == BattleState.RUN)
+        if (Input.GetKey("c") || state == BattleState.RUN || state == BattleState.VACIO)
         {
             FadeIn();
             yield return new WaitForSeconds(fadeTime);
@@ -475,12 +513,12 @@ public class BattleSystem : MonoBehaviour
             playerAnim.SetFloat("eje X", -1f);
             playerAnim.SetFloat("eje Y", 0f);
 
-            if(enemyName == "enemy bowsette")
+            if(enemyName == "enemy bowsette" || state == BattleState.VACIO)
 			{
+                yield return new WaitForSeconds(1f);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
             }
         }
-
     }
     
     IEnumerator Run()
