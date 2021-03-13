@@ -1,5 +1,5 @@
 # Geno RPG "The new heroes and The Forgotten ![genoRPGlogo](genoRPGlogo.png)".
- Proyecto de unity basado en el popular Super Mario RPG.
+ Proyecto de unity basado en el popular Súper Mario RPG.
 
 
  Screenshots:
