@@ -14,10 +14,18 @@ public class EnemyMoveScript : MonoBehaviour
     {
 		mov = new Vector3(0, 0, 0);
 
-		destino[0] = new Vector3(this.transform.position.x - distance * 2f, this.transform.position.y + distance * 1f, this.transform.position.z);
-		destino[1] = new Vector3(this.transform.position.x, this.transform.position.y + distance * 2f, this.transform.position.z);
-		destino[2] = new Vector3(this.transform.position.x + distance * 2f, this.transform.position.y + distance * 1f, this.transform.position.z);
-		destino[3] = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+		if(this.gameObject.name.Contains("bones"))
+		{
+			destino[0] = new Vector3(this.transform.position.x - distance * 2f, this.transform.position.y + distance * 1f, this.transform.position.z);
+			destino[1] = new Vector3(this.transform.position.x, this.transform.position.y + distance * 2f, this.transform.position.z);
+			destino[2] = new Vector3(this.transform.position.x + distance * 2f, this.transform.position.y + distance * 1f, this.transform.position.z);
+			destino[3] = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+		}
+		if (this.gameObject.name.Contains("superfireball"))
+		{
+			destino[0] = new Vector3(this.transform.position.x, this.transform.position.y + 0.15f, this.transform.position.z);
+			destino[1] = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+		}
 		//destino[4] = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
 		StartCoroutine(wait(1.2f));
 	}
@@ -47,35 +55,30 @@ public class EnemyMoveScript : MonoBehaviour
 
 	void ManageMovement()
 	{
-		this.transform.position = Vector3.MoveTowards(
+		if (this.gameObject.name.Contains("bones"))
+		{
+			this.transform.position = Vector3.MoveTowards(
 					this.transform.position,
 					this.transform.position + mov,
 					0.4f * Time.deltaTime);
+		}
+		else
+		{
+			this.transform.position = Vector3.MoveTowards(
+					this.transform.position,
+					this.transform.position + mov,
+					0.2f * Time.deltaTime);
+		}
+	}
 
-		//switch (i)
-		//{
-		//	case 0:
-		//		upLeft();
-		//		break;
-		//	case 1:
-		//		upRight();
-		//		break;
-		//	case 2:
-		//		downRight();
-		//		break;
-		//	case 3:
-		//		downLeft();
-		//		break;
-		//	default:
-		//		print("Error de movimiento enemigo\n");
-		//		break;
-		//}
+	void up()
+	{
+		mov = new Vector3(0, 1, 0);
+	}
 
-		//if (this.transform.position == destino[i])
-		//{
-		//	i++;
-		//	if (i == 4) i = 0;
-		//}
+	void down()
+	{
+		mov = new Vector3(0, -1, 0);
 	}
 
 	void upLeft()
@@ -100,27 +103,49 @@ public class EnemyMoveScript : MonoBehaviour
 
 	IEnumerator wait(float x)
 	{
-		i++;
-		if (i == 4) i = 0;
-		switch (i)
+		if(this.gameObject.name.Contains("bones"))
 		{
-			case 0:
-				upLeft();
-				break;
-			case 1:
-				upRight();
-				break;
-			case 2:
-				downRight();
-				break;
-			case 3:
-				downLeft();
-				break;
-			default:
-				print("Error de movimiento enemigo\n");
-				break;
+			i++;
+			if (i == 4) i = 0;
+			switch (i)
+			{
+				case 0:
+					upLeft();
+					break;
+				case 1:
+					upRight();
+					break;
+				case 2:
+					downRight();
+					break;
+				case 3:
+					downLeft();
+					break;
+				default:
+					print("Error de movimiento enemigo\n");
+					break;
+			}
+			yield return new WaitForSeconds(x);
+			StartCoroutine(wait(x));
 		}
-		yield return new WaitForSeconds(x);
-		StartCoroutine(wait(x));
+		if (this.gameObject.name.Contains("superfireball"))
+		{
+			if (this.transform.position.y >= destino[0].y) i = 1;
+			if (this.transform.position.y <= destino[1].y) i = 0;
+			switch (i)
+			{
+				case 0:
+					up();
+					break;
+				case 1:
+					down();
+					break;
+				default:
+					print("Error de movimiento enemigo\n");
+					break;
+			}
+			yield return new WaitForSeconds(0.001f);
+			StartCoroutine(wait(x));
+		}
 	}
 }

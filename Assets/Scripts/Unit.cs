@@ -70,6 +70,10 @@ public class Unit : MonoBehaviour
 				gameObject.GetComponent<Animator>().SetBool("walking", false);
 				gameObject.GetComponent<EnemyMoveScript>().anim = GetComponent<Animator>();
 			}
+            if (gameObject.name.Contains("superfireball"))
+            {
+                gameObject.GetComponent<EnemyMoveScript>().anim = GetComponent<Animator>();
+            }
         }
         this.GetComponent<SpriteRenderer>().sprite = unitSprite;
 

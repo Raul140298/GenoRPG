@@ -8,7 +8,8 @@ public class shadow : MonoBehaviour
     public CharacterController control;
     public Vector3 startPosTarget, startPosObj, difference, auxFloor, auxScale, ScaleIni;
     public float floorShadow, scaleX, scaleY;
-   
+    CapsuleCollider2D coll;
+
     void Start()
     {
         target = this.transform.parent.gameObject;
@@ -17,6 +18,11 @@ public class shadow : MonoBehaviour
         ScaleIni = this.transform.localScale;
         scaleX = this.transform.localScale.x;
         scaleY = this.transform.localScale.y;
+        if (this.transform.parent.name.Contains("superfireball"))
+        {
+            startPosTarget.y -= 0.14f;
+            startPosTarget.z = 9f;
+        }
     }
     void Update()
     {
@@ -62,10 +68,19 @@ public class shadow : MonoBehaviour
         }
 		else//SI NO ES EL PERSONAJE (solo tiene que actualizar la sombra por si se mueve)
 		{
-            this.GetComponent<SpriteRenderer>().enabled = false;
-            //actualizar la posición de la sombra
-            difference = target.transform.position - startPosTarget;
-            this.transform.position = startPosObj + difference;
+            if (this.transform.parent.name.Contains("bones"))
+            { 
+                this.GetComponent<SpriteRenderer>().enabled = false;
+                //actualizar la posición de la sombra
+                difference = target.transform.position - startPosTarget;
+                this.transform.position = startPosObj + difference;
+            }
+            if (this.transform.parent.name.Contains("superfireball"))
+            {
+                this.GetComponent<SpriteRenderer>().enabled = true;
+                //actualizar la posición de la sombra
+                this.transform.position = startPosTarget;
+            }
         }
     }
 }

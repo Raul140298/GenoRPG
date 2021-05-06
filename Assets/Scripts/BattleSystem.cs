@@ -65,6 +65,7 @@ public class BattleSystem : MonoBehaviour
 
         enemyBattleStation.GetComponent<SpriteRenderer>().sprite = this.enemyUnit.unitSprite;
         enemyBattleStation.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+        if(enemyUnit.unitNames == "Fireball") enemyBattleStation.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
         enemyBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.enemyUnit.unitBattleAnimator;
         enemyAnim = enemyBattleStation.GetComponent<Animator>();
         enemyAnim.SetBool("isDead", false);
@@ -148,6 +149,9 @@ public class BattleSystem : MonoBehaviour
                         state = BattleState.RUN;
                         StartCoroutine(EndBattle());
                         StartCoroutine(Run());
+                        break;
+                    case Action.NONE:
+                        StartCoroutine(playerTurn());
                         break;
                     default:
                         print("Error de seleccion de accion\n");
@@ -280,6 +284,11 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator PlayerSpecial()
     {
+        if(this.playerUnit.unitCurrMP<=0)
+		{
+            StartCoroutine(playerTurn());
+            yield break;
+        }
         //Tiempo para voltearse
         yield return new WaitForSeconds(0.25f);
         playerAnim.SetBool("isAttack", false);

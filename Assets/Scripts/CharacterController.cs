@@ -11,9 +11,9 @@ public class CharacterController : MonoBehaviour
 	//PUBLICAS
 	public int numNarrative;
 	public float floor, oposY;
-	public bool canJump = true, elevando = false, choca = false, canBattle = true;
+	public bool canJump = true, elevando = false, choca = false, canBattle = true, caeDeMuro = false;
 	public BattleSystem battleByTurn;
-	public GameObject zonaBatalla, zonaActual;
+	public GameObject zonaBatalla, zonaActual, otherCollider;
 	public State state;
 	public Camera camera1, camera2;
 	public Rigidbody2D body;
@@ -50,7 +50,7 @@ public class CharacterController : MonoBehaviour
 
 	// Update is called once per frame
 	void Update()
-	{   	
+	{
 		if (state == State.ADVENTURE)
 		{
 			ManageMovement();
@@ -78,7 +78,7 @@ public class CharacterController : MonoBehaviour
 		object[] Cams = GameObject.FindObjectsOfType(typeof(Camera));
 		foreach (Camera C in Cams)
 		{
-			if(C.name == "Main Camera")
+			if (C.name == "Main Camera")
 			{
 				camera1 = C;
 			}
@@ -98,39 +98,50 @@ public class CharacterController : MonoBehaviour
 			0
 		);
 
-		if (canJump)//si está en el suelo
+		if(caeDeMuro == true)
 		{
-			GetComponent<CapsuleCollider2D>().isTrigger = false;
-			if (choca == false)
-			{
-				transform.position = Vector3.MoveTowards(
-						transform.position,
-						transform.position + mov,
-						player.unitSpeed * Time.deltaTime
-						//speed * player.unitSpeed * Time.deltaTime
-						);
-			}
-			else
-			{   //Solo saldrá del bloque si es que se ha dejado de presionar los botones anteriores
-				if (!comparaSignos(chocaX, mov.x) || !comparaSignos(chocaY, mov.y))
-				{
-					choca = false;
-				}
-			}
-		}
-		else //si ya saltó (elevando o cayendo)
-		{   //basicamente para disminuir la velocidad en el aire
-			if(elevando)GetComponent<CapsuleCollider2D>().isTrigger = true;
-
-			anteriorY = gameObject.transform.position.y;
 			transform.position = Vector3.MoveTowards(
 						transform.position,
-						transform.position + mov,
-						0.75f * Time.deltaTime
+						transform.position - salto,
+						gravity*1f * Time.deltaTime
 						);
-			//La diferencia de posicion (distancia) en ejeY actualiza el piso y el tope
-			floor += transform.position.y - anteriorY;
-			topeY += transform.position.y - anteriorY;
+		}
+		else
+		{
+			if (canJump)//si está en el suelo
+			{
+				GetComponent<CapsuleCollider2D>().isTrigger = false;
+				if (choca == false)
+				{
+					transform.position = Vector3.MoveTowards(
+							transform.position,
+							transform.position + mov,
+							player.unitSpeed * Time.deltaTime
+							//speed * player.unitSpeed * Time.deltaTime
+							);
+				}
+				else
+				{   //Solo saldrá del bloque si es que se ha dejado de presionar los botones anteriores
+					if (!comparaSignos(chocaX, mov.x) || !comparaSignos(chocaY, mov.y))
+					{
+						choca = false;
+					}
+				}
+			}
+			else //si ya saltó (elevando o cayendo)
+			{   //basicamente para disminuir la velocidad en el aire
+				if (elevando) GetComponent<CapsuleCollider2D>().isTrigger = true;
+
+				anteriorY = gameObject.transform.position.y;
+				transform.position = Vector3.MoveTowards(
+							transform.position,
+							transform.position + mov,
+							0.75f * Time.deltaTime
+							);
+				//La diferencia de posicion (distancia) en ejeY actualiza el piso y el tope
+				floor += transform.position.y - anteriorY;
+				topeY += transform.position.y - anteriorY;
+			}
 		}
 	}
 
@@ -142,18 +153,18 @@ public class CharacterController : MonoBehaviour
 		{
 			floor = gameObject.transform.position.y;
 			topeY = floor + 0.25f;
-			
-			if (Input.GetKey("c") && ejeY < topeY)
-			{
-				floor = ejeY;
-				canJump = false;
-				elevando = true;
-				SoundSystemScript.PlaySound("Sound_jump");
-			}
+
+			//if (Input.GetKey("c") && ejeY < topeY && canJump)
+			//{
+			//	canJump = false;
+			//	elevando = true;
+			//	floor = ejeY;
+			//	SoundSystemScript.PlaySound("Sound_jump");
+			//}
 		}
 		else
 		{
-			if (elevando == true)
+			if (elevando == true)//ha saltado
 			{
 				transform.position = Vector3.MoveTowards(
 						transform.position,
@@ -165,9 +176,10 @@ public class CharacterController : MonoBehaviour
 					elevando = false;
 					Vector3 newPosition = new Vector3(transform.position.x, topeY, transform.position.z);
 					transform.position = newPosition;
+					StartCoroutine(canJumpAgain());
 				}
 			}
-			else
+			else //esta cayendo
 			{
 				transform.position = Vector3.MoveTowards(
 						transform.position,
@@ -176,16 +188,23 @@ public class CharacterController : MonoBehaviour
 						);
 				if (transform.position.y <= floor)
 				{//si ha traspasado el piso lo devolvemos
-					canJump = true;//ya se ha llegado al piso
 					Vector3 newPosition = new Vector3(transform.position.x, floor, transform.position.z);
 					transform.position = newPosition;
+					//canJump = true;//ya se ha llegado al piso			
 				}
 			}
 		}
 	}
 
+	IEnumerator canJumpAgain()
+	{
+		yield return new WaitForSeconds(0.45f);
+		canJump = true;//ya se ha llegado al piso
+	}
+
 	IEnumerator OnTriggerEnter2D(Collider2D other)
 	{
+		otherCollider = other.gameObject;
 		oposY = other.transform.position.y;
 
 
@@ -270,17 +289,34 @@ public class CharacterController : MonoBehaviour
 			//anim.SetBool("narrative", true);
 			state = State.NARRATIVE;	
 		}
-		else if (other.gameObject.name.Contains("wall") && elevando == false)
+		else if (other.gameObject.name.Contains("wall") && elevando == true)
 		{
 			choca = true;
 			chocaX = mov.x;
 			chocaY = mov.y;
+		}
+		else if (other.gameObject.name.Contains("traspasable"))
+		{
+			print("esta tocando");
+			StartCoroutine(cayendoDeMuro());
+			GetComponent<CapsuleCollider2D>().isTrigger = true;
+			caeDeMuro = !other.gameObject.GetComponent<WallScript>().playerAbajo;
+		}
+		else if (other.gameObject.name.Contains("suelo"))//llego al final de la caida del muro
+		{
+			caeDeMuro = false;
 		}
 		else if (other.gameObject.name.Contains("Zona"))
 		{
 			zonaActual = other.gameObject;
 			//SoundSystemScript.PlaySoundtrack(zonaActual.GetComponent<ZonaScript>().soundtrack.name);
 		}
+	}
+
+	IEnumerator cayendoDeMuro()
+	{
+		yield return new WaitForSeconds(0.1f);
+		otherCollider.GetComponent<WallScript>().playerAbajo = true;
 	}
 
 	bool comparaSignos(float x, float y)
