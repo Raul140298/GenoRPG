@@ -576,11 +576,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Template2D
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\raul1\Documents\Unity Projects\2020Project\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: WoodenMaskStudio
+  metroCertificateIssuer: WoodenMaskStudio
+  metroCertificateNotAfter: 004c398b2261d801
   metroApplicationDescription: Template_2D
   wsaImages: {}
   metroTileShortName: 2020Project

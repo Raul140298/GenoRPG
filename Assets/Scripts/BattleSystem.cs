@@ -65,7 +65,6 @@ public class BattleSystem : MonoBehaviour
 
         enemyBattleStation.GetComponent<SpriteRenderer>().sprite = this.enemyUnit.unitSprite;
         enemyBattleStation.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
-        if(enemyUnit.unitNames == "Fireball") enemyBattleStation.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
         enemyBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.enemyUnit.unitBattleAnimator;
         enemyAnim = enemyBattleStation.GetComponent<Animator>();
         enemyAnim.SetBool("isDead", false);
