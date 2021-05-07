@@ -60,6 +60,7 @@ public class BattleSystem : MonoBehaviour
         this.enemyUnit = enemyPrefab.GetComponent<Unit>();
 
         playerBattleStation.GetComponent<SpriteRenderer>().sprite = this.playerUnit.unitSprite;
+        playerBattleStation.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = false;
         playerBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.playerUnit.unitBattleAnimator;
         playerAnim = playerBattleStation.GetComponent<Animator>();
 

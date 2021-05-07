@@ -934,7 +934,7 @@ TextureImporter:
     second: Bowsette_309
   - first:
       213: 2773223112820311307
-    second: Bowsette_310
+    second: Shadow
   - first:
       213: -7917445565022242392
     second: Bowsette_311
@@ -7696,7 +7696,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bowsette_310
+      name: Shadow
       rect:
         serializedVersion: 2
         x: 120
