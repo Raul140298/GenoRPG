@@ -26,6 +26,7 @@ public class TextBoxScript : MonoBehaviour
                 cajaTextoSprite.enabled = textoSprite.enabled = false;
                 break;
             case State.BATTLE:
+                cajaTextoSprite.enabled = textoSprite.enabled = false;
                 break;
             case State.NARRATIVE:
                 cajaTextoSprite.enabled = textoSprite.enabled = true;

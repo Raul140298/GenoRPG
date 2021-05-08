@@ -55,7 +55,7 @@ public class CharacterController : MonoBehaviour
 		{
 			ManageMovement();
 			ManageJump();
-		}
+		}	
 	}
 
 	void FixedUpdate()
@@ -103,7 +103,7 @@ public class CharacterController : MonoBehaviour
 			transform.position = Vector3.MoveTowards(
 						transform.position,
 						transform.position - salto,
-						gravity*1f * Time.deltaTime
+						gravity * 1f * Time.deltaTime
 						);
 		}
 		else
@@ -211,6 +211,9 @@ public class CharacterController : MonoBehaviour
 		if (other.gameObject.name.Contains("enemy") && canBattle == true 
 			&& (Mathf.Abs(oposY - floor) <= 0.075f))
 		{
+			mov = new Vector3(0,0,0);
+			other.gameObject.GetComponent<Unit>().enemyMove.enBatalla = true;
+			state = State.BATTLE;
 			canBattle = false;
 			SoundSystemScript.PlaySound("Sound_battle_start");
 			print("Chocaste con un enemigo\n");

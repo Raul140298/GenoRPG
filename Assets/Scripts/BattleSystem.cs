@@ -19,7 +19,7 @@ public class BattleSystem : MonoBehaviour
     public String enemyName;
     //DATOS DE IU
     public BattleHUD playerHUD;
-    public GameObject playerBattleStation, enemyBattleStation, zonaBatalla;
+    public GameObject playerBattleStation, enemyBattleStation, zonaBatalla, genoHUD;
     public CharacterController controller;
     public BattleState state;
     public Action action;
@@ -91,15 +91,17 @@ public class BattleSystem : MonoBehaviour
         }
         else if (enemyTurn == true)
         {
+            genoHUD.SetActive(false);
             enemyBattleStation.transform.position = Vector3.MoveTowards(
                     enemyBattleStation.transform.position,
                     playerBattleStation.transform.position + new Vector3(0.1f, 0.1f, 0f),
                     0.75f * Time.deltaTime);
         }
 
-        //Si es el turno del personaje
+        //Si es el turno del personajes
         if (buttonAnim.GetBool("PlayerTurn") == true)
         {
+            genoHUD.SetActive(true);
             if (Input.GetAxisRaw("Horizontal") > 0 && action != Action.ATTACK)
             {
                 action = Action.ATTACK;
@@ -131,6 +133,7 @@ public class BattleSystem : MonoBehaviour
 
             if (Input.GetKey("c"))
             {
+                genoHUD.SetActive(false);
                 SoundSystemScript.PlaySound("Sound_button");
                 StartCoroutine(HideButtons());
                 buttonAnim.SetBool("PlayerTurn", false);
@@ -490,6 +493,7 @@ public class BattleSystem : MonoBehaviour
             case BattleState.RUN:
                 print("Huiste con éxito\n");
                 yield return new WaitForSeconds(4f);
+                enemyPrefab.GetComponent<Unit>().enemyMove.enBatalla = false;
                 break;
             default:
                 break;

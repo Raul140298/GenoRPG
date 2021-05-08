@@ -18,6 +18,7 @@ public class Unit : MonoBehaviour
     public ParticleSystem unitAttackParticle;
     public ParticleSystem unitSpecialParticle;
     CapsuleCollider2D coll;
+    public EnemyMoveScript enemyMove;
 
     void Start()
     {
@@ -74,6 +75,7 @@ public class Unit : MonoBehaviour
             {
                 gameObject.GetComponent<EnemyMoveScript>().anim = GetComponent<Animator>();
             }
+            enemyMove = gameObject.GetComponent<EnemyMoveScript>();
         }
         this.GetComponent<SpriteRenderer>().sprite = unitSprite;
 
