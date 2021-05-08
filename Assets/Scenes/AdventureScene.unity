@@ -4453,6 +4453,7 @@ MonoBehaviour:
   playerBattleStation: {fileID: 1234684990}
   enemyBattleStation: {fileID: 1962686914}
   zonaBatalla: {fileID: 0}
+  genoHUD: {fileID: 863823693}
   controller: {fileID: 0}
   state: 0
   action: 0
