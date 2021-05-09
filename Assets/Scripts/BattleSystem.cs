@@ -134,28 +134,35 @@ public class BattleSystem : MonoBehaviour
             }
 
             if (Input.GetKey("c"))
-            {
-                StartCoroutine(hideGenoHUD(false, 0.1f));
-                SoundSystemScript.PlaySound("Sound_button");
+            {            
                 StartCoroutine(HideButtons());
                 buttonAnim.SetBool("PlayerTurn", false);
                 switch (action)
                 {
                     case Action.ATTACK:
+                        SoundSystemScript.PlaySound("Sound_button");
+                        StartCoroutine(hideGenoHUD(false, 0.1f));
                         StartCoroutine(PlayerAttack());
                         break;
                     case Action.SPECIAL:
+                        //SoundSystemScript.PlaySound("Sound_button");
+                        //StartCoroutine(hideGenoHUD(false, 0.1f));
                         StartCoroutine(PlayerSpecial());
                         break;
                     case Action.ITEM:
+                        SoundSystemScript.PlaySound("Sound_button");
+                        StartCoroutine(hideGenoHUD(false, 0.1f));
                         StartCoroutine(PlayerItem());
                         break;
                     case Action.ETC:
+                        SoundSystemScript.PlaySound("Sound_button");
+                        StartCoroutine(hideGenoHUD(false, 0.1f));
                         state = BattleState.RUN;
                         StartCoroutine(EndBattle());
                         StartCoroutine(Run());
                         break;
                     case Action.NONE:
+                        SoundSystemScript.PlaySound("Sound_wrong");
                         StartCoroutine(playerTurn());
                         break;
                     default:
@@ -291,8 +298,14 @@ public class BattleSystem : MonoBehaviour
     {
         if(this.playerUnit.unitCurrMP<=0)
 		{
+            SoundSystemScript.PlaySound("Sound_wrong");
             StartCoroutine(playerTurn());
             yield break;
+        }
+		else
+		{
+            SoundSystemScript.PlaySound("Sound_button");
+            StartCoroutine(hideGenoHUD(false, 0.1f));        
         }
         //Tiempo para voltearse
         yield return new WaitForSeconds(0.25f);
@@ -413,8 +426,16 @@ public class BattleSystem : MonoBehaviour
         //Evalúo si está muerto o no
         if (isDead)
         {
-            state = BattleState.LOST;
-            StartCoroutine(EndBattle());
+            if (state != BattleState.LOST && state != BattleState.VACIO)
+            {
+                print("Esta muerto");
+                state = BattleState.LOST;
+                StartCoroutine(EndBattle());
+            }        
+            else if (state == BattleState.LOST || state == BattleState.VACIO)
+            {
+                yield break;
+            }
         }
         else
         {
@@ -460,16 +481,22 @@ public class BattleSystem : MonoBehaviour
         while(true)
 		{
             yield return new WaitForSeconds(1f);
-            bool isDead = playerUnit.TakeDamage(5);
+            bool isDead = playerUnit.TakeDamage(2);
             playerHUD.SetHP(playerUnit.unitCurrHP);
             //Devuelvo al enemigo a su posicion en el mismo tiempo
 
             //Evalúo si está muerto o no
-            if (isDead)
+            if (isDead && (state != BattleState.LOST && state != BattleState.VACIO))
             {
+                print("Esta muerto por especial");
                 state = BattleState.LOST;
                 StartCoroutine(EndBattle());
+                yield break;
             }
+            else if (state == BattleState.LOST || state == BattleState.VACIO)
+			{
+                yield break;
+			}
         }
 	}
 
