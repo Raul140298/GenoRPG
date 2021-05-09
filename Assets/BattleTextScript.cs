@@ -10,10 +10,11 @@ public class BattleTextScript : MonoBehaviour
     public int index = 0;
     public float typingSpeed;
     public SpriteRenderer continueButton;
-    bool isActive = false, last = false;
-    SpriteRenderer cajaTextoSprite;
-    MeshRenderer textoSprite;
+    //bool isActive = false, last = false;
+    public SpriteRenderer cajaTextoSprite;
+    public MeshRenderer textoSprite;
     CharacterController controller;
+    public BattleSystem battleSystem;
     public GameObject posInicial;
     public GameObject bowsette;
     // start: Para controlar si empieza o no la transición
@@ -36,16 +37,25 @@ public class BattleTextScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switch (controller.state)
+        switch (battleSystem.state)
         {
-            case State.ADVENTURE:
-                break;
-            case State.BATTLE:
+            case BattleState.START:
                 cajaTextoSprite.enabled = textoSprite.enabled = continueButton.enabled = false;
                 break;
-            case State.NARRATIVE:
+            case BattleState.PLAYERTURN:
                 break;
-            case State.TELEPORT:
+            case BattleState.ENEMYTURN:
+                break;
+            case BattleState.NARRATIVE:
+                cajaTextoSprite.enabled = textoSprite.enabled = true;
+                break;
+            case BattleState.LOST:
+                break;
+            case BattleState.WON:
+                break;
+            case BattleState.VACIO:
+                break;
+            case BattleState.RUN:
                 break;
             default:
                 print("Error de seleccion de estado\n");
@@ -53,7 +63,7 @@ public class BattleTextScript : MonoBehaviour
         }
     }
 
-    IEnumerator Type()
+    public IEnumerator Type()
     {
         foreach (char letter in sentences[index].ToCharArray())
         {
@@ -83,7 +93,7 @@ public class BattleTextScript : MonoBehaviour
 	{
 		yield return new WaitForSeconds(0.5f);
 		index = 0;
-		isActive = false;
+		//isActive = false;
 		//controller.state = State.ADVENTURE;
 		if (controller.numNarrative == -1)
 		{

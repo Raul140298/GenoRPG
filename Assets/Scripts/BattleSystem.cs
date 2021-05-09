@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST, RUN, VACIO }
+public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST, RUN, VACIO, NARRATIVE }
 public enum Action { ITEM, SPECIAL, ATTACK, ETC, NONE }
 
 public class BattleSystem : MonoBehaviour
@@ -23,6 +23,7 @@ public class BattleSystem : MonoBehaviour
     public CharacterController controller;
     public BattleState state;
     public Action action;
+    public BattleTextScript battleText;
     //Animator enemyAnim;
     public Animator playerAnim, buttonAnim, enemyAnim;
     public Camera camera1, camera2;
@@ -63,6 +64,7 @@ public class BattleSystem : MonoBehaviour
         playerBattleStation.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = false;
         playerBattleStation.GetComponent<Animator>().runtimeAnimatorController = this.playerUnit.unitBattleAnimator;
         playerAnim = playerBattleStation.GetComponent<Animator>();
+        playerHUD.SetHP(this.playerUnit.unitCurrHP);
 
         enemyBattleStation.GetComponent<SpriteRenderer>().sprite = this.enemyUnit.unitSprite;
         enemyBattleStation.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
@@ -91,7 +93,7 @@ public class BattleSystem : MonoBehaviour
         }
         else if (enemyTurn == true)
         {
-            genoHUD.SetActive(false);
+            StartCoroutine(hideGenoHUD(false,0.05f));
             enemyBattleStation.transform.position = Vector3.MoveTowards(
                     enemyBattleStation.transform.position,
                     playerBattleStation.transform.position + new Vector3(0.1f, 0.1f, 0f),
@@ -101,7 +103,7 @@ public class BattleSystem : MonoBehaviour
         //Si es el turno del personajes
         if (buttonAnim.GetBool("PlayerTurn") == true)
         {
-            genoHUD.SetActive(true);
+            StartCoroutine(hideGenoHUD(true,0.05f));
             if (Input.GetAxisRaw("Horizontal") > 0 && action != Action.ATTACK)
             {
                 action = Action.ATTACK;
@@ -133,7 +135,7 @@ public class BattleSystem : MonoBehaviour
 
             if (Input.GetKey("c"))
             {
-                genoHUD.SetActive(false);
+                StartCoroutine(hideGenoHUD(false, 0.1f));
                 SoundSystemScript.PlaySound("Sound_button");
                 StartCoroutine(HideButtons());
                 buttonAnim.SetBool("PlayerTurn", false);
@@ -423,10 +425,17 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator EnemySpecial()
     {
+        StartCoroutine(hideGenoHUD(false, 0.02f));
         print("Turno del enemigo\n");
         //Volteo al player en direccion al enemigo
         playerAnim.SetFloat("eje X", -1f);
         playerAnim.SetFloat("eje Y", 0f);
+
+        battleText.textDisplay.text = char.ToUpper(enemyBattleStation.transform.GetChild(1).name[0]) + enemyBattleStation.transform.GetChild(1).name.Substring(1);
+        battleText.cajaTextoSprite.enabled = battleText.textoSprite.enabled = true;
+
+        yield return new WaitForSeconds(1.5f);
+        battleText.cajaTextoSprite.enabled = battleText.textoSprite.enabled = false;
 
         //Tiempo del ataque
         yield return new WaitForSeconds(1f);
@@ -531,6 +540,7 @@ public class BattleSystem : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
             }
+            genoHUD.SetActive(true);
         }
     }
     
@@ -538,6 +548,12 @@ public class BattleSystem : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         StartCoroutine(Won());
+    }
+
+    IEnumerator hideGenoHUD(bool b, float x)
+	{
+        yield return new WaitForSeconds(x);
+        genoHUD.SetActive(b);
     }
 
     #region Transicion

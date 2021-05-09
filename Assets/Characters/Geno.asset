@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Geno
   m_EditorClassIdentifier: 
   names: Geno
-  lvl: 1
-  damage: 100
-  maxHP: 500
-  currHP: 500
-  maxMP: 100
-  currMP: 100
+  lvl: 30
+  damage: 153
+  maxHP: 167
+  currHP: 167
+  maxMP: 200
+  currMP: 200
+  expNeed: 200
+  expGiven: 0
+  currExp: 0
   speed: 0.75
   sprite: {fileID: -3318929105122603393, guid: 1abeb65e97c269b4195f60170f6b7d4a, type: 3}
   battleAnimator: {fileID: 9100000, guid: ae00aeb5cd78d624b8c16c6a95d7f68c, type: 2}

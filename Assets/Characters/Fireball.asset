@@ -14,11 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   names: Fireball
   lvl: 2
-  damage: 10
+  damage: 2
   maxHP: 10
   currHP: 10
   maxMP: 0
   currMP: 0
+  expNeed: 0
+  expGiven: 2
+  currExp: 0
   speed: 2
   sprite: {fileID: 5353841184698615464, guid: 1e105c99544af244f9c2c30ef9a2aeaf, type: 3}
   battleAnimator: {fileID: 9100000, guid: caa6fb798cc019d4eb3e3dcfa36ec948, type: 2}

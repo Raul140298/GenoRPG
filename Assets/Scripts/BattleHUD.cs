@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BattleHUD : MonoBehaviour
 {
-    public Text nameText, levelText;
+    public Text nameText;
     public Slider hpSlider, mpSlider;
+    public TextMeshPro levelText;
 
     public void SetHUD(Unit unit)
 	{
@@ -27,6 +29,7 @@ public class BattleHUD : MonoBehaviour
         //currHP = hp;
         //HP.text = currHP.ToString() + '/' + maxHP.ToString();
         hpSlider.value = hp;
+        levelText.text = hp.ToString();
     }
     public void SetMP(int mp)
 	{

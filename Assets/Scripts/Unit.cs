@@ -9,7 +9,7 @@ public class Unit : MonoBehaviour
 {
     public ScriptableCharacters character;
     public string unitNames;
-    public int unitLvl, unitDamage, unitMaxHP, unitCurrHP, unitMaxMP, unitCurrMP;
+    public int unitLvl, unitDamage, unitMaxHP, unitCurrHP, unitMaxMP, unitCurrMP, unitExpNeed, unitExpGiven, unitCurrExp;
     public float unitSpeed;
     public Sprite unitSprite;
     public GameObject sombraPrefab;
@@ -58,12 +58,17 @@ public class Unit : MonoBehaviour
         if (unitNames == "Geno")
         {
             coll.isTrigger = true;
+            unitExpNeed = character.expNeed;
+            //Esto de arriba no debería hacerse. Solamente debería necesiar el nivel para hallar la exp necesaria.
+            //Formula para hallar unitExpNeed con el nivel
+            unitCurrExp = character.currExp;
         }
 		else
 		{
             gameObject.AddComponent<SpriteRenderer>();
             gameObject.AddComponent<Animator>();
             gameObject.GetComponent<Animator>().runtimeAnimatorController = unitBattleAnimator;
+            unitExpGiven = character.expGiven;
             //if(gameObject.name.Contains("bones") || gameObject.name.Contains("bowsette"))
             if(gameObject.name.Contains("bones"))
 			{
@@ -107,6 +112,17 @@ public class Unit : MonoBehaviour
         unitCurrMP -= mana;
         if (unitCurrMP <= 0) return true;
         else return false;
+    }
+
+    public void setExp(int exp)
+    {
+        unitCurrExp += exp;
+        if (unitCurrExp == unitExpNeed)
+        {
+            unitLvl += 1;
+            unitCurrExp = 0;
+            //Formula para hallar unitExpNeed con el nivel
+        }
     }
 
     public void Die()
