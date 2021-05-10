@@ -67,7 +67,6 @@ public class MainMenu : MonoBehaviour
 					print("Error de seleccion de boton\n");
 					break;
 			}
-			SoundSystemScript.PlaySound("Sound_button");
 		}
 	}
 
