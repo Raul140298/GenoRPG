@@ -722,7 +722,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1260583731}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &150191248
 Animator:
@@ -830,8 +830,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198335324}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.719, z: 2}
-  m_LocalScale: {x: 1.2672199, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.65, z: 2}
+  m_LocalScale: {x: 1.3039762, y: 1, z: 1}
   m_Children:
   - {fileID: 2012765293}
   - {fileID: 1618397842}
@@ -2021,11 +2021,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445516662}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7533, y: -0.6502, z: -8}
+  m_LocalPosition: {x: -0.7459998, y: -0.6502, z: -8}
   m_LocalScale: {x: 1.8316566, y: 11.211372, z: 1}
   m_Children: []
   m_Father: {fileID: 1260583731}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &445516664
 SpriteRenderer:
@@ -3769,74 +3769,98 @@ PrefabInstance:
     - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
       propertyPath: sentences.Array.size
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: 'G: Peach?... I was looking for them. What happened all this time?'
+      value: 'GENO: Peach?... I was looking for them. What happened all this time?'
       objectReference: {fileID: 0}
     - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
       propertyPath: sentences.Array.data[1]
-      value: '?: Peach? I''m no Peach. And you should stop your search, G E N O.'
+      value: '???: Peach? I''m no Peach. And you should stop your search, G E N O.'
       objectReference: {fileID: 0}
     - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
       propertyPath: sentences.Array.data[2]
-      value: '?: With the exception of Mallow, you should stop your search for the
-        rest of the traitors.'
+      value: '???: With the exception of Mallow, you should stop your search for
+        the rest of'
       objectReference: {fileID: 0}
     - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
       propertyPath: sentences.Array.data[3]
-      value: 'G: What do you mean... who or what are you? I can feel Bowser and Peach''s'
+      value: the traitors.
       objectReference: {fileID: 0}
     - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
       propertyPath: sentences.Array.data[4]
+      value: Come... if you can beat me, maybe I will tell you a little more about
+        this world.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
+        type: 3}
+      propertyPath: sentences.Array.data[5]
+      value: 'GENO: What do you mean... who or what are you? I can feel Bowser and
+        Peach''s'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
+        type: 3}
+      propertyPath: sentences.Array.data[6]
       value: presence in you. They are my friends and also the saviors. You shouldn't
         talk...
       objectReference: {fileID: 0}
     - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
-      propertyPath: sentences.Array.data[5]
-      value: '?: Stop... It''ll be much better if I explain. Listen to me... this
+      propertyPath: sentences.Array.data[7]
+      value: '???: Stop... It''ll be much better if I explain. Listen to me... this
         is a forgotten world...'
       objectReference: {fileID: 0}
     - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
-      propertyPath: sentences.Array.data[6]
-      value: '?: Some famous figures seized the moment and were able to get out of
-        here...'
-      objectReference: {fileID: 0}
-    - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
-        type: 3}
-      propertyPath: sentences.Array.data[7]
-      value: '?: Others weren''t so lucky... Forgetfulness can affect in many ways,
-        like Mallow.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
-        type: 3}
       propertyPath: sentences.Array.data[8]
-      value: '?: Finally, the unique cases, like me, were able to seize the moment
-        and materialize'
+      value: '???: Some famous figures seized the moment and were able to get out
+        of'
       objectReference: {fileID: 0}
     - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
       propertyPath: sentences.Array.data[9]
-      value: in this world. You are lucky ... even with the passage of time there
-        are many who
+      value: here...
       objectReference: {fileID: 0}
     - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
       propertyPath: sentences.Array.data[10]
-      value: ' remember you. And that''s something that particularly bothers me.'
+      value: '???: Others weren''t so lucky... Forgetfulness can affect in many ways,'
       objectReference: {fileID: 0}
     - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
       propertyPath: sentences.Array.data[11]
-      value: Come ... if you can beat me, maybe I will tell you a little more about
+      value: like Mallow.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
+        type: 3}
+      propertyPath: sentences.Array.data[12]
+      value: '???: Finally, the unique cases, like me, were able to seize the moment'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
+        type: 3}
+      propertyPath: sentences.Array.data[13]
+      value: and materialize in this world.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
+        type: 3}
+      propertyPath: sentences.Array.data[14]
+      value: You are lucky ... even with the passage of time there are many who
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
+        type: 3}
+      propertyPath: sentences.Array.data[15]
+      value: remember you. And that's something that particularly bothers me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398359784800725510, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
+        type: 3}
+      propertyPath: sentences.Array.data[16]
+      value: Come... if you can beat me, maybe I will tell you a little more about
         this world.
       objectReference: {fileID: 0}
     - target: {fileID: 5551653603643324564, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
@@ -3847,7 +3871,7 @@ PrefabInstance:
     - target: {fileID: 5551653603643324564, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33c5f4fc6f8c9f047a6dbae37b2aaf88, type: 3}
@@ -3861,6 +3885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 834385281}
   - component: {fileID: 834385282}
+  - component: {fileID: 834385283}
   m_Layer: 0
   m_Name: IconBar
   m_TagString: Untagged
@@ -3934,6 +3959,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &834385283
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834385280}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c12503ba484be1d4c90b1fcec06efa7a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &845577822
 GameObject:
   m_ObjectHideFlags: 0
@@ -4160,7 +4204,7 @@ Transform:
   - {fileID: 365445996}
   - {fileID: 1228722330}
   m_Father: {fileID: 1260583731}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &886191036
 PrefabInstance:
@@ -5151,7 +5195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111875602}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0069999695, y: -0.044, z: -30}
+  m_LocalPosition: {x: 0, y: -0.044, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 432180788}
@@ -6092,10 +6136,10 @@ Transform:
   m_LocalPosition: {x: -0.77400017, y: 0.6539999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 445516663}
-  - {fileID: 1735375345}
   - {fileID: 863823694}
   - {fileID: 150191247}
+  - {fileID: 445516663}
+  - {fileID: 1735375345}
   m_Father: {fileID: 394109519}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6326,7 +6370,7 @@ MonoBehaviour:
   sentences:
   - "It's been some time since your last visit, \u2665\u266A!?..."
   - Go back to that world once again under the name Geno..
-  - Come back one more time and find your friends.
+  - Go back one more time and find your friends.
   numNarrative: -1
 --- !u!4 &1361616501 stripped
 Transform:
@@ -7390,6 +7434,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6130894082425441519, guid: e392849ee14ae0e458b917220c81ebab,
+        type: 3}
+      propertyPath: emitter
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e392849ee14ae0e458b917220c81ebab, type: 3}
 --- !u!4 &1566941855 stripped
@@ -8351,11 +8400,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735375344}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2930002, y: -0.6502, z: -8}
+  m_LocalPosition: {x: 2.2940001, y: -0.6502, z: -8}
   m_LocalScale: {x: 1.8316599, y: 11.2113695, z: 1}
   m_Children: []
   m_Father: {fileID: 1260583731}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1735375346
 SpriteRenderer:
@@ -10389,7 +10438,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073131207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.015, y: 11.386, z: 0}
+  m_LocalPosition: {x: 8.81, y: 2.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

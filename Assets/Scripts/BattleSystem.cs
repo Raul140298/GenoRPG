@@ -452,7 +452,7 @@ public class BattleSystem : MonoBehaviour
         playerAnim.SetFloat("eje X", -1f);
         playerAnim.SetFloat("eje Y", 0f);
 
-        battleText.textDisplay.text = char.ToUpper(enemyBattleStation.transform.GetChild(1).name[0]) + enemyBattleStation.transform.GetChild(1).name.Substring(1);
+        battleText.textDisplay.text = enemyBattleStation.transform.GetChild(1).name;
         battleText.cajaTextoSprite.enabled = battleText.textoSprite.enabled = true;
 
         yield return new WaitForSeconds(1.5f);
@@ -512,6 +512,10 @@ public class BattleSystem : MonoBehaviour
             case BattleState.LOST:
                 state = BattleState.VACIO;
                 print("Perdiste\n");
+                battleText.textDisplay.text = "Game Over...!";
+                battleText.cajaTextoSprite.enabled = battleText.textoSprite.enabled = true;
+                yield return new WaitForSeconds(2f);
+                battleText.cajaTextoSprite.enabled = battleText.textoSprite.enabled = false;
                 StartCoroutine(Won());
                 break;
             case BattleState.WON:

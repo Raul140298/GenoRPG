@@ -41,6 +41,8 @@ public class NarrativeTextScript : MonoBehaviour
             case State.ADVENTURE:
                 cajaTextoSprite.enabled = textoSprite.enabled = continueButton.enabled = false;
                 controller.anim.SetBool("narrative", false);
+                GameObject.Find("enemy bowsette").GetComponent<Animator>().SetBool("isBattle", false);
+                GameObject.Find("enemy bowsette").GetComponent<Animator>().SetBool("walking", true);
                 break;
             case State.BATTLE:
                 break;
@@ -53,7 +55,7 @@ public class NarrativeTextScript : MonoBehaviour
                 if (controller.numNarrative == -2 && last == false)
                 {
                     last = true;
-                    this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y - 1.44f, this.gameObject.transform.position.z);
+                    this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y - 1.30f, this.gameObject.transform.position.z);
                 }
                 if (index < sentences.Length)
                 {
@@ -108,7 +110,7 @@ public class NarrativeTextScript : MonoBehaviour
 
     IEnumerator Wait()
 	{
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.25f);
         index = 0;
         isActive = false;
         controller.state = State.ADVENTURE;

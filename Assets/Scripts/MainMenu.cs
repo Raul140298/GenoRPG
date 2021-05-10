@@ -39,6 +39,7 @@ public class MainMenu : MonoBehaviour
 			if (botonSeleccionado == 3) botonSeleccionado = 0;
 			pressedSpaceTime = Time.time;
 			actualizaBoton();
+			SoundSystemScript.PlaySound("Sound_button");
 		}
 		if (Input.GetKey("up") && Time.time - pressedSpaceTime > 0.2f)
 		{
@@ -46,6 +47,7 @@ public class MainMenu : MonoBehaviour
 			if (botonSeleccionado == -1) botonSeleccionado = 2;
 			pressedSpaceTime = Time.time;
 			actualizaBoton();
+			SoundSystemScript.PlaySound("Sound_button");
 		}
 
 		if (Input.GetKey("c"))
@@ -65,6 +67,7 @@ public class MainMenu : MonoBehaviour
 					print("Error de seleccion de boton\n");
 					break;
 			}
+			SoundSystemScript.PlaySound("Sound_button");
 		}
 	}
 
