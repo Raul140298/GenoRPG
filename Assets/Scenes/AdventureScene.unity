@@ -4690,6 +4690,7 @@ MonoBehaviour:
   camera1: {fileID: 797046323}
   camera2: {fileID: 1111875605}
   firstAttack: 0
+  spriteRenderer: {fileID: 0}
 --- !u!4 &965200829
 Transform:
   m_ObjectHideFlags: 0

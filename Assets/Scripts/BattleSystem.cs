@@ -28,6 +28,7 @@ public class BattleSystem : MonoBehaviour
     public Animator playerAnim, buttonAnim, enemyAnim;
     public Camera camera1, camera2;
     public bool firstAttack = false;
+    public SpriteRenderer spriteRenderer;
 
     Vector3 mov = new Vector3(-1, -1, 0), destino;
     bool enemyTurn = false;
@@ -72,6 +73,7 @@ public class BattleSystem : MonoBehaviour
         enemyAnim = enemyBattleStation.GetComponent<Animator>();
         enemyAnim.SetBool("isDead", false);
         enemyName = this.enemyUnit.name;
+        spriteRenderer = enemyPrefab.gameObject.GetComponent<SpriteRenderer>();
 
 
         //Establezco el inicio de la batalla
@@ -532,7 +534,8 @@ public class BattleSystem : MonoBehaviour
                 break;
             case BattleState.RUN:
                 print("Huiste con éxito\n");
-                yield return new WaitForSeconds(4f);
+                StartCoroutine(enemigoTransparente());
+                yield return new WaitForSeconds(4.5f);
                 enemyPrefab.GetComponent<Unit>().enemyMove.enBatalla = false;
                 break;
             default:
@@ -541,6 +544,23 @@ public class BattleSystem : MonoBehaviour
 
         //tiempo de espera de la decision de huir o la animacion de muerte del enemigo
         yield return new WaitForSeconds(1.5f);
+    }
+
+    IEnumerator enemigoTransparente()
+	{
+        print("Se cambio de color");
+        for(int i =0; i< 45; i++)
+		{
+            if(i%2==0)
+			{
+                spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+            }
+			else
+			{
+                spriteRenderer.color = new Color(1f, 1f, 1f, 0.5f);
+            }
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 
     IEnumerator Won()

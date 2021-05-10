@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &208980809 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6633724716783820100, guid: bb08dae7f082daa42b261ac2e945cb86,
+    type: 3}
+  m_PrefabInstance: {fileID: 1288442831}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &242661148
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +332,7 @@ Transform:
   - {fileID: 638263396}
   - {fileID: 859609688}
   m_Father: {fileID: 1442927400}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &268528872
 MonoBehaviour:
@@ -5179,7 +5185,7 @@ Transform:
   - {fileID: 832311559}
   - {fileID: 392370447}
   m_Father: {fileID: 1442927400}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &586787707
 GameObject:
@@ -10667,6 +10673,80 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &1288442831
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1442927400}
+    m_Modifications:
+    - target: {fileID: 6633724716783820100, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633724716783820100, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.953981
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633724716783820100, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.256995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633724716783820100, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633724716783820100, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633724716783820100, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633724716783820100, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633724716783820100, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633724716783820100, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633724716783820100, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633724716783820100, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633724716783820105, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633724716783820106, guid: bb08dae7f082daa42b261ac2e945cb86,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bb08dae7f082daa42b261ac2e945cb86, type: 3}
 --- !u!1 &1442927397
 GameObject:
   m_ObjectHideFlags: 0
@@ -10748,6 +10828,7 @@ Transform:
   m_LocalPosition: {x: 2.0430188, y: 1.477005, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 208980809}
   - {fileID: 268528871}
   - {fileID: 450547056}
   m_Father: {fileID: 0}

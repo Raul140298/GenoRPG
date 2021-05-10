@@ -209,7 +209,7 @@ public class CharacterController : MonoBehaviour
 
 
 		if (other.gameObject.name.Contains("enemy") && canBattle == true 
-			&& (Mathf.Abs(oposY - floor) <= 0.075f))
+			&& (Mathf.Abs(oposY - floor) <= 0.075f) && other.GetComponent<Unit>().enemyMove.enBatalla == false)
 		{
 			mov = new Vector3(0,0,0);
 			other.gameObject.GetComponent<Unit>().enemyMove.enBatalla = true;
