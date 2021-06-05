@@ -41,16 +41,16 @@ public class NarrativeTextScript : MonoBehaviour
             case State.ADVENTURE:
                 cajaTextoSprite.enabled = textoSprite.enabled = continueButton.enabled = false;
                 controller.anim.SetBool("narrative", false);
-                GameObject.Find("enemy bowsette").GetComponent<Animator>().SetBool("isBattle", false);
-                GameObject.Find("enemy bowsette").GetComponent<Animator>().SetBool("walking", true);
+                //GameObject.Find("enemy bowsette").GetComponent<Animator>().SetBool("isBattle", false);
+                //GameObject.Find("enemy bowsette").GetComponent<Animator>().SetBool("walking", true);
                 break;
             case State.BATTLE:
                 break;
             case State.NARRATIVE:
                 cajaTextoSprite.enabled = textoSprite.enabled = true;
                 controller.anim.SetBool("walking", false);
-                GameObject.Find("enemy bowsette").GetComponent<Animator>().SetBool("isBattle", false);
-                GameObject.Find("enemy bowsette").GetComponent<Animator>().SetBool("walking", false);
+                //GameObject.Find("enemy bowsette").GetComponent<Animator>().SetBool("isBattle", false);
+                //GameObject.Find("enemy bowsette").GetComponent<Animator>().SetBool("walking", false);
                 if (controller.numNarrative == 0) controller.anim.SetBool("narrative", true);
                 if (controller.numNarrative == -2 && last == false)
                 {

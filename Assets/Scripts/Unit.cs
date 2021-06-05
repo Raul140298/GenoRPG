@@ -9,7 +9,7 @@ public class Unit : MonoBehaviour
 {
     public ScriptableCharacters character;
     public string unitNames;
-    public int unitLvl, unitDamage, unitMaxHP, unitCurrHP, unitMaxMP, unitCurrMP, unitExpNeed, unitExpGiven, unitCurrExp;
+    public int unitLvl, unitDamage, unitMaxHP, unitCurrHP, unitMaxMP, unitCurrMP, unitExpNeed, unitExpGiven, unitCurrExp, unitProbRun;
     public float unitSpeed;
     public Sprite unitSprite;
     public GameObject sombraPrefab;
@@ -69,6 +69,7 @@ public class Unit : MonoBehaviour
             gameObject.AddComponent<Animator>();
             gameObject.GetComponent<Animator>().runtimeAnimatorController = unitBattleAnimator;
             unitExpGiven = character.expGiven;
+            unitProbRun = character.probRun;
             //if(gameObject.name.Contains("bones") || gameObject.name.Contains("bowsette"))
             if(gameObject.name.Contains("bones"))
 			{

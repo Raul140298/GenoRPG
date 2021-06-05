@@ -21,7 +21,7 @@ public class BattleHUD : MonoBehaviour
         hpSlider.value = unit.unitCurrHP;
         mpSlider.maxValue = unit.unitMaxMP;
         mpSlider.value = unit.unitCurrMP;
-
+        levelText.text = unit.unitCurrHP.ToString() + "  /  " + unit.unitMaxHP.ToString();
     }
 
     public void SetHP(int hp)
@@ -29,7 +29,7 @@ public class BattleHUD : MonoBehaviour
         //currHP = hp;
         //HP.text = currHP.ToString() + '/' + maxHP.ToString();
         hpSlider.value = hp;
-        levelText.text = hp.ToString();
+        levelText.text = hp.ToString() + "  /  " + hpSlider.maxValue.ToString();
     }
     public void SetMP(int mp)
 	{

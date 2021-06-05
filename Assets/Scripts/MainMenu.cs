@@ -50,7 +50,7 @@ public class MainMenu : MonoBehaviour
 			SoundSystemScript.PlaySound("Sound_button");
 		}
 
-		if (Input.GetKey("c"))
+		if (Input.GetKey("c") || Input.GetKey("space") || Input.GetKey(KeyCode.Return))
 		{
 			switch (botonSeleccionado)
 			{

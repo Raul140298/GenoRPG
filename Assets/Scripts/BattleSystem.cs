@@ -160,7 +160,6 @@ public class BattleSystem : MonoBehaviour
                         SoundSystemScript.PlaySound("Sound_button");
                         StartCoroutine(hideGenoHUD(false, 0.1f));
                         state = BattleState.RUN;
-                        StartCoroutine(EndBattle());
                         StartCoroutine(Run());
                         break;
                     case Action.NONE:
@@ -374,7 +373,7 @@ public class BattleSystem : MonoBehaviour
         playerAnim.SetFloat("eje X", -1f);
         playerAnim.SetFloat("eje Y", 0f);
 
-        print("Iteml\n");
+        print("Item\n");
         //Tiempo del ataque
         yield return new WaitForSeconds(0.5f);
 
@@ -597,8 +596,30 @@ public class BattleSystem : MonoBehaviour
     
     IEnumerator Run()
     {
-        yield return new WaitForSeconds(1f);
-        StartCoroutine(Won());
+        if(UnityEngine.Random.Range(0, enemyUnit.unitProbRun) == 0)
+		{
+            yield return new WaitForSeconds(0.5f);
+            battleText.textDisplay.text = "Couldn't Run !";
+            battleText.cajaTextoSprite.enabled = battleText.textoSprite.enabled = true;
+
+            yield return new WaitForSeconds(1.5f);
+            battleText.cajaTextoSprite.enabled = battleText.textoSprite.enabled = false;
+            yield return new WaitForSeconds(1f);
+            StartCoroutine(EnemyTurn());
+        }
+		else
+		{
+            yield return new WaitForSeconds(0.5f);
+            battleText.textDisplay.text = "Ran Away";
+            battleText.cajaTextoSprite.enabled = battleText.textoSprite.enabled = true;
+
+            yield return new WaitForSeconds(0.75f);
+            StartCoroutine(EndBattle());
+            yield return new WaitForSeconds(0.75f);
+            battleText.cajaTextoSprite.enabled = battleText.textoSprite.enabled = false;
+            yield return new WaitForSeconds(1f);
+            StartCoroutine(Won());
+        }
     }
 
     IEnumerator hideGenoHUD(bool b, float x)

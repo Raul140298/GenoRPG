@@ -22,6 +22,7 @@ MonoBehaviour:
   expNeed: 0
   expGiven: 10
   currExp: 0
+  probRun: 7
   speed: 0.8
   sprite: {fileID: -5193276013480602723, guid: 4b8e123c720a18042b738d5b12794815, type: 3}
   battleAnimator: {fileID: 9100000, guid: 3445e36b985deb74d8730ae63cd23c04, type: 2}
