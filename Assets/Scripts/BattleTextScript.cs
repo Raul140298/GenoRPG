@@ -9,14 +9,11 @@ public class BattleTextScript : MonoBehaviour
     public string[] sentences;
     public int index = 0;
     public float typingSpeed;
-    public SpriteRenderer continueButton;
-    //bool isActive = false, last = false;
-    public SpriteRenderer cajaTextoSprite;
+    public SpriteRenderer continueButton, cajaTextoSprite;
     public MeshRenderer textoSprite;
-    CharacterController controller;
+    CharController controller;
     public BattleSystem battleSystem;
-    public GameObject posInicial;
-    public GameObject bowsette;
+    public GameObject posInicial, bowsette;
     // start: Para controlar si empieza o no la transición
     // isFadeIn: Para controlar si la transición es de entrada o salida
     // alpha: Opacidad inicial del cuadrado de transición
@@ -27,7 +24,7 @@ public class BattleTextScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controller = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>();
+        controller = GameObject.FindGameObjectWithTag("Player").GetComponent<CharController>();
         cajaTextoSprite = this.GetComponent<SpriteRenderer>();
         textoSprite = this.transform.GetChild(0).GetComponent<MeshRenderer>();
         continueButton = this.transform.GetChild(1).GetComponent<SpriteRenderer>();

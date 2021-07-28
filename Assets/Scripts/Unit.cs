@@ -15,8 +15,7 @@ public class Unit : MonoBehaviour
     public GameObject sombraPrefab;
     public RuntimeAnimatorController unitBattleAnimator;
     public CameraScript cam;
-    public ParticleSystem unitAttackParticle;
-    public ParticleSystem unitSpecialParticle;
+    public ParticleSystem unitAttackParticle, unitSpecialParticle;
     CapsuleCollider2D coll;
     public EnemyMoveScript enemyMove;
 
@@ -88,18 +87,6 @@ public class Unit : MonoBehaviour
         
       
     }
-
-	//void Update()
-	//{
-	//	if (this.GetComponent<SpriteRenderer>().isVisible)
-	//	{
-	//		print(unitNames + " es visible\n");
-	//	}
-	//	else
-	//	{
-	//		print(unitNames + " se escondió\n");
-	//	}
-	//}
 
 	public bool TakeDamage(int dmg)
 	{

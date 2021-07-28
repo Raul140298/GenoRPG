@@ -13,7 +13,7 @@ public class NarrativeTextScript : MonoBehaviour
     bool isActive = false, last = false;
     SpriteRenderer cajaTextoSprite;  
     MeshRenderer textoSprite;
-    CharacterController controller;
+    CharController controller;
     public GameObject posInicial;
     public GameObject bowsette;
     // start: Para controlar si empieza o no la transición
@@ -26,7 +26,7 @@ public class NarrativeTextScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controller = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>();
+        controller = GameObject.FindGameObjectWithTag("Player").GetComponent<CharController>();
         cajaTextoSprite = this.GetComponent<SpriteRenderer>();
         textoSprite = this.transform.GetChild(0).GetComponent<MeshRenderer>();
         continueButton = this.transform.GetChild(1).GetComponent<SpriteRenderer>();

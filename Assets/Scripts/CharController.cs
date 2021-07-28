@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public enum State { ADVENTURE, BATTLE, TELEPORT, NARRATIVE }
 
-public class CharacterController : MonoBehaviour
+public class CharController : MonoBehaviour
 {
 	#region variables
 	//PUBLICAS
 	public int numNarrative;
-	public float floor, oposY;
+	public float floor, oposY, ejeY;
 	public bool canJump = true, elevando = false, choca = false, canBattle = true, caeDeMuro = false;
 	public BattleSystem battleByTurn;
 	public GameObject zonaBatalla, zonaActual, otherCollider;
@@ -20,7 +20,7 @@ public class CharacterController : MonoBehaviour
 	public NarrativeTextScript narrative;
 	public Animator anim;
 	//PRIVADAS
-	float ejeY, topeY, anteriorY, chocaX, chocaY, speedJump = 4f, gravity = 1f;
+	float topeY, anteriorY, chocaX, chocaY, speedJump = 4f, gravity = 1f;
 	Vector3 salto = new Vector3(0f, 1f, 0f), mov;
 	Unit player;
 	// start: Para controlar si empieza o no la transición
@@ -48,18 +48,22 @@ public class CharacterController : MonoBehaviour
 		state = State.ADVENTURE;
 	}
 
-	// Update is called once per frame
-	void Update()
+	private void Update()
+	{
+		if (state == State.ADVENTURE)
+		{
+			//ManageMovement();
+			//ManageJump();
+		}
+	}
+
+	void FixedUpdate()
 	{
 		if (state == State.ADVENTURE)
 		{
 			ManageMovement();
 			ManageJump();
-		}	
-	}
-
-	void FixedUpdate()
-	{
+		}
 		//Si se está moviendo
 		if (mov != Vector3.zero)
 		{
@@ -111,22 +115,22 @@ public class CharacterController : MonoBehaviour
 			if (canJump)//si está en el suelo
 			{
 				GetComponent<CapsuleCollider2D>().isTrigger = false;
-				if (choca == false)
-				{
+				//if (choca == false)
+				//{
 					transform.position = Vector3.MoveTowards(
 							transform.position,
 							transform.position + mov,
 							player.unitSpeed * Time.deltaTime
 							//speed * player.unitSpeed * Time.deltaTime
 							);
-				}
-				else
-				{   //Solo saldrá del bloque si es que se ha dejado de presionar los botones anteriores
-					if (!comparaSignos(chocaX, mov.x) || !comparaSignos(chocaY, mov.y))
-					{
-						choca = false;
-					}
-				}
+				//}
+				//else
+				//{   //Solo saldrá del bloque si es que se ha dejado de presionar los botones anteriores
+				//	if (!comparaSignos(chocaX, mov.x) || !comparaSignos(chocaY, mov.y))
+				//	{
+				//		choca = false;
+				//	}
+				//}
 			}
 			else //si ya saltó (elevando o cayendo)
 			{   //basicamente para disminuir la velocidad en el aire
@@ -154,13 +158,13 @@ public class CharacterController : MonoBehaviour
 			floor = gameObject.transform.position.y;
 			topeY = floor + 0.25f;
 
-			//if (Input.GetKey("c") && ejeY < topeY && canJump)
-			//{
-			//	canJump = false;
-			//	elevando = true;
-			//	floor = ejeY;
-			//	SoundSystemScript.PlaySound("Sound_jump");
-			//}
+			if (Input.GetKey("c") && ejeY < topeY && canJump)
+			{
+				canJump = false;
+				elevando = true;
+				floor = ejeY;
+				SoundSystemScript.PlaySound("Sound_jump");
+			}
 		}
 		else
 		{
@@ -286,14 +290,16 @@ public class CharacterController : MonoBehaviour
 		}
 		else if (other.gameObject.name.Contains("narrative"))
 		{
+			body.velocity = new Vector2(0f, 0f);
 			other.GetComponent<PolygonCollider2D>().enabled = false;
 			narrative.sentences = other.GetComponent<NarrativeLauncherScript>().sentences;
 			numNarrative = other.GetComponent<NarrativeLauncherScript>().numNarrative;
 			//anim.SetBool("narrative", true);
 			state = State.NARRATIVE;	
 		}
-		else if (other.gameObject.name.Contains("wall") && elevando == true)
+		else if (other.gameObject.name.Contains("wall"))
 		{
+			camera1.GetComponent<CameraScript>().followPlayer = false;
 			choca = true;
 			chocaX = mov.x;
 			chocaY = mov.y;

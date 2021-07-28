@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using TMPro;
 //using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,24 +13,33 @@ public enum Action { ITEM, SPECIAL, ATTACK, ETC, NONE }
 
 public class BattleSystem : MonoBehaviour
 {
-    //OBJETOS O PERSONAJES QUE PELEAN
-    public GameObject playerPrefab, enemyPrefab, playerButtons;
-    //DATOS DE LOS QUE PELEARAN
-    public Unit playerUnit, enemyUnit;
-    public String enemyName;
-    //DATOS DE IU
+    #region variables
+    [Header("Player variables")]
+    public GameObject playerBattleStation;
     public BattleHUD playerHUD;
-    public GameObject playerBattleStation, enemyBattleStation, zonaBatalla, genoHUD;
-    public CharacterController controller;
+    public GameObject genoHUD;
+    public GameObject playerDamagePopup;
+    public GameObject playerPrefab;
+    public Unit playerUnit;
+    public GameObject playerButtons;
+    public Animator playerAnim, buttonAnim;
+    public CharController controller;
+    [Header("Enemy variables")]
+    public GameObject enemyBattleStation;
+    public GameObject enemyDamagePopup;
+    public GameObject enemyPrefab;
+    public Unit enemyUnit;
+    public String enemyName;
+    public SpriteRenderer spriteRenderer;
+    public Animator enemyAnim;
+    public bool firstAttack = false;
+    [Header("Battle variables")]
     public BattleState state;
     public Action action;
     public BattleTextScript battleText;
-    //Animator enemyAnim;
-    public Animator playerAnim, buttonAnim, enemyAnim;
     public Camera camera1, camera2;
-    public bool firstAttack = false;
-    public SpriteRenderer spriteRenderer;
-
+    public GameObject zonaBatalla;
+    //[Header("Smooth variables")]
     Vector3 mov = new Vector3(-1, -1, 0), destino;
     bool enemyTurn = false;
     // start: Para controlar si empieza o no la transición
@@ -38,8 +48,9 @@ public class BattleSystem : MonoBehaviour
     // fadeTime: Transición de 1 segundo
     bool start = false, isFadeIn = false;
     float alpha = 0, fadeTime = 1f;
-    
-    void Start()
+	#endregion
+
+	void Start()
     {
         zonaBatalla = GameObject.Find("Zona Battalla");
         buttonAnim = GameObject.Find("BattleButtons").GetComponent<Animator>();
@@ -260,21 +271,20 @@ public class BattleSystem : MonoBehaviour
         main.duration = playerUnit.unitAttackParticle.GetComponent<ParticleSystem>().main.duration;
         playerBattleStation.transform.GetChild(0).GetComponent<ParticleSystemRenderer>().sharedMaterial = playerUnit.unitAttackParticle.GetComponent<ParticleSystemRenderer>().sharedMaterial;
         playerBattleStation.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
-
         SoundSystemScript.PlaySound("Sound_geno_fingershot");
         bool isDead = enemyUnit.TakeDamage(playerUnit.unitDamage);
         //Fin de la animacion
-
         yield return new WaitForSeconds(0.89f);
         //---------------------------------------------------------------------------------------
         playerAnim.SetFloat("eje X", -1f);
         playerAnim.SetFloat("eje Y", 0f);
         playerAnim.SetBool("isAttack", false);
 
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.5f);
 
         print("Enemigo recibio daño\n");
         //ANIMACION DE RECIBIR DAÑO Y SONIDO
+        enemyDamagePopup.GetComponent<TextMeshPro>().text = playerUnit.unitDamage.ToString();
         yield return new WaitForSeconds(1f);
 
         //yield return new WaitForSeconds(1f);
@@ -569,7 +579,7 @@ public class BattleSystem : MonoBehaviour
             FadeIn();
             yield return new WaitForSeconds(fadeTime);
             SoundSystemScript.Stop();
-            SoundSystemScript.PlaySoundtrack(playerPrefab.GetComponent<CharacterController>().zonaActual.GetComponent<ZonaScript>().soundtrack.name);
+            SoundSystemScript.PlaySoundtrack(playerPrefab.GetComponent<CharController>().zonaActual.GetComponent<ZonaScript>().soundtrack.name);
             camera2.enabled = false;
             camera1.enabled = true;
             FadeOut();
@@ -577,8 +587,8 @@ public class BattleSystem : MonoBehaviour
 
             //Desactivo el BattleSystem y activo el controller
             this.enabled = false;
-            GameObject.Find("player").GetComponent<CharacterController>().state = State.ADVENTURE;
-            GameObject.Find("player").GetComponent<CharacterController>().canBattle = true;
+            GameObject.Find("player").GetComponent<CharController>().state = State.ADVENTURE;
+            GameObject.Find("player").GetComponent<CharController>().canBattle = true;
 
             //Retornamos la animacion al por defecto
             playerAnim.SetBool("won", false);

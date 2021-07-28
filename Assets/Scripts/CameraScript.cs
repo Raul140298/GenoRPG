@@ -8,10 +8,10 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour
 {
     Transform target;
-    CharacterController control;
+    CharController control;
     Vector3 prevPosition;
     Vector2 velocity;
-    bool followPlayer = false;
+    public bool followPlayer = false;
     float posX, posY, smoothTime = 0.6f, posXF, posYF, smoothTimeF = 0.25f;
     public List<GameObject> objetosEnCamara = new List<GameObject>();
 
@@ -24,11 +24,11 @@ public class CameraScript : MonoBehaviour
                 transform.position.z);
         prevPosition = transform.position;
 
-        control = target.GetComponent<CharacterController>();
+        control = target.GetComponent<CharController>();
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
 		posX = Mathf.SmoothDamp(
 			transform.position.x,
@@ -129,11 +129,11 @@ public class CameraScript : MonoBehaviour
     {
         if(o1.name == "player")
 		{
-            return o2.transform.position.y.CompareTo(o1.GetComponent<CharacterController>().floor);
+            return o2.transform.position.y.CompareTo(o1.GetComponent<CharController>().floor);
         }
         else if (o2.name == "player")
 		{
-            return o2.GetComponent<CharacterController>().floor.CompareTo(o1.transform.position.y);
+            return o2.GetComponent<CharController>().floor.CompareTo(o1.transform.position.y);
         }
 		else
 		{

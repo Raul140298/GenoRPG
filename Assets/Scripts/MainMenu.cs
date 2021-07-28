@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
 	public TextMeshPro[] flechasDeBotones = new TextMeshPro[3];
 	public int botonSeleccionado;
 	private float pressedSpaceTime;
+	public Animator transitionAnim;
 
 	void Start()
 	{
@@ -81,7 +82,7 @@ public class MainMenu : MonoBehaviour
 
 	public void Jugar()
 	{
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		StartCoroutine(loadScene());
 	}
 
 	public void Opciones()
@@ -91,5 +92,23 @@ public class MainMenu : MonoBehaviour
 	public void Salir()
 	{
 		Application.Quit();
+	}
+
+	IEnumerator loadScene()
+	{
+		SoundSystemScript.Stop();
+		this.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+		this.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(false);
+		this.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = false;
+		this.transform.GetChild(1).transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+		this.transform.GetChild(2).GetComponent<MeshRenderer>().enabled = false;
+		this.transform.GetChild(2).transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+		this.transform.GetChild(3).GetComponent<MeshRenderer>().enabled = false;
+		this.transform.GetChild(3).transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+		transitionAnim.SetTrigger("end");
+		yield return new WaitForSeconds(9.167f);
+		transitionAnim.SetTrigger("finish");
+		yield return new WaitForSeconds(0.831f);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }

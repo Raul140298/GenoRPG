@@ -5,7 +5,7 @@ using UnityEngine;
 public class shadow : MonoBehaviour
 {
     public GameObject target;
-    public CharacterController control;
+    public CharController control;
     public Vector3 startPosTarget, startPosObj, difference, auxFloor, auxScale, ScaleIni;
     public float floorShadow, scaleX, scaleY;
     CapsuleCollider2D coll;
@@ -26,7 +26,7 @@ public class shadow : MonoBehaviour
     }
     void Update()
     {
-        control = target.GetComponent<CharacterController>();
+        control = target.GetComponent<CharController>();
 
         if (control)//SI ES EL PERSONAJE
 		{
