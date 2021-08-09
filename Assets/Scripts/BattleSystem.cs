@@ -33,6 +33,8 @@ public class BattleSystem : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Animator enemyAnim;
     public bool firstAttack = false;
+    public Rigidbody2D enemyRB;
+    public bool enemyAttacking = false;
     [Header("Battle variables")]
     public BattleState state;
     public Action action;
@@ -85,6 +87,7 @@ public class BattleSystem : MonoBehaviour
         enemyAnim.SetBool("isDead", false);
         enemyName = this.enemyUnit.name;
         spriteRenderer = enemyPrefab.gameObject.GetComponent<SpriteRenderer>();
+        enemyRB = enemyBattleStation.GetComponent<Rigidbody2D>();
 
 
         //Establezco el inicio de la batalla
@@ -104,7 +107,7 @@ public class BattleSystem : MonoBehaviour
                     destino,
                     0.75f * Time.deltaTime);
         }
-        else if (enemyTurn == true)
+        else if (enemyTurn == true && enemyAttacking == false)
         {
             StartCoroutine(hideGenoHUD(false,0.05f));
             enemyBattleStation.transform.position = Vector3.MoveTowards(
@@ -114,7 +117,7 @@ public class BattleSystem : MonoBehaviour
         }
 
         //Si es el turno del personajes
-        if (buttonAnim.GetBool("PlayerTurn") == true)
+        if (buttonAnim.GetBool("PlayerTurn") == true && enemyAttacking == false)
         {
             StartCoroutine(hideGenoHUD(true,0.05f));
             if (Input.GetAxisRaw("Horizontal") > 0 && action != Action.ATTACK)
@@ -284,7 +287,7 @@ public class BattleSystem : MonoBehaviour
 
         print("Enemigo recibio daño\n");
         //ANIMACION DE RECIBIR DAÑO Y SONIDO
-        enemyDamagePopup.GetComponent<TextMeshPro>().text = playerUnit.unitDamage.ToString();
+        StartCoroutine(DamagePopup(playerUnit.unitDamage, enemyDamagePopup));
         yield return new WaitForSeconds(1f);
 
         //yield return new WaitForSeconds(1f);
@@ -428,11 +431,21 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         print("Enemigo ataca\n");
         SoundSystemScript.PlaySound("Sound_hit");
+
+        enemyAttacking = true;
+        enemyAnim.SetBool("attacking", true);
+        yield return new WaitForSeconds(0.5f);
+        enemyAnim.SetBool("attacking", false);
+        yield return new WaitForSeconds(0.5f);
+        enemyAttacking = false;
+
         bool isDead = playerUnit.TakeDamage(enemyUnit.unitDamage);
         playerHUD.SetHP(playerUnit.unitCurrHP);
         //Devuelvo al enemigo a su posicion en el mismo tiempo
         enemyTurn = false;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
+        enemyAnim.SetBool("attacking", false);
+        yield return new WaitForSeconds(1f);
 
         //Evalúo si está muerto o no
         if (isDead)
@@ -545,7 +558,7 @@ public class BattleSystem : MonoBehaviour
                 print("Huiste con éxito\n");
                 StartCoroutine(enemigoTransparente());
                 yield return new WaitForSeconds(4.5f);
-                enemyPrefab.GetComponent<Unit>().enemyMove.enBatalla = false;
+                enemyPrefab.GetComponent<ObjectPathMovementScript>().inBattle = false;
                 break;
             default:
                 break;
@@ -636,6 +649,14 @@ public class BattleSystem : MonoBehaviour
 	{
         yield return new WaitForSeconds(x);
         genoHUD.SetActive(b);
+    }
+
+    IEnumerator DamagePopup(float damage,GameObject popup)
+	{
+        yield return new WaitForSeconds(0.4f);
+        popup.GetComponent<TextMeshPro>().text = damage.ToString();
+        yield return new WaitForSeconds(0.7f);
+        popup.GetComponent<TextMeshPro>().text = " ";
     }
 
     #region Transicion

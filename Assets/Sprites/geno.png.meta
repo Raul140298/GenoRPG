@@ -5960,9 +5960,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 31
-        y: 126
+        y: 125
         width: 22
-        height: 31
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6064,7 +6064,7 @@ TextureImporter:
       name: geno_235
       rect:
         serializedVersion: 2
-        x: 162
+        x: 161
         y: 126
         width: 22
         height: 32

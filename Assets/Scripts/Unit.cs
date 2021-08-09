@@ -18,6 +18,7 @@ public class Unit : MonoBehaviour
     public ParticleSystem unitAttackParticle, unitSpecialParticle;
     CapsuleCollider2D coll;
     public EnemyMoveScript enemyMove;
+    public ObjectPathMovementScript pathMovement;
 
     void Start()
     {
@@ -69,18 +70,25 @@ public class Unit : MonoBehaviour
             gameObject.GetComponent<Animator>().runtimeAnimatorController = unitBattleAnimator;
             unitExpGiven = character.expGiven;
             unitProbRun = character.probRun;
-            //if(gameObject.name.Contains("bones") || gameObject.name.Contains("bowsette"))
-            if(gameObject.name.Contains("bones"))
+            pathMovement = GetComponent<ObjectPathMovementScript>();
+
+            if (!gameObject.name.Contains("bowsette"))
+            {
+                enemyMove = gameObject.GetComponent<EnemyMoveScript>();
+                enemyMove.anim = GetComponent<Animator>();
+                
+            }
+            if (gameObject.name.Contains("bones"))
 			{
-				gameObject.GetComponent<Animator>().SetBool("isBattle", false);
-				gameObject.GetComponent<Animator>().SetBool("walking", false);
-				gameObject.GetComponent<EnemyMoveScript>().anim = GetComponent<Animator>();
+                enemyMove.anim.SetBool("isBattle", false);
+                enemyMove.anim.SetBool("walking", false);
 			}
             if (gameObject.name.Contains("superfireball"))
             {
-                gameObject.GetComponent<EnemyMoveScript>().anim = GetComponent<Animator>();
             }
-            enemyMove = gameObject.GetComponent<EnemyMoveScript>();
+            
+
+            
         }
         this.GetComponent<SpriteRenderer>().sprite = unitSprite;
 

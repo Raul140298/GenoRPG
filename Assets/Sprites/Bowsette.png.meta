@@ -1085,6 +1085,9 @@ TextureImporter:
   - first:
       213: 7477803922810436232
     second: Bowsette_360
+  - first:
+      213: 6774329971368368448
+    second: Bowsette_361
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1116,8 +1119,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -2198,8 +2201,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 86
-        y: 631
-        width: 22
+        y: 632
+        width: 45
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -8762,6 +8765,27 @@ TextureImporter:
       bones: []
       spriteID: 88a73277c0f76c760800000000000000
       internalID: 7477803922810436232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bowsette_361
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 632
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04991be8731430e50800000000000000
+      internalID: 6774329971368368448
       vertices: []
       indices: 
       edges: []

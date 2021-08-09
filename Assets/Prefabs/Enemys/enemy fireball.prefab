@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2765843898411305349}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.79399943, y: -2.681, z: -20}
+  m_LocalPosition: {x: -0.79399943, y: -2.681, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,9 +51,15 @@ MonoBehaviour:
   unitCurrHP: 0
   unitMaxMP: 0
   unitCurrMP: 0
+  unitExpNeed: 0
+  unitExpGiven: 0
+  unitCurrExp: 0
+  unitProbRun: 0
   unitSpeed: 0
   unitSprite: {fileID: 0}
   sombraPrefab: {fileID: 0}
   unitBattleAnimator: {fileID: 0}
   cam: {fileID: 0}
   unitAttackParticle: {fileID: 0}
+  unitSpecialParticle: {fileID: 0}
+  enemyMove: {fileID: 0}
