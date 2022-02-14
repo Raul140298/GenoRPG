@@ -358,6 +358,7 @@ public class BattleSystem : MonoBehaviour
 
         print("Enemigo recibio daño\n");
         //ANIMACION DE RECIBIR DAÑO Y SONIDO
+        StartCoroutine(DamagePopup(playerUnit.unitDamage * 2, enemyDamagePopup));
         yield return new WaitForSeconds(1f);
 
         //yield return new WaitForSeconds(1f);
@@ -442,6 +443,9 @@ public class BattleSystem : MonoBehaviour
         bool isDead = playerUnit.TakeDamage(enemyUnit.unitDamage);
         playerHUD.SetHP(playerUnit.unitCurrHP);
         //Devuelvo al enemigo a su posicion en el mismo tiempo
+        print("Player recibio daño\n");
+        //ANIMACION DE RECIBIR DAÑO Y SONIDO
+        StartCoroutine(DamagePopup(enemyUnit.unitDamage, playerDamagePopup));
         enemyTurn = false;
         yield return new WaitForSeconds(0.5f);
         enemyAnim.SetBool("attacking", false);
